@@ -13,6 +13,8 @@ mermaid:
   enabled: true
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}">
+
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
 *Seri: Optimasi di Teknik Industri, Hari #1. Topik 1.1: What and Where Do We Optimize?* · [Read in English]({{ '/blog/2026/optimization-experts-in-everyday-life/' | relative_url }})

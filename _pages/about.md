@@ -23,6 +23,8 @@ latest_posts:
   enabled: false
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}">
+
 ## Biographical notes
 
 I am a PhD candidate in Industrial Engineering (concentrating on Manufacturing Systems Engineering) at King Saud University, Riyadh, Saudi Arabia, and a permanent faculty member (Civil Servant Lecturer) at Politeknik Industri Furnitur dan Pengolahan Kayu under the Ministry of Industry of the Republic of Indonesia. My research bridges manufacturing systems optimization, computational modeling, and product engineering, spanning additive manufacturing, 2D nesting and batch scheduling, data-driven industrial analytics, and smart furniture design.
