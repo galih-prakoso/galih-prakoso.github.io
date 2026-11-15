@@ -12,8 +12,9 @@
     links.forEach(function (a) {
       var url;
       try { url = new URL(a.getAttribute("href") || "", location.origin).pathname; } catch (e) { return; }
-      var item = map[url];
       var li = a.closest("li");
+      var isToggle = a.classList.contains("dropdown-toggle");
+      var item = isToggle ? null : map[url];
       if (item) {
         a.setAttribute("href", item.href);
         // replace only the label text node, keep child elements (e.g. screen-reader "(current)")
@@ -24,7 +25,7 @@
         var isActive = item.match.test(path) || (item.href === "/id/tulisan/" && /^\/id\/tulisan\//.test(path));
         a.classList.toggle("active", isActive);
         if (li) li.classList.toggle("active", isActive);
-      } else if (a.classList.contains("dropdown-toggle") && /language/i.test(a.textContent)) {
+      } else if (isToggle && /language/i.test(a.textContent)) {
         for (var j = 0; j < a.childNodes.length; j++) {
           var m = a.childNodes[j];
           if (m.nodeType === 3 && /language/i.test(m.nodeValue)) { m.nodeValue = m.nodeValue.replace(/language/i, "bahasa"); break; }
