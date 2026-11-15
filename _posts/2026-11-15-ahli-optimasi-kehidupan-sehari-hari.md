@@ -15,7 +15,7 @@ mermaid:
 
 *Seri: Optimasi di Teknik Industri, Hari #1. Topik 1.1: What and Where Do We Optimize?* · [Read in English]({{ '/blog/2026/optimization-experts-in-everyday-life/' | relative_url }})
 
-![Ilustrasi konsep optimasi dalam kehidupan sehari-hari dan rekayasa]({{ '/assets/img/blog/optimasi-hari-1.svg' | relative_url }})
+<img src="{{ '/assets/img/blog/optimization-day-1-id.svg' | relative_url }}" alt="Ilustrasi konsep optimasi dalam kehidupan sehari-hari dan rekayasa" style="max-width: 100%; height: auto; display: block; margin: 1rem auto;">
 
 Pada kehidupan sehari-hari, kita sering dihadapkan pada beberapa pilihan. Tidak jarang pilihan ini membuat kita bingung dalam mengambil keputusan. Contoh, ketika ingin membeli rumah, kita dihadapkan pada pilihan rumah yang luas tetapi jauh dari tempat kerja, atau rumah yang mungil tetapi dekat dengan pusat kota. Tentu saja, keputusan ini dipersulit dengan ketersediaan dana yang kita miliki. Atau contoh lain, ketika memilih kendaraan, kita harus menimbang antara harga unit, tingkat penggunaan bahan bakar apakah boros atau tidak, kenyamanan, serta *after-sales service*.
 

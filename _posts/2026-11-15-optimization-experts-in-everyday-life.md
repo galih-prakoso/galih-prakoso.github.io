@@ -15,7 +15,7 @@ mermaid:
 
 *Series: Optimization in Industrial Engineering, Day #1. Topic 1.1: What and Where Do We Optimize?* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/ahli-optimasi-kehidupan-sehari-hari/' | relative_url }})
 
-![Illustration of optimization concepts in everyday life and engineering]({{ '/assets/img/blog/optimasi-hari-1.svg' | relative_url }})
+<img src="{{ '/assets/img/blog/optimization-day-1-en.svg' | relative_url }}" alt="Illustration of optimization concepts in everyday life and engineering" style="max-width: 100%; height: auto; display: block; margin: 1rem auto;">
 
 In our daily lives, we are frequently faced with multiple choices. Quite often, these choices make it difficult for us to reach a decision. For example, when we want to buy a house, we might be torn between a spacious home that is far from our workplace, or a smaller house located right near the city center. Of course, this decision is further complicated by the funds we have available. Another example is when we choose a vehicle: we have to weigh the purchase price, fuel consumption efficiency, driving comfort, and after-sales service.
 

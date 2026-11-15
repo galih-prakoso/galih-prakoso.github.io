@@ -32,7 +32,7 @@ Saya adalah kandidat doktor Teknik Industri (konsentrasi Manufacturing Systems E
 
 Sebelum beralih ke dunia akademik pada 2022, saya memiliki pengalaman luas di bidang rekayasa dan manajemen industri pada sektor alat berat dan manufaktur. Saya bekerja sebagai Senior Design Engineer di PT. Hitachi Construction Machinery Indonesia (2014–2016), kemudian menjabat sebagai Account Portfolio Manager di PT. Sandvik Indonesia (2017–2022). Saya meraih gelar Bachelor of Science di bidang Teknik Industri (Production Technology) dari President University dan lulus cum laude Master of Science di bidang Teknik Industri (Productivity & Quality) dari Universitas Mercu Buana, Jakarta.
 
-Selain mengajar dan menempuh studi doktoral, saya memegang sertifikasi profesi nasional sebagai Data Scientist dan Furniture Designer dari Badan Nasional Sertifikasi Profesi (BNSP). Karya ilmiah saya telah terbit di jurnal peer-reviewed yang mencakup teknik industri, transformasi digital Industri 4.0, ergonomi, dan desain produk. Saya juga aktif dalam kepemimpinan organisasi, termasuk sebagai Sekretaris Jenderal asosiasi mahasiswa Indonesia di Riyadh (PPMI Riyadh) periode 2025–2026.
+Selain mengajar dan menempuh studi doktoral, saya memegang sertifikasi profesi nasional sebagai Data Scientist dan Furniture Designer dari Badan Nasional Sertifikasi Profesi (BNSP). Karya ilmiah saya telah terbit di jurnal peer-reviewed yang mencakup teknik industri, transformasi digital Industri 4.0, ergonomi, dan desain produk. Saya juga aktif dalam kepemimpinan organisasi, termasuk sebagai Sekretaris Jenderal Persatuan Pelajar Mahasiswa Indonesia (PPMI) Riyadh periode 2025–2026.
 
 ## Kontak
 
