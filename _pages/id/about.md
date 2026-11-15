@@ -10,8 +10,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Departemen Teknik Industri</p>
-    <p>Fakultas Teknik, King Saud University</p>
+    <p>King Saud University</p>
     <p>Riyadh, Arab Saudi</p>
 
 selected_papers: true
@@ -34,7 +33,7 @@ latest_posts:
 
 Saya adalah kandidat doktor Teknik Industri (konsentrasi Manufacturing Systems Engineering) di King Saud University, Riyadh, Arab Saudi, sekaligus dosen tetap (Dosen PNS) di Politeknik Industri Furnitur dan Pengolahan Kayu di bawah Kementerian Perindustrian Republik Indonesia. Penelitian saya menjembatani optimasi sistem manufaktur, pemodelan komputasi, dan rekayasa produk, mencakup additive manufacturing, nesting 2D dan penjadwalan batch, analitik industri berbasis data, serta desain furnitur pintar.
 
-Sebelum beralih ke dunia akademik pada 2022, saya memiliki pengalaman luas di bidang rekayasa dan manajemen industri pada sektor alat berat dan manufaktur. Saya bekerja sebagai Senior Design Engineer di PT. Hitachi Construction Machinery Indonesia (2014–2016), kemudian menjabat sebagai Account Portfolio Manager di PT. Sandvik Indonesia (2017–2022). Saya meraih gelar Bachelor of Science di bidang Teknik Industri (Production Technology) dari President University dan lulus cum laude Master of Science di bidang Teknik Industri (Productivity & Quality) dari Universitas Mercu Buana, Jakarta.
+Sebelum beralih ke dunia akademik pada 2022, saya memiliki pengalaman luas di bidang rekayasa dan manajemen industri pada sektor alat berat dan manufaktur. Saya bekerja sebagai Senior Design Engineer di PT. Hitachi Construction Machinery Indonesia (2014–2016), kemudian menjabat sebagai Account Portfolio Manager di PT. Sandvik Indonesia (2017–2022). Saya meraih gelar Bachelor of Science di bidang Teknik Industri (Production Technology) dari President University dan lulus cum laude Magister Teknik di bidang Teknik Industri (Productivity & Quality) dari Universitas Mercu Buana, Jakarta.
 
 Selain mengajar dan menempuh studi doktoral, saya memegang sertifikasi profesi nasional sebagai Data Scientist dan Furniture Designer dari Badan Nasional Sertifikasi Profesi (BNSP). Karya ilmiah saya telah terbit di jurnal peer-reviewed yang mencakup teknik industri, transformasi digital Industri 4.0, ergonomi, dan desain produk. Saya juga aktif dalam kepemimpinan organisasi, termasuk sebagai Sekretaris Jenderal Persatuan Pelajar Mahasiswa Indonesia (PPMI) Riyadh periode 2025–2026.
 

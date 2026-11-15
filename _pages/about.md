@@ -9,8 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Industrial Engineering Department</p>
-    <p>College of Engineering, King Saud University</p>
+    <p>King Saud University</p>
     <p>Riyadh, Saudi Arabia</p>
 
 selected_papers: true
