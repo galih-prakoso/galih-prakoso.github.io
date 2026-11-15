@@ -13,6 +13,8 @@ mermaid:
   enabled: true
 ---
 
+<script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
+
 *Seri: Optimasi di Teknik Industri, Hari #1. Topik 1.1: What and Where Do We Optimize?* · [Read in English]({{ '/blog/2026/optimization-experts-in-everyday-life/' | relative_url }})
 
 <img src="{{ '/assets/img/blog/optimization-day-1-id.svg' | relative_url }}" alt="Ilustrasi konsep optimasi dalam kehidupan sehari-hari dan rekayasa" style="max-width: 100%; height: auto; display: block; margin: 1rem auto;">

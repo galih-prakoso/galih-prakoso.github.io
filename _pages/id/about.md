@@ -24,6 +24,8 @@ latest_posts:
   enabled: false
 ---
 
+<script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
+
 <p><a href="{{ '/id/' | relative_url }}">Tentang</a> · <a href="{{ '/id/publikasi/' | relative_url }}">Publikasi</a> · <a href="{{ '/id/tulisan/' | relative_url }}">Tulisan</a> · <a href="{{ '/' | relative_url }}">English</a></p>
 
 ## Catatan biografi

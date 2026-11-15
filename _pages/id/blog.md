@@ -7,6 +7,8 @@ description: Catatan harian dan artikel tentang optimasi, teknik industri, dan m
 nav: false
 ---
 
+<script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
+
 <p><a href="{{ '/id/' | relative_url }}">Tentang</a> · <a href="{{ '/id/publikasi/' | relative_url }}">Publikasi</a> · <a href="{{ '/id/tulisan/' | relative_url }}">Tulisan</a> · <a href="{{ '/blog/' | relative_url }}">English</a></p>
 
 {% assign id_posts = site.posts | where: "lang", "id" %}
