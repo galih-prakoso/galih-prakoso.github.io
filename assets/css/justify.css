@@ -1,0 +1,17 @@
+/* Justified (left-right aligned) paragraphs for the biography and blog posts */
+article p,
+article li {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+/* keep short metadata blocks left-aligned */
+article .more-info p,
+article p.post-meta,
+article .post-tags,
+article .post-tags p {
+  text-align: left;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
