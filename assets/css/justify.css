@@ -15,3 +15,9 @@ article .post-tags p {
   -webkit-hyphens: none;
   hyphens: none;
 }
+
+/* Navbar search button: replace the hard-coded "ctrl k" label with a plain word */
+#search-toggle .nav-link { font-size: 0; }
+#search-toggle .nav-link::before { content: "search"; font-size: 1rem; margin-right: 0.35rem; }
+html:lang(id) #search-toggle .nav-link::before { content: "cari"; }
+#search-toggle .nav-link i { font-size: 1rem; }

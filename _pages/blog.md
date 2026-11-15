@@ -7,6 +7,8 @@ nav: true
 nav_order: 3
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}">
+
 {% assign en_posts = site.posts | where: "lang", "en" %}
 
 {% if en_posts.size == 0 %}
