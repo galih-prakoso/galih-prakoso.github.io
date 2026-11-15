@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EFF6FF" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Top Header Banner -->
+  <rect x="36" y="28" width="1128" height="96" rx="14" fill="url(#headerGrad)" />
+  <text x="68" y="68" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">APA &amp; DI MANA KITA MENGOPTIMALKAN?</text>
+  <text x="68" y="98" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#CBD5E1">Mengambil keputusan terbaik di tengah keterbatasan sumber daya &amp; batasan dunia nyata</text>
+  <rect x="945" y="52" width="190" height="44" rx="22" fill="#2563EB" />
+  <text x="1040" y="79" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Seri #1 • Teknik Industri</text>
+
+  <!-- LEFT PANEL: Everyday Life Optimization -->
+  <rect x="36" y="144" width="460" height="350" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#cardShadow)" />
+  <rect x="36" y="144" width="460" height="44" rx="14" fill="#FEF3C7" />
+  <rect x="36" y="172" width="460" height="16" fill="#FEF3C7" />
+  <text x="60" y="172" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#92400E">1. PILIHAN SEHARI-HARI (TRADE-OFF)</text>
+
+  <!-- House Dilemma -->
+  <rect x="58" y="206" width="416" height="118" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" />
+  <text x="76" y="232" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" fill="#1E293B">Memilih Rumah</text>
+
+  <!-- Option A -->
+  <rect x="76" y="244" width="175" height="64" rx="8" fill="#EFF6FF" stroke="#93C5FD" />
+  <text x="163" y="266" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#1D4ED8">Rumah Luas</text>
+  <text x="163" y="284" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#475569">Jauh dari tempat kerja</text>
+  <text x="163" y="300" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#DC2626">- Waktu tempuh lama</text>
+
+  <text x="266" y="281" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#64748B">VS</text>
+
+  <!-- Option B -->
+  <rect x="281" y="244" width="175" height="64" rx="8" fill="#F0FDF4" stroke="#86EFAC" />
+  <text x="368" y="266" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#15803D">Rumah Mungil</text>
+  <text x="368" y="284" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#475569">Dekat pusat kota</text>
+  <text x="368" y="300" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#DC2626">- Ruang hidup terbatas</text>
+
+  <!-- Budget Constraint Pill -->
+  <rect x="58" y="340" width="416" height="134" rx="10" fill="#FFFBEB" stroke="#FCD34D" stroke-width="1.2" />
+  <text x="76" y="366" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#92400E">Dibatasi oleh Keterbatasan Sumber Daya</text>
+  <text x="76" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#334155">• Ketersediaan dana</text>
+  <text x="76" y="412" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#334155">• Konsumsi BBM, kenyamanan &amp; layanan purna jual</text>
+  <text x="76" y="434" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#334155">• Membagi sisa dana untuk prioritas hidup lain</text>
+  <text x="76" y="458" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#B45309">→ Hasil: Kita memilih opsi OPTIMAL, bukan kesempurnaan.</text>
+
+  <!-- RIGHT PANEL: Engineering Case Study (4 Car Designs) -->
+  <rect x="516" y="144" width="648" height="350" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#cardShadow)" />
+  <rect x="516" y="144" width="648" height="44" rx="14" fill="#DBEAFE" />
+  <rect x="516" y="172" width="648" height="16" fill="#DBEAFE" />
+  <text x="540" y="172" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#1E40AF">2. STUDI KASUS REKAYASA: TRADE-OFF DESAIN OTOMOTIF</text>
+
+  <!-- Table Column Headers -->
+  <text x="540" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#64748B">TIPE KENDARAAN</text>
+  <text x="735" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#64748B">AKSELERASI</text>
+  <text x="875" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#64748B">HEMAT BBM</text>
+  <text x="1015" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#64748B">KAPASITAS / BEBAN</text>
+
+  <!-- Row 1: Sports Car -->
+  <rect x="536" y="224" width="608" height="56" rx="8" fill="#F8FAFC" />
+  <text x="548" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A">Mobil Sport</text>
+  <text x="548" y="266" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Tenaga maksimal, bodi ringan</text>
+  <rect x="735" y="242" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="735" y="242" width="104" height="12" rx="6" fill="#EF4444" />
+  <rect x="875" y="242" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="875" y="242" width="28" height="12" rx="6" fill="#F59E0B" />
+  <rect x="1015" y="242" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="1015" y="242" width="32" height="12" rx="6" fill="#3B82F6" />
+
+  <!-- Row 2: Fuel-Efficient Car -->
+  <rect x="536" y="288" width="608" height="56" rx="8" fill="#F8FAFC" />
+  <text x="548" y="312" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A">Mobil Hemat BBM</text>
+  <text x="548" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Bodi kecil, tenaga rendah</text>
+  <rect x="735" y="306" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="735" y="306" width="42" height="12" rx="6" fill="#EF4444" />
+  <rect x="875" y="306" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="875" y="306" width="104" height="12" rx="6" fill="#10B981" />
+  <rect x="1015" y="306" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="1015" y="306" width="52" height="12" rx="6" fill="#3B82F6" />
+
+  <!-- Row 3: Family Car -->
+  <rect x="536" y="352" width="608" height="56" rx="8" fill="#F8FAFC" />
+  <text x="548" y="376" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A">Mobil Keluarga Besar</text>
+  <text x="548" y="394" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Batasan: 3 baris kursi</text>
+  <rect x="735" y="370" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="735" y="370" width="66" height="12" rx="6" fill="#EF4444" />
+  <rect x="875" y="370" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="875" y="370" width="68" height="12" rx="6" fill="#10B981" />
+  <rect x="1015" y="370" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="1015" y="370" width="84" height="12" rx="6" fill="#3B82F6" />
+
+  <!-- Row 4: Cargo Truck -->
+  <rect x="536" y="416" width="608" height="56" rx="8" fill="#F8FAFC" />
+  <text x="548" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A">Truk Kargo</text>
+  <text x="548" y="458" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Angkut berat, ukuran besar</text>
+  <rect x="735" y="434" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="735" y="434" width="24" height="12" rx="6" fill="#EF4444" />
+  <rect x="875" y="434" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="875" y="434" width="34" height="12" rx="6" fill="#F59E0B" />
+  <rect x="1015" y="434" width="110" height="12" rx="6" fill="#E2E8F0" />
+  <rect x="1015" y="434" width="106" height="12" rx="6" fill="#3B82F6" />
+
+  <!-- BOTTOM PANEL: 3 Core Components of Mathematical Modeling -->
+  <rect x="36" y="514" width="1128" height="132" rx="14" fill="#0F172A" />
+  <text x="64" y="546" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#38BDF8">3 PILAR UTAMA PEMODELAN OPTIMASI MATEMATIS</text>
+
+  <!-- Pillar 1 -->
+  <rect x="64" y="562" width="330" height="66" rx="10" fill="#1E293B" stroke="#334155" />
+  <text x="82" y="588" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#F8FAFC">1. Variabel Keputusan (x)</text>
+  <text x="82" y="610" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">Yang kita atur: ukuran mesin, jumlah pesanan</text>
+
+  <!-- Arrow 1 -->
+  <text x="415" y="601" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#38BDF8">→</text>
+
+  <!-- Pillar 2 -->
+  <rect x="436" y="562" width="330" height="66" rx="10" fill="#1E293B" stroke="#334155" />
+  <text x="454" y="588" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#F8FAFC">2. Fungsi Tujuan f(x)</text>
+  <text x="454" y="610" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">Dimaksimalkan (laba) atau diminimalkan (biaya)</text>
+
+  <!-- Arrow 2 -->
+  <text x="787" y="601" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#38BDF8">←</text>
+
+  <!-- Pillar 3 -->
+  <rect x="808" y="562" width="330" height="66" rx="10" fill="#1E293B" stroke="#334155" />
+  <text x="826" y="588" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#F8FAFC">3. Batasan (g(x) ≤ b)</text>
+  <text x="826" y="610" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">Yang harus dipatuhi: anggaran, kursi, kapasitas</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTphNDZiYWY5ZC1kYmE2LTQ4MzQtYjFiMi1kZmIxZWE2ODBlMTgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaLQ+4GeSoeHW1z2mXfgngZ4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo1M2RjYzA0Ni02NWNmLTRkNjQtYjc4Yi0wMGVjY2I5MzA3M2RscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNou815euE7wwPXyRYuowPTEgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggZhYRpHgSLTLcwbK+qJD296F5ZsWEHseCkg3QcG2OfOOkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaOfas0y/QDaKLJ04Swr4jSkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYILpualekWZ4engOm+jgf37dxnKJU3bZgtpEnZgIgOC95ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSt0Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmE0NmJhZjlkLWRiYTYtNDgzNC1iMWIyLWRmYjFlYTY4MGUxOC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmI0NGM5ZTc1LTkyZjYtNDY4OC04NTU4LWE3MTFmZDQ1NjQxN3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBmFhGkeBItMtzBsr6okPb3oXlmxYQex4KSDdBwbY5846JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggYVEhkBOcWYshcO8H6wrEObF2AAI3kiIRDSnwK7bdSfKiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggQJJzbQbaus3Ftd3tGqkiVp54/sytsmifyCRH3RoNX4V0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQHoAw7sRkzmkJocDexWIlLnFYFsEIG8ISA2Ltaqi1iELoNdijZWamkVGBasqQsTHcLLtfVI6yrBuCE7cXflkh4k=</c2pa:manifest></metadata></svg>
