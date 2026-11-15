@@ -13,7 +13,7 @@ mermaid:
   enabled: true
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=2">
 
 *Series: Optimization in Industrial Engineering, Day #1. Topic 1.1: What and Where Do We Optimize?* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/ahli-optimasi-kehidupan-sehari-hari/' | relative_url }})
 

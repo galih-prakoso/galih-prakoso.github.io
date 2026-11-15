@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=2">
 
 <!-- _pages/publications.md -->
 

@@ -7,7 +7,7 @@ description: Catatan harian dan artikel tentang optimasi, teknik industri, dan m
 nav: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=2">
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
