@@ -22,9 +22,9 @@ latest_posts:
   enabled: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=4">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=5">
 
-<script src="{{ '/assets/js/wos-icon.js' | relative_url }}?v=2" defer></script>
+<script src="{{ '/assets/js/wos-icon.js' | relative_url }}?v=3" defer></script>
 
 ## Biographical notes
 

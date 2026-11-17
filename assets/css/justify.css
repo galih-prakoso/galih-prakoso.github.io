@@ -26,3 +26,10 @@ html:lang(id) #search-toggle .nav-link::before { content: "cari"; }
 .contact-icons a.wos-icon { display: inline-block; }
 .wos-icon-glyph { display: inline-block; width: 1em; height: 1em; vertical-align: -0.125em; background-color: var(--global-text-color); transition: background-color 0.2s; -webkit-mask: url("../img/clarivate.svg") no-repeat center / contain; mask: url("../img/clarivate.svg") no-repeat center / contain; }
 .contact-icons a.wos-icon:hover .wos-icon-glyph { background-color: var(--global-hover-color); }
+
+/* Scopus and ResearchGate icons: same treatment as the Web of Science icon */
+.contact-icons a.extra-icon { display: inline-block; }
+.scopus-icon-glyph, .researchgate-icon-glyph { display: inline-block; width: 1em; height: 1em; vertical-align: -0.125em; background-color: var(--global-text-color); transition: background-color 0.2s; }
+.scopus-icon-glyph { -webkit-mask: url("../img/scopus.svg") no-repeat center / contain; mask: url("../img/scopus.svg") no-repeat center / contain; }
+.researchgate-icon-glyph { -webkit-mask: url("../img/researchgate.svg") no-repeat center / contain; mask: url("../img/researchgate.svg") no-repeat center / contain; }
+.contact-icons a.scopus-icon:hover .scopus-icon-glyph, .contact-icons a.researchgate-icon:hover .researchgate-icon-glyph { background-color: var(--global-hover-color); }
