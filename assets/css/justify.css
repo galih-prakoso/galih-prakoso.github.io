@@ -21,3 +21,7 @@ article .post-tags p {
 #search-toggle .nav-link::before { content: "search"; font-size: 1rem; margin-right: 0.35rem; }
 html:lang(id) #search-toggle .nav-link::before { content: "cari"; }
 #search-toggle .nav-link i { font-size: 1rem; }
+
+/* Web of Science (Clarivate) icon: monochrome, follows the theme text/link colour */
+.contact-icons a.wos-icon { display: inline-block; }
+.wos-icon-glyph { display: inline-block; width: 1em; height: 1em; vertical-align: -0.125em; background-color: currentColor; -webkit-mask: url("../img/clarivate.svg") no-repeat center / contain; mask: url("../img/clarivate.svg") no-repeat center / contain; }
