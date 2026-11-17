@@ -37,4 +37,4 @@ Alongside my teaching and doctoral research, I hold national professional certif
 ## Contact
 
 - Email: [445109312@student.ksu.edu.sa](mailto:445109312@student.ksu.edu.sa) · [galih.prakoso@poltek-furnitur.ac.id](mailto:galih.prakoso@poltek-furnitur.ac.id)
-- [ORCID](https://orcid.org/0009-0006-1962-5336) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=yG2JbOAAAAAJ) · [Web of Science](https://www.webofscience.com/wos/author/record/RKP-4603-2026) · [LinkedIn](https://www.linkedin.com/in/galih-prakoso-255bb756/)
+- [ORCID](https://orcid.org/0009-0006-1962-5336) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=yG2JbOAAAAAJ) · [Web of Science](https://www.webofscience.com/wos/author/record/RKP-4603-2026) · [ResearchGate](https://www.researchgate.net/profile/Galih-Prakoso-7) · [LinkedIn](https://www.linkedin.com/in/galih-prakoso-255bb756/)
