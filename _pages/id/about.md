@@ -25,7 +25,7 @@ latest_posts:
 
 <link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=4">
 
-<script src="{{ '/assets/js/wos-icon.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/wos-icon.js' | relative_url }}?v=2" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 

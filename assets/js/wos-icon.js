@@ -13,6 +13,11 @@
   i.className = "wos-icon-glyph";
   a.appendChild(i);
   var ref = box.querySelector('a[href*="scholar.google"]');
-  if (ref && ref.nextSibling) box.insertBefore(a, ref.nextSibling);
-  else box.appendChild(a);
+  if (ref) {
+    /* same whitespace gap as between the other icons */
+    ref.after(a);
+    ref.after(document.createTextNode(" "));
+  } else {
+    box.appendChild(a);
+  }
 })();
