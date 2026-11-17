@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" xmlns:c2pa="http://c2pa.org/manifest">
+ <defs>
+ <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+ <stop offset="0%" stop-color="#F8FAFC" />
+ <stop offset="100%" stop-color="#EFF6FF" />
+ </linearGradient>
+ <linearGradient id="headerGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+ <stop offset="0%" stop-color="#0F172A" />
+ <stop offset="100%" stop-color="#1E3A8A" />
+ </linearGradient>
+ <filter id="cardShadow2" x="-5%" y="-5%" width="110%" height="110%">
+ <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.06" />
+ </filter>
+ </defs>
+
+ <!-- Background -->
+ <rect width="1200" height="675" fill="url(#bgGrad2)" rx="16" />
+
+ <!-- Top Header Banner -->
+ <rect x="36" y="28" width="1128" height="96" rx="14" fill="url(#headerGrad2)" />
+ <text x="68" y="68" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">
+ JOHN'S PROBLEM: ECONOMIC ORDER QUANTITY (EOQ)
+ </text>
+ <text x="68" y="98" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#CBD5E1">
+ Finding the optimal order size (Q*) that balances ordering costs and warehouse holding costs
+ </text>
+ <rect x="945" y="52" width="190" height="44" rx="22" fill="#2563EB" />
+ <text x="1040" y="79" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">
+ Series #2 • Industrial Eng.
+ </text>
+
+ <!-- LEFT PANEL: Sawtooth Inventory Cycle -->
+ <rect x="36" y="144" width="510" height="360" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#cardShadow2)" />
+ <rect x="36" y="144" width="510" height="44" rx="14" fill="#DBEAFE" />
+ <rect x="36" y="172" width="510" height="16" fill="#DBEAFE" />
+ <text x="60" y="172" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#1E40AF">
+ 1. INVENTORY "SAWTOOTH" CYCLE
+ </text>
+
+ <!-- Sawtooth Axes -->
+ <line x1="104" y1="220" x2="104" y2="415" stroke="#64748B" stroke-width="2" />
+ <line x1="104" y1="415" x2="508" y2="415" stroke="#64748B" stroke-width="2" />
+
+ <!-- Axis Labels -->
+ <text x="68" y="320" text-anchor="middle" transform="rotate(-90, 68, 320)" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#475569">
+ Inventory Level (Units)
+ </text>
+ <text x="306" y="442" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#475569">
+ Time
+ </text>
+
+ <!-- Sawtooth Area Fill -->
+ <polygon points="104,245 232,415 232,245 360,415 360,245 488,415 488,415 104,415" fill="#EFF6FF" opacity="0.85" />
+
+ <!-- Sawtooth Lines -->
+ <polyline points="104,245 232,415 232,245 360,415 360,245 488,415" fill="none" stroke="#2563EB" stroke-width="3" stroke-linejoin="round" />
+
+ <!-- Dashed Q line and Q/2 Average Line -->
+ <line x1="98" y1="245" x2="495" y2="245" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4,4" />
+ <text x="90" y="250" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1E293B">Q</text>
+
+ <line x1="98" y1="330" x2="495" y2="330" stroke="#D97706" stroke-width="2" stroke-dasharray="6,4" />
+ <text x="90" y="335" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#D97706">Q/2</text>
+ <text x="90" y="419" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#475569">0</text>
+
+ <!-- Callouts on Sawtooth -->
+ <rect x="285" y="212" width="195" height="26" rx="6" fill="#FEF3C7" stroke="#FCD34D" />
+ <text x="382" y="229" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#92400E">
+ Average Stock = Q / 2
+ </text>
+ <text x="165" y="305" text-anchor="middle" transform="rotate(52, 165, 305)" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1D4ED8">
+ Demand Rate (D)
+ </text>
+
+ <!-- Explanation Box inside Left Panel -->
+ <rect x="58" y="454" width="466" height="36" rx="8" fill="#F8FAFC" stroke="#E2E8F0" />
+ <text x="291" y="476" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#334155">
+ Stock drops linearly from <tspan font-weight="700" fill="#0F172A">Q</tspan> to <tspan font-weight="700" fill="#0F172A">0</tspan>, so average warehouse inventory is <tspan font-weight="700" fill="#B45309">Q / 2</tspan>.
+ </text>
+
+ <!-- RIGHT PANEL: EOQ Cost Trade-Off Curve -->
+ <rect x="566" y="144" width="598" height="360" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#cardShadow2)" />
+ <rect x="566" y="144" width="598" height="44" rx="14" fill="#FEF3C7" />
+ <rect x="566" y="172" width="598" height="16" fill="#FEF3C7" />
+ <text x="590" y="172" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#92400E">
+ 2. EOQ COST TRADE-OFF CURVE
+ </text>
+
+ <!-- Gridlines -->
+ <line x1="650" y1="245" x2="1125" y2="245" stroke="#F1F5F9" stroke-width="1" />
+ <line x1="650" y1="295" x2="1125" y2="295" stroke="#F1F5F9" stroke-width="1" />
+ <line x1="650" y1="345" x2="1125" y2="345" stroke="#F1F5F9" stroke-width="1" />
+ <line x1="650" y1="395" x2="1125" y2="395" stroke="#F1F5F9" stroke-width="1" />
+
+ <!-- Cost Axes -->
+ <line x1="650" y1="215" x2="650" y2="445" stroke="#64748B" stroke-width="2" />
+ <line x1="650" y1="445" x2="1125" y2="445" stroke="#64748B" stroke-width="2" />
+
+ <text x="612" y="330" text-anchor="middle" transform="rotate(-90, 612, 330)" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#475569">
+ Annual Cost ($)
+ </text>
+ <text x="888" y="485" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#475569">
+ Order Quantity (Q)
+ </text>
+
+ <!-- Curves (Mathematically accurate for D=1000, S=50, H=4) -->
+ <!-- Total Variable Cost TC(Q) = (D/Q)S + (Q/2)H (Navy Blue U-Curve) -->
+ <path d="M 660 236 Q 716 322, 772.5 341.8 T 826.1 345.6 T 913.1 340.1 T 1025.6 324.5 T 1110 310" fill="none" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" />
+
+ <!-- Ordering Cost (D/Q)S (Red Hyperbola) -->
+ <path d="M 660 248.6 Q 716 346.8, 772.5 379.5 T 826.1 395.3 T 913.1 409.3 T 1025.6 418.8 T 1110 423.2" fill="none" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round" />
+
+ <!-- Holding Cost (Q/2)H (Green Linear Line) -->
+ <line x1="660" y1="432.4" x2="1110" y2="331.9" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" />
+
+ <!-- Optimal Vertical Dashed Line at Q* = 158 (x = 826.1) -->
+ <line x1="826.1" y1="345.6" x2="826.1" y2="445" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,4" />
+
+ <!-- Intersection Point (Ordering = Holding = $316) -->
+ <circle cx="826.1" cy="395.3" r="5.5" fill="#F59E0B" stroke="#FFFFFF" stroke-width="1.5" />
+
+ <!-- Minimum Total Cost Point ($632) -->
+ <circle cx="826.1" cy="345.6" r="6.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="2" />
+
+ <!-- Optimal Badge Callout -->
+ <rect x="766" y="294" width="124" height="36" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5" />
+ <text x="828" y="310" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#1D4ED8">
+ Min Total Cost ($632)
+ </text>
+ <text x="828" y="324" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#475569">
+ Ordering = Holding
+ </text>
+
+ <!-- X-Axis Optimal Tick -->
+ <text x="826.1" y="463" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#2563EB">
+ Q* ≈ 158
+ </text>
+
+ <!-- Legend Box (Top Right inside Cost Plot) -->
+ <rect x="935" y="202" width="210" height="84" rx="8" fill="#F8FAFC" stroke="#E2E8F0" />
+ <line x1="948" y1="220" x2="972" y2="220" stroke="#0F172A" stroke-width="3.5" />
+ <text x="980" y="224" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Total Variable Cost</text>
+
+ <line x1="948" y1="244" x2="972" y2="244" stroke="#10B981" stroke-width="2.5" />
+ <text x="980" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#047857">Holding Cost (Q/2 · H)</text>
+
+ <line x1="948" y1="268" x2="972" y2="268" stroke="#EF4444" stroke-width="2.5" />
+ <text x="980" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#B91C1C">Ordering Cost (D/Q · S)</text>
+
+ <!-- BOTTOM PANEL: EOQ Formula & Key Takeaways -->
+ <rect x="36" y="522" width="1128" height="124" rx="14" fill="#0F172A" />
+
+ <!-- Left: Formula Box -->
+ <rect x="60" y="540" width="290" height="88" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+ <text x="205" y="564" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#38BDF8">
+ OPTIMAL ORDER QUANTITY
+ </text>
+ <text x="205" y="606" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#FFFFFF">
+ Q* = √( 2DS / H )
+ </text>
+
+ <!-- Right: Parameters Breakdown -->
+ <text x="382" y="562" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#F8FAFC">
+ Key Parameters in John's Store Example:
+ </text>
+ <text x="382" y="586" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
+ • <tspan font-weight="700" fill="#38BDF8">D = 1,000 units/yr</tspan> (Annual customer demand) • <tspan font-weight="700" fill="#38BDF8">S = $50/order</tspan> (Fixed ordering &amp; shipping fee)
+ </text>
+ <text x="382" y="608" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
+ • <tspan font-weight="700" fill="#38BDF8">H = $4/unit/yr</tspan> (Annual warehouse holding cost) • <tspan font-weight="700" fill="#FBBF24">Result: Q* ≈ 158 units</tspan> (Saves &gt;40% vs. extreme choices)
+ </text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTozMDhhZWNmMi04NjJiLTQyOGItYjZlMC0wOTE1Zjc1ZGM0YjcAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaHYSnH77OQTCxLHn9a1JDWcAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpjZDkxNTk4Ni0yZjkyLTRjNTMtYTc1Ny1mMTQwNjFiYTcwYmVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoPEoSj7MYkUNCvAJaTI8f1gAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggFzWetoXMYJxOSt4cCwZ0YKIWOceaHOAbD3t7f9tIthekZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMrogfCFEmjMkPrZQE8hfTkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIJ6gOHvhCiak9fYAcQQSNCR4XE6b/GCIKx5BFYf+/Q3RZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSf1Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjMwOGFlY2YyLTg2MmItNDI4Yi1iNmUwLTA5MTVmNzVkYzRiNy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjViMDY2YTQ4LTNlOTItNGNmNy1iYjM5LWNhYzgyMGVjNjVhZXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAXNZ62hcxgnE5K3hwLBnRgohY5x5oc4BsPe3t/20i2F6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg2ynszTfUmtg8XJZm3S4Ie2Q8JkDkMhrWZHmx8iAlvjyiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggyQ1OooK+Kc3yBTNVBa8x8NzhMNJ94UpyGmg25iJV8UF0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQIsWTukoUx6ry/cyYxoqKrbl0eoUUjfPMCckzMZNOUvnS76baImH7dHYMgGNgizbllXOIwYEavSX2NNXzqeVAcw=</c2pa:manifest></metadata></svg>
