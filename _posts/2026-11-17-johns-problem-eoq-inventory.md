@@ -13,6 +13,8 @@ related_posts: false
 
 <link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=7">
 
+<script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
+
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #2. Topic 1.2: John's Problem, Introduction to the EOQ* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/masalah-john-model-eoq/' | relative_url }})

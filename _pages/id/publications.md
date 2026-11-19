@@ -9,6 +9,8 @@ nav: false
 
 <link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=6">
 
+<script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" data-alt="{{ '/publications/' | relative_url }}" defer></script>
+
 <script src="{{ '/assets/js/pub-links.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>

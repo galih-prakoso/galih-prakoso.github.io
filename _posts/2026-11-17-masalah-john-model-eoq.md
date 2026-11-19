@@ -13,6 +13,8 @@ related_posts: false
 
 <link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=7">
 
+<script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
+
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>

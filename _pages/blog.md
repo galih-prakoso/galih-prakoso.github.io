@@ -9,6 +9,8 @@ nav_order: 3
 
 <link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=2">
 
+<script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" data-alt="{{ '/id/tulisan/' | relative_url }}" defer></script>
+
 {% assign en_posts = site.posts | where: "lang", "en" %}
 
 {% if en_posts.size == 0 %}

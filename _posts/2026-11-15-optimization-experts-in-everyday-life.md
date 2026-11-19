@@ -13,6 +13,8 @@ related_posts: false
 
 <link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=7">
 
+<script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
+
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #1. Topic 1.1: What and Where Do We Optimize?* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/ahli-optimasi-kehidupan-sehari-hari/' | relative_url }})
