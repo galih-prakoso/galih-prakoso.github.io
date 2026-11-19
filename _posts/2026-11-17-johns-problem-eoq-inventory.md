@@ -19,7 +19,7 @@ In the previous post, we saw how optimization principles are already woven into 
 
 To keep the concept approachable for beginners, let us look at a simple scenario often introduced in textbooks as **John's Problem**.
 
-Imagine John manages a retail store that sells an everyday consumer product. Based on sales records from previous years, customer demand for this product is steady and predictable throughout the year. On the surface, John's task seems straightforward: he simply needs to order stock from his supplier so that items are always available whenever customers walk in to buy.
+Suppose John manages a retail store that sells an everyday consumer product. Based on sales records from previous years, customer demand for this product is steady and predictable throughout the year. On the surface, John's task seems straightforward: he simply needs to order stock from his supplier so that items are always available whenever customers walk in to buy.
 
 However, as soon as operational expenses are taken into account, a dilemma emerges that frequently challenges business managers: **how many units should be ordered each time a replenishment order is placed?**
 

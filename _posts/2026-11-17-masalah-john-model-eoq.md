@@ -21,7 +21,7 @@ Pada pembahasan sebelumnya, kita telah melihat bagaimana prinsip optimasi sebena
 
 Agar konsepnya mudah diikuti oleh pemula, mari simak sebuah studi kasus sederhana yang dalam literatur sering diperkenalkan sebagai **Masalah John (*John's Problem*)**.
 
-Bayangkan John adalah seorang pengelola toko ritel yang menjual produk kebutuhan harian. Berdasarkan catatan penjualan tahun-tahun sebelumnya, permintaan pelanggan terhadap produk tersebut tergolong stabil dan dapat diperkirakan setiap tahunnya. Secara sekilas, tugas John tampak sederhana: ia hanya perlu memesan barang dari pemasok (*supplier*) agar stok di toko selalu tersedia saat pelanggan datang membeli.
+Misalkan John adalah seorang pengelola toko ritel yang menjual produk kebutuhan harian. Berdasarkan catatan penjualan tahun-tahun sebelumnya, permintaan pelanggan terhadap produk tersebut tergolong stabil dan dapat diperkirakan setiap tahunnya. Secara sekilas, tugas John tampak sederhana: ia hanya perlu memesan barang dari pemasok (*supplier*) agar stok di toko selalu tersedia saat pelanggan datang membeli.
 
 Namun, begitu perhitungan biaya operasional mulai dilakukan, muncul sebuah dilema yang kerap membuat para pengelola usaha ragu dalam mengambil keputusan: **berapa banyak unit barang yang sebaiknya dipesan setiap kali melakukan pemesanan?**
 

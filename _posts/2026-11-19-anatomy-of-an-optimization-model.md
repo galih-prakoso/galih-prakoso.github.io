@@ -30,7 +30,7 @@ As shown in the diagram above, the decision-making flow always begins by choosin
 
 ### An Everyday Analogy: Planning a Home Catering Menu
 
-To make the relationship between these three blocks feel concrete, imagine a home-based catering owner planning tomorrow's lunch production. The kitchen offers two daily meal boxes: a **Standard Box** and a **Premium Box**.
+To make the relationship between these three blocks feel concrete, consider, for example, a home-based catering owner who is planning tomorrow's lunch production. The kitchen offers two daily meal boxes: a **Standard Box** and a **Premium Box**.
 
 Every evening, the owner must decide how many portions of each menu to cook the next morning so that daily profit is maximized without exceeding the available grocery budget and kitchen working hours. Breaking this everyday scenario down into the anatomy of an optimization model reveals a clear structure:
 
