@@ -11,13 +11,11 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=2">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=5">
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
 *Seri: Optimasi di Teknik Industri, Hari #2. Topik 1.2: John's Problem, Introduction to the EOQ* · [Read in English]({{ '/blog/2026/johns-problem-eoq-inventory/' | relative_url }})
-
-<img src="{{ '/assets/img/blog/optimization-day-2-id.svg' | relative_url }}" alt="Ilustrasi siklus persediaan gigi gergaji dan kurva trade-off biaya EOQ" style="max-width: 100%; height: auto; display: block; margin: 1rem auto;">
 
 Pada pembahasan sebelumnya, kita telah melihat bagaimana prinsip optimasi sebenarnya sudah sangat akrab dengan berbagai keputusan sehari-hari. Kali ini, pembahasan berlanjut ke salah satu persoalan klasik yang paling mendasar dalam Teknik Industri dan manajemen rantai pasok, yakni pengelolaan persediaan barang (*inventory*).
 
@@ -57,6 +55,10 @@ Dari logika sederhana tersebut, total biaya persediaan tahunan terdiri atas dua 
 Ketika kedua komponen biaya tersebut digabungkan menjadi fungsi tujuan total biaya $$TC(Q) = \frac{D}{Q}S + \frac{Q}{2}H$$, akan terbentuk sebuah kurva menyerupai huruf **U**. Titik terendah pada dasar huruf U tersebut ternyata terjadi tepat pada saat **biaya pemesanan tahunan sama besar dengan biaya penyimpanan tahunan**. Secara matematis, kuantitas pesanan paling optimal ($$Q^*$$) dapat langsung dihitung menggunakan rumus:
 
 $$Q^* = \sqrt{\frac{2DS}{H}}$$
+
+<img src="{{ '/assets/img/blog/optimization-day-2-id.svg' | relative_url }}" alt="Ilustrasi siklus persediaan gigi gergaji dan kurva trade-off biaya EOQ" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
+<p style="text-align: center;"><em>Gambar 1. Pola siklus stok gigi gergaji (kiri) dan titik keseimbangan kurva biaya pada model EOQ (kanan).</em></p>
+
 
 ### Simulasi Angka Sederhana untuk Toko John
 

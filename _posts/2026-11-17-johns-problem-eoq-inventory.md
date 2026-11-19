@@ -11,11 +11,9 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=2">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=5">
 
 *Series: Optimization in Industrial Engineering, Day #2. Topic 1.2: John's Problem, Introduction to the EOQ* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/masalah-john-model-eoq/' | relative_url }})
-
-<img src="{{ '/assets/img/blog/optimization-day-2-en.svg' | relative_url }}" alt="Illustration of the sawtooth inventory cycle and the EOQ cost trade-off curve" style="max-width: 100%; height: auto; display: block; margin: 1rem auto;">
 
 In the previous post, we saw how optimization principles are already woven into everyday decisions. Today, the discussion moves one step further into one of the most foundational problems in Industrial Engineering and supply chain management: inventory control.
 
@@ -55,6 +53,10 @@ Following this logic, the annual inventory cost affected by the order decision c
 Combining both cost components into a single total cost objective function, $$TC(Q) = \frac{D}{Q}S + \frac{Q}{2}H$$, produces a smooth **U-shaped curve**. Interestingly, the very bottom of this U-curve occurs at the exact point where **annual ordering cost equals annual holding cost**. Mathematically, the optimal order quantity ($$Q^*$$) is given by the clean formula:
 
 $$Q^* = \sqrt{\frac{2DS}{H}}$$
+
+<img src="{{ '/assets/img/blog/optimization-day-2-en.svg' | relative_url }}" alt="Illustration of the sawtooth inventory cycle and the EOQ cost trade-off curve" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
+<p style="text-align: center;"><em>Figure 1. The inventory sawtooth cycle (left) and the cost trade-off balance point in the EOQ model (right).</em></p>
+
 
 ### A Simple Numerical Walkthrough for John's Store
 
