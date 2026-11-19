@@ -1,14 +1,20 @@
-/* Publications page tweaks (no theme files overridden):
+/* Publication list tweaks (no theme files overridden), applied on About and Publications:
    1) the title links to the original article on the publisher's site (new tab);
-   2) the plain "PDF" button becomes a recognisable PDF icon. */
+   2) a visible "DOI: <number>" line, hyperlinked to the article (new tab);
+   3) the separate DOI and HTML buttons are removed (title + DOI line replace them);
+   4) the plain "PDF" button becomes a recognisable PDF icon. */
 (function () {
   "use strict";
   var id = (document.documentElement.lang || "en").toLowerCase().indexOf("id") === 0;
   document.querySelectorAll(".publications li").forEach(function (li) {
     var links = li.querySelectorAll(".links a[href]");
     var external = null;
+    var doi = null;
     links.forEach(function (a) {
-      if (!external && /^https?:\/\//i.test(a.getAttribute("href")) && a.target === "_blank") external = a.href;
+      var href = a.getAttribute("href");
+      if (!external && /^https?:\/\//i.test(href) && a.target === "_blank") external = a.href;
+      var m = href.match(/^https?:\/\/(?:dx\.)?doi\.org\/(.+)$/i);
+      if (m && !doi) doi = decodeURIComponent(m[1]);
     });
 
     var title = li.querySelector(".title");
@@ -23,8 +29,28 @@
       title.appendChild(a);
     }
 
+    var linksBox = li.querySelector(".links");
+    if (doi && linksBox && !li.querySelector(".pub-doi")) {
+      var d = document.createElement("div");
+      d.className = "periodical pub-doi";
+      var l = document.createElement("a");
+      l.href = "https://doi.org/" + doi;
+      l.target = "_blank";
+      l.rel = "external nofollow noopener";
+      l.textContent = doi;
+      l.title = id ? "Buka artikel asli melalui DOI" : "Open the original article via DOI";
+      d.appendChild(document.createTextNode("DOI: "));
+      d.appendChild(l);
+      linksBox.parentNode.insertBefore(d, linksBox);
+    }
+
     links.forEach(function (btn) {
-      if (/\.pdf([?#]|$)/i.test(btn.getAttribute("href")) && !btn.querySelector("i")) {
+      var href = btn.getAttribute("href");
+      if (/^https?:\/\//i.test(href) && btn.target === "_blank") {
+        btn.remove(); // DOI / HTML buttons
+        return;
+      }
+      if (/\.pdf([?#]|$)/i.test(href) && !btn.querySelector("i")) {
         btn.classList.add("pdf-btn");
         btn.innerHTML = '<i class="fa-solid fa-file-pdf" aria-hidden="true"></i>';
         btn.setAttribute("aria-label", id ? "Unduh PDF" : "Download PDF");

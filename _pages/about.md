@@ -22,11 +22,12 @@ latest_posts:
   enabled: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=5">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=8">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" data-alt="{{ '/id/' | relative_url }}" defer></script>
 
 <script src="{{ '/assets/js/wos-icon.js' | relative_url }}?v=3" defer></script>
+<script src="{{ '/assets/js/pub-links.js' | relative_url }}?v=2" defer></script>
 
 ## Biographical notes
 
