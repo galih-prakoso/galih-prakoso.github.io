@@ -63,7 +63,7 @@ Setiap malam, pengelola usaha ini harus memutuskan berapa porsi masing-masing pa
 
    - **Batasan non-negatif (*non-negativity*):** Jumlah porsi makanan tidak mungkin bernilai negatif, sehingga secara matematis ditulis $$x_1 \ge 0$$ dan $$x_2 \ge 0$$.
 
-### Membaca Bentuk Umum di Buku Teks Tanpa Bingung
+### Membaca Bentuk Umum di Buku Teks dengan Mudah
 
 Ketika membuka literatur optimasi, ketiga bagian di atas biasanya dirangkum dalam satu format baku yang ringkas:
 
