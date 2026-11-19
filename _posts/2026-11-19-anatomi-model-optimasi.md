@@ -67,9 +67,9 @@ Setiap malam, pengelola usaha ini harus memutuskan berapa porsi masing-masing pa
 
 Ketika membuka literatur optimasi, ketiga bagian di atas biasanya dirangkum dalam satu format baku yang ringkas:
 
-$$\begin{aligned} \text{Optimalkan} \quad & f(\mathbf{x}) \\ \text{Dengan batasan} \quad & g_i(\mathbf{x}) \le b_i, \quad i = 1, 2, \dots, m \\ & \mathbf{x} \in \mathcal{S} \end{aligned}$$
+$$\begin{aligned} \text{Optimize} \quad & f(\mathbf{x}) \\ \text{Subject to} \quad & g_i(\mathbf{x}) \le b_i, \quad i = 1, 2, \dots, m \\ & \mathbf{x} \in \mathcal{S} \end{aligned}$$
 
-Notasi $$\mathbf{x}$$ bercetak tebal hanyalah singkatan untuk sekumpulan variabel keputusan ($$x_1, x_2, \dots, x_n$$), fungsi $$f(\mathbf{x})$$ mewakili target yang ingin dimaksimalkan atau diminimalkan, sedangkan $$g_i(\mathbf{x}) \le b_i$$ adalah daftar seluruh aturan batas yang wajib dipatuhi. Sementara itu, $$\mathcal{S}$$ menunjukkan wilayah solusi yang masuk akal (*feasible region*), yakni seluruh kombinasi angka yang tidak melanggar satu pun aturan batasan.
+Notasi $$\mathbf{x}$$ bercetak tebal hanyalah singkatan untuk sekumpulan variabel keputusan ($$x_1, x_2, \dots, x_n$$), fungsi $$f(\mathbf{x})$$ mewakili target yang ingin dimaksimalkan atau diminimalkan, sedangkan $$g_i(\mathbf{x}) \le b_i$$ adalah daftar seluruh aturan batas yang wajib dipatuhi. Sementara itu, $$\mathcal{S}$$ menunjukkan *feasible region*, yakni seluruh kombinasi angka yang tidak melanggar satu pun aturan batasan.
 
 Dengan memahami anatomi dasar ini, setiap persoalan optimasi, sekompleks apa pun bentuknya, dapat selalu dikenali polanya. Pada contoh katering di atas, semua persamaan kebetulan berbentuk perkalian angka sederhana tanpa pangkat atau lengkungan. Namun di lapangan, hubungan antarvariabel sering kali tidak sesederhana garis lurus. Perbedaan karakteristik inilah yang akan kita bahas pada pertemuan berikutnya mengenai masalah **Linear vs. Non-Linear**.
 

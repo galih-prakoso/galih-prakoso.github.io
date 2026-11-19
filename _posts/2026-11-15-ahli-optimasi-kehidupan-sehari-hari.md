@@ -21,7 +21,7 @@ Dalam kehidupan sehari-hari, kita sering dihadapkan pada beragam pilihan yang ti
 
 Pola serupa juga muncul dalam berbagai pilihan lain, mulai dari makanan, pakaian, laptop, profesi, hingga kota tempat tinggal. Secara alami, setiap orang tentu menginginkan pilihan yang paling baik. Namun, karena adanya keterbatasan sumber daya dan berbagai batasan (*constraints*), mustahil mendapatkan yang terbaik dalam segala aspek sekaligus. Sebagai gantinya, diambil opsi yang **paling optimal**, yaitu keputusan terbaik yang paling masuk akal setelah mempertimbangkan prioritas, sumber daya, dan batasan yang ada. Proses pengambilan keputusan inilah yang disebut sebagai **optimasi**.
 
-### Memahami "Pengorbanan" Lewat Desain Kendaraan
+### Memahami *Trade-Off* Lewat Desain Kendaraan
 
 Dalam sudut pandang rekayasa (*engineering*), optimasi juga dapat dipahami sebagai cara menentukan "biaya" atau pengorbanan apa yang bersedia ditanggung demi memperoleh manfaat yang diharapkan. Contoh nyatanya terlihat pada bagaimana para insinyur merancang empat kategori mobil berbeda di industri otomotif:
 

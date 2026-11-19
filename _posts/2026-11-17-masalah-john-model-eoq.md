@@ -36,7 +36,7 @@ Di sinilah esensi optimasi kembali terlihat nyata. Memesan terlalu sedikit membu
 
 ### Mengenal Model *Economic Order Quantity* (EOQ)
 
-Dalam Teknik Industri, pendekatan matematis untuk menjawab dilema tersebut dikenal dengan nama model **EOQ (*Economic Order Quantity*)** atau Kuantitas Pesanan Ekonomis. Model klasik ini pertama kali diperkenalkan oleh Ford W. Harris pada tahun 1913 dan tetap menjadi fondasi utama manajemen persediaan hingga hari ini karena logikanya yang sangat intuitif.
+Dalam Teknik Industri, pendekatan matematis untuk menjawab dilema tersebut dikenal dengan nama model **EOQ (*Economic Order Quantity*)**. Model klasik ini pertama kali diperkenalkan oleh Ford W. Harris pada tahun 1913 dan tetap menjadi fondasi utama manajemen persediaan hingga hari ini karena logikanya yang sangat intuitif.
 
 Untuk memahami cara kerja model ini tanpa perlu terjebak pada penurunan rumus kalkulus yang rumit, cukup kenali empat komponen dasar berikut:
 
@@ -45,19 +45,19 @@ Untuk memahami cara kerja model ini tanpa perlu terjebak pada penurunan rumus ka
 3. **$$H$$ (*Holding Cost*):** Biaya untuk menyimpan satu unit barang di gudang selama satu tahun penuh (mencakup sewa ruang, listrik, asuransi, dan biaya modal).
 4. **$$Q$$ (*Order Quantity*):** Jumlah unit barang yang dipesan setiap kali mengisi ulang stok. Nilai $$Q$$ inilah yang berperan sebagai **variabel keputusan**.
 
-Apabila pergerakan stok barang di gudang John diamati dari waktu ke waktu, polanya akan menyerupai **gigi gergaji (*sawtooth pattern*)**. Saat kiriman barang datang, jumlah stok berada di titik tertinggi sebesar $$Q$$. Seiring berjalannya waktu, barang terjual secara bertahap hingga menyentuh angka $$0$$, tepat ketika kiriman berikutnya tiba. Karena stok bergerak turun secara teratur dari $$Q$$ ke $$0$$, rata-rata jumlah barang yang tersimpan di gudang setiap harinya adalah setengah dari ukuran pesanan, atau ditulis sebagai $$\frac{Q}{2}$$.
+Apabila pergerakan stok barang di gudang John diamati dari waktu ke waktu, polanya akan menyerupai **sawtooth pattern**. Saat kiriman barang datang, jumlah stok berada di titik tertinggi sebesar $$Q$$. Seiring berjalannya waktu, barang terjual secara bertahap hingga menyentuh angka $$0$$, tepat ketika kiriman berikutnya tiba. Karena stok bergerak turun secara teratur dari $$Q$$ ke $$0$$, rata-rata jumlah barang yang tersimpan di gudang setiap harinya adalah setengah dari ukuran pesanan, atau ditulis sebagai $$\frac{Q}{2}$$.
 
 Dari logika sederhana tersebut, total biaya persediaan tahunan terdiri atas dua komponen utama yang saling tarik-menarik:
 
 - **Biaya Pemesanan Tahunan:** Diperoleh dari frekuensi pemesanan dalam setahun ($$\frac{D}{Q}$$) dikalikan dengan biaya per satu kali pesan ($$S$$), sehingga membentuk persamaan $$\frac{D}{Q} \cdot S$$. Semakin besar nilai $$Q$$, komponen biaya ini akan **semakin turun**.
 - **Biaya Penyimpanan Tahunan:** Diperoleh dari rata-rata stok di gudang ($$\frac{Q}{2}$$) dikalikan dengan biaya simpan per unit per tahun ($$H$$), sehingga membentuk persamaan $$\frac{Q}{2} \cdot H$$. Semakin besar nilai $$Q$$, komponen biaya ini justru **semakin naik**.
 
-Ketika kedua komponen biaya tersebut digabungkan menjadi fungsi tujuan total biaya $$TC(Q) = \frac{D}{Q}S + \frac{Q}{2}H$$, akan terbentuk sebuah kurva menyerupai huruf **U**. Titik terendah pada dasar huruf U tersebut ternyata terjadi tepat pada saat **biaya pemesanan tahunan sama besar dengan biaya penyimpanan tahunan**. Secara matematis, kuantitas pesanan paling optimal ($$Q^*$$) dapat langsung dihitung menggunakan rumus:
+Ketika kedua komponen biaya tersebut digabungkan menjadi fungsi tujuan total biaya $$TC(Q) = \frac{D}{Q}S + \frac{Q}{2}H$$, akan terbentuk sebuah kurva menyerupai huruf **U**. Titik terendah pada dasar huruf U tersebut ternyata terjadi tepat pada saat **biaya pemesanan tahunan sama besar dengan biaya penyimpanan tahunan**. Secara matematis, *optimal order quantity* ($$Q^*$$) dapat langsung dihitung menggunakan rumus:
 
 $$Q^* = \sqrt{\frac{2DS}{H}}$$
 
-<img src="{{ '/assets/img/blog/optimization-day-2-id.svg' | relative_url }}" alt="Ilustrasi siklus persediaan gigi gergaji dan kurva trade-off biaya EOQ" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
-<p style="text-align: center;"><em>Gambar 1. Pola siklus stok gigi gergaji (kiri) dan titik keseimbangan kurva biaya pada model EOQ (kanan).</em></p>
+<img src="{{ '/assets/img/blog/optimization-day-2-id.svg' | relative_url }}" alt="Ilustrasi siklus persediaan sawtooth dan kurva trade-off biaya EOQ" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
+<p style="text-align: center;"><em>Gambar 1. Pola siklus stok sawtooth (kiri) dan titik keseimbangan kurva biaya pada model EOQ (kanan).</em></p>
 
 
 ### Simulasi Angka Sederhana untuk Toko John
