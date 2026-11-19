@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=8">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=9">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" data-alt="{{ '/id/publikasi/' | relative_url }}" defer></script>
 

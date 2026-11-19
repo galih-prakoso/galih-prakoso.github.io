@@ -7,7 +7,7 @@ description: Publikasi ilmiah (peer-reviewed) dari yang terbaru.
 nav: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=8">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=9">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" data-alt="{{ '/publications/' | relative_url }}" defer></script>
 
