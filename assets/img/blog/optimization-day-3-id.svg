@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="id" viewBox="0 0 1200 620" width="1200" height="620" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EFF6FF" />
+    </linearGradient>
+    <linearGradient id="headerGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <filter id="cardShadow3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="620" fill="url(#bgGrad3)" rx="16" />
+
+  <!-- Top Header Banner -->
+  <rect x="36" y="28" width="1128" height="92" rx="14" fill="url(#headerGrad3)" />
+  <text x="68" y="66" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">ANATOMI MODEL OPTIMASI</text>
+  <text x="68" y="96" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#CBD5E1">Cara masalah nyata disusun menjadi Variabel, Batasan, dan Fungsi Tujuan</text>
+  <rect x="945" y="50" width="190" height="44" rx="22" fill="#2563EB" />
+  <text x="1040" y="77" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Seri #3 • Teknik Industri</text>
+
+  <!-- CARD 1: DECISION VARIABLES -->
+  <rect x="36" y="144" width="336" height="312" rx="14" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.8" filter="url(#cardShadow3)" />
+  <rect x="36" y="144" width="336" height="48" rx="14" fill="#DBEAFE" />
+  <rect x="36" y="176" width="336" height="16" fill="#DBEAFE" />
+  <text x="204" y="174" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="700" fill="#1E40AF">1. VARIABEL KEPUTUSAN (x)</text>
+  <text x="204" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0F172A">"Tuas yang Bisa Diatur"</text>
+  <text x="204" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748B">Masukan bebas yang kita tentukan sendiri</text>
+  <line x1="60" y1="254" x2="348" y2="254" stroke="#E2E8F0" stroke-width="1.2" />
+  <rect x="56" y="268" width="296" height="168" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+  <text x="72" y="292" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#2563EB">ANALOGI KATERING:</text>
+  <text x="72" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1E293B">• x₁ = Paket Hemat</text>
+  <text x="84" y="336" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#475569">Porsi yang dimasak besok</text>
+  <text x="72" y="368" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1E293B">• x₂ = Paket Spesial</text>
+  <text x="84" y="386" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#475569">Porsi yang dimasak besok</text>
+  <rect x="72" y="402" width="264" height="24" rx="6" fill="#EFF6FF" />
+  <text x="204" y="418" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#1D4ED8">Vektor masukan: x = [ x₁ , x₂ ]</text>
+
+  <!-- ARROW 1 TO 2 -->
+  <line x1="382" y1="300" x2="418" y2="300" stroke="#64748B" stroke-width="2.5" />
+  <polygon points="416,293 428,300 416,307" fill="#64748B" />
+
+  <!-- CARD 2: CONSTRAINTS -->
+  <rect x="432" y="144" width="336" height="312" rx="14" fill="#FFFFFF" stroke="#FCD34D" stroke-width="1.8" filter="url(#cardShadow3)" />
+  <rect x="432" y="144" width="336" height="48" rx="14" fill="#FEF3C7" />
+  <rect x="432" y="176" width="336" height="16" fill="#FEF3C7" />
+  <text x="600" y="174" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="700" fill="#92400E">2. BATASAN (g(x) ≤ b)</text>
+  <text x="600" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0F172A">"Aturan Main &amp; Batas"</text>
+  <text x="600" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748B">Batas sumber daya yang menentukan pilihan layak</text>
+  <line x1="456" y1="254" x2="744" y2="254" stroke="#E2E8F0" stroke-width="1.2" />
+  <rect x="452" y="268" width="296" height="168" rx="10" fill="#FFFBEB" stroke="#FDE68A" />
+  <text x="468" y="292" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#B45309">KETERBATASAN DAPUR:</text>
+  <text x="468" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#1E293B">• Batas Modal Belanja:</text>
+  <text x="480" y="336" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#475569">Biaya bahan ≤ Modal harian</text>
+  <text x="468" y="364" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#1E293B">• Batas Waktu Memasak:</text>
+  <text x="480" y="382" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#475569">Menit persiapan ≤ 480 menit (8 jam)</text>
+  <rect x="468" y="402" width="264" height="24" rx="6" fill="#FEF3C7" />
+  <text x="600" y="418" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#92400E">Non-negatif: x₁ ≥ 0, x₂ ≥ 0</text>
+
+  <!-- ARROW 2 TO 3 -->
+  <line x1="778" y1="300" x2="814" y2="300" stroke="#64748B" stroke-width="2.5" />
+  <polygon points="812,293 824,300 812,307" fill="#64748B" />
+
+  <!-- CARD 3: OBJECTIVE FUNCTION -->
+  <rect x="828" y="144" width="336" height="312" rx="14" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="1.8" filter="url(#cardShadow3)" />
+  <rect x="828" y="144" width="336" height="48" rx="14" fill="#D1FAE5" />
+  <rect x="828" y="176" width="336" height="16" fill="#D1FAE5" />
+  <text x="996" y="174" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="700" fill="#065F46">3. FUNGSI TUJUAN f(x)</text>
+  <text x="996" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0F172A">"Target Akhir"</text>
+  <text x="996" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748B">Ukuran kinerja yang dimaksimalkan/diminimalkan</text>
+  <line x1="852" y1="254" x2="1140" y2="254" stroke="#E2E8F0" stroke-width="1.2" />
+  <rect x="848" y="268" width="296" height="168" rx="10" fill="#F0FDF4" stroke="#BBF7D0" />
+  <text x="864" y="292" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#047857">TUJUAN USAHA:</text>
+  <text x="864" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A">Maksimalkan Total Keuntungan Harian</text>
+  <text x="864" y="344" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#334155">Jumlah keuntungan dari Paket Hemat dan</text>
+  <text x="864" y="362" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#334155">Paket Spesial yang dimasak.</text>
+  <rect x="864" y="394" width="264" height="32" rx="6" fill="#059669" />
+  <text x="996" y="415" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Hasil: Rencana Optimal (x₁*, x₂*)</text>
+
+  <!-- BOTTOM PANEL: General Mathematical Blueprint -->
+  <rect x="36" y="478" width="1128" height="114" rx="14" fill="#0F172A" />
+  <text x="64" y="508" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#38BDF8">BENTUK BAKU DI BUKU TEKS (DITERJEMAHKAN)</text>
+  <rect x="64" y="522" width="320" height="52" rx="8" fill="#1E293B" stroke="#334155" />
+  <text x="224" y="544" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FFFFFF">Optimalkan f(x)</text>
+  <text x="224" y="563" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#94A3B8">Cari nilai terbaik fungsi tujuan</text>
+  <rect x="404" y="522" width="360" height="52" rx="8" fill="#1E293B" stroke="#334155" />
+  <text x="584" y="544" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FBBF24">Dengan batasan: gᵢ(x) ≤ bᵢ</text>
+  <text x="584" y="563" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#94A3B8">Patuhi setiap batas sumber daya &amp; kapasitas</text>
+  <rect x="784" y="522" width="352" height="52" rx="8" fill="#1E293B" stroke="#334155" />
+  <text x="960" y="544" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#34D399">x ∈ S (Wilayah Layak)</text>
+  <text x="960" y="563" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#94A3B8">Hanya kombinasi valid dan realistis</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo1OGQ0ZmZmZC05ZDU5LTQ5YmYtOWQxMC1iOWRjNWY5ZmE2Y2QAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaIebkujco2KPGcsRmoW5X7gAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoxN2JjYTcwMC0yOTA1LTRlZGUtYjljMi03MTU3OWNkZTMwYWRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo6+nLsooJJwuUp44XLOI4lAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg1d9ihj5ASyz2v9CwigYq4Ht8tuzAyAjFcrU0O8t0R1WkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaCIoYuKUhEN9xC16on994XUAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIEHrsNttggu2VMSIyMSVNmBhRkj1VrmEGXuw+QyAdtu/ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSTHZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjU4ZDRmZmZkLTlkNTktNDliZi05ZDEwLWI5ZGM1ZjlmYTZjZC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmQ4Njk1MjZmLTFkNjMtNDA2MS04Yjg3LTAxNGQzM2E3Zjk4NnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDV32KGPkBLLPa/0LCKBirge3y27MDICMVytTQ7y3RHVaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggHCbMVMI7X0RLDD7vWFafi5zNOnH+v94vAyaaVF94zNqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggAx7GPh2ojeJuPqK4w8XvegfObzdonB688zFgpAc5xGl0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQFPbUvvD2pO9+i6t35WlvpfL5OEqsWjP79ivpFGabDiWOAYuslRtt9saNmG3v3dVFLAA3ff1pKWtdwEkEUair44=</c2pa:manifest></metadata></svg>
