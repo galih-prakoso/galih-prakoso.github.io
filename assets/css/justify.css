@@ -52,3 +52,4 @@ img.img-zoomable { cursor: zoom-in; }
 @media (min-width: 900px) { .img-zoom-img { min-width: 0; } }
 .publications .pub-doi a { color: inherit; border-bottom: 1px dotted var(--global-text-color-light); text-decoration: none; transition: color 0.2s, border-color 0.2s; }
 .publications .pub-doi a:hover { color: var(--global-hover-color); border-bottom-color: var(--global-hover-color); }
+.publications .links a.abstract, .publications .links a.bibtex, .publications .links a.btn { cursor: pointer; }
