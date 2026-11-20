@@ -39,7 +39,7 @@ Seperti terlihat pada diagram di atas, proses pengambilan keputusan selalu berge
 
 Agar hubungan ketiga komponen tersebut terasa lebih membumi, sebagai contoh, seorang pengelola usaha katering rumahan sedang merencanakan produksi menu makan siang untuk besok. Dapur katering tersebut menawarkan dua pilihan menu utama: **Paket Hemat** dan **Paket Spesial**.
 
-Setiap malam, pengelola usaha ini harus memutuskan berapa porsi masing-masing paket yang akan dimasak keesokan harinya agar keuntungan harian yang didapat bisa maksimal, tanpa melanggar keterbatasan modal dan waktu kerja di dapur. Jika cerita sederhana ini dibedah ke dalam anatomi model optimasi, susunannya menjadi sangat jernih:
+Setiap malam, pengelola usaha ini harus memutuskan berapa porsi masing-masing paket yang akan dimasak keesokan harinya agar keuntungan harian yang didapat bisa maksimal, tanpa melanggar keterbatasan modal dan waktu kerja di dapur. Jika cerita sederhana ini dibedah ke dalam anatomi model optimasi, susunannya menjadi sangat jelas:
 
 1. **Variabel Keputusan (*Decision Variables*): "Apa yang Bisa Diatur?"**
 
