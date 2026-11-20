@@ -5,6 +5,10 @@
    4) the plain "PDF" button becomes a recognisable PDF icon. */
 (function () {
   "use strict";
+  // Web of Science records, keyed by bibliography entry id.
+  var WOS = {
+    prakoso2026nesting: "https://www.webofscience.com/wos/woscc/full-record/WOS:001928820200001"
+  };
   var id = (document.documentElement.lang || "en").toLowerCase().indexOf("id") === 0;
   document.querySelectorAll(".publications li").forEach(function (li) {
     var links = li.querySelectorAll(".links a[href]");
@@ -42,6 +46,25 @@
       d.appendChild(document.createTextNode("DOI: "));
       d.appendChild(l);
       linksBox.parentNode.insertBefore(d, linksBox);
+    }
+
+    var entry = li.querySelector("[id]");
+    var wosUrl = entry && WOS[entry.id];
+    if (wosUrl && linksBox && !linksBox.querySelector(".wos-btn")) {
+      var w = document.createElement("a");
+      w.className = "btn btn-sm z-depth-0 wos-btn";
+      w.setAttribute("role", "button");
+      w.href = wosUrl;
+      w.target = "_blank";
+      w.rel = "external nofollow noopener";
+      w.textContent = "WoS";
+      w.title = id ? "Lihat di Web of Science" : "View on Web of Science";
+      var pdfLink = null;
+      linksBox.querySelectorAll("a[href]").forEach(function (x) {
+        if (/\.pdf([?#]|$)/i.test(x.getAttribute("href"))) pdfLink = x;
+      });
+      linksBox.insertBefore(w, pdfLink);
+      linksBox.insertBefore(document.createTextNode(" "), pdfLink);
     }
 
     links.forEach(function (btn) {

@@ -11,7 +11,7 @@ nav: false
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" data-alt="{{ '/publications/' | relative_url }}" defer></script>
 
-<script src="{{ '/assets/js/pub-links.js' | relative_url }}?v=2" defer></script>
+<script src="{{ '/assets/js/pub-links.js' | relative_url }}?v=3" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
