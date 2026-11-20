@@ -35,7 +35,7 @@ Terlepas dari seberapa rumit sebuah sistem industri, mulai dari pengaturan jadwa
 
 Seperti terlihat pada diagram di atas, proses pengambilan keputusan selalu bergerak dari pemilihan nilai pada variabel yang dapat diatur, lalu disaring oleh berbagai keterbatasan sumber daya, hingga menghasilkan nilai kinerja pada fungsi tujuan.
 
-### Analogi Nyata: Meracik Paket Usaha Katering Rumahan
+### Analogi Nyata: Menyusun Paket Usaha Katering Rumahan
 
 Agar hubungan ketiga komponen tersebut terasa lebih membumi, sebagai contoh, seorang pengelola usaha katering rumahan sedang merencanakan produksi menu makan siang untuk besok. Dapur katering tersebut menawarkan dua pilihan menu utama: **Paket Hemat** dan **Paket Spesial**.
 
