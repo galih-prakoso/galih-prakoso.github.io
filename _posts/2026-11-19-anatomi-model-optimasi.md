@@ -22,7 +22,7 @@ related_posts: false
 
 *Seri: Optimasi di Teknik Industri, Hari #3. Topik 1.3: General Formulation of an Optimization Problem* · [Read in English]({{ '/blog/2026/anatomy-of-an-optimization-model/' | relative_url }})
 
-Setelah melihat bagaimana konsep keseimbangan biaya bekerja pada pengelolaan stok toko di pembahasan sebelumnya, muncul satu pertanyaan praktis: **bagaimana cara mengubah permasalah di dunia nyata menjadi susunan rumus yang bisa dihitung secara sistematis?**
+Setelah melihat bagaimana konsep keseimbangan biaya bekerja pada pengelolaan stok toko di pembahasan sebelumnya, muncul satu pertanyaan praktis: **bagaimana cara mengubah permasalahan di dunia nyata menjadi susunan rumus yang bisa dihitung secara sistematis?**
 
 Dalam Teknik Industri, langkah menerjemahkan situasi lapangan ke dalam bahasa simbolik ini disebut sebagai **pemodelan matematis**. Bagi pemula, deretan huruf $$x$$, $$y$$, atau tanda pertidaksamaan di buku teks sering kali terlihat mengintimidasi. Padahal, simbol-simbol tersebut hanyalah cara singkat untuk menuliskan cerita yang sebenarnya sangat logis.
 
