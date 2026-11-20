@@ -16,6 +16,7 @@ related_posts: false
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #3. Topic 1.3: General Formulation of an Optimization Problem* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/anatomi-model-optimasi/' | relative_url }})
 
