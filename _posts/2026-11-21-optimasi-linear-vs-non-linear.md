@@ -1,7 +1,7 @@
 ---
 layout: post
 lang: id
-title: "Mengapa Garis Lurus dan Kurva Mengubah Cara Kita Menyelesaikan Masalah: Optimasi Linear vs. Non-Linear"
+title: "Garis Lurus dan Kurva Mengubah Cara Kita Menyelesaikan Masalah: Optimasi Linear vs. Non-Linear"
 date: 2026-11-21 12:00:00 +0300
 description: "Optimasi di Teknik Industri, Hari #4: bagaimana perbedaan garis lurus dan kurva mengubah cara kita menyelesaikan masalah?"
 permalink: /id/tulisan/2026/optimasi-linear-vs-non-linear/
