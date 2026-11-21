@@ -23,6 +23,8 @@ related_posts: false
 
 The previous post covered how decision variables, an objective function, and constraints form the basic structure of an optimization problem. When we step further into real-world applications, the next crucial question arises: **what is the shape of the relationship among the variables?** Is it a straight line (linear) or a curve (non-linear)?
 
+The difference resembles a straight highway versus a winding mountain road. On the highway, once the speed is known, the travel time can be calculated exactly, and every extra kilometre adds the same amount of time. On the mountain road, climbs, bends and descents break that proportion, and a stretch that is going downhill does not necessarily lead to the lowest point of the valley.
+
 This simple distinction fundamentally changes the mathematical difficulty, the type of algorithm required, and the guarantee of finding the best solution.
 
 ---
@@ -63,7 +65,7 @@ This structural shift introduces the major challenge of non-linear optimization:
 - **Local Optimum:** A point that outperforms all of its immediate neighbors, but is not the best score across the whole landscape.
 - **Global Optimum:** The absolute best point across the entire feasible region.
 
-Derivative-based algorithms (such as *Gradient Descent* or *Sequential Quadratic Programming*, SQP) can easily become trapped at a local peak and stop searching, wrongly assuming that the highest point has been reached.
+Derivative-based algorithms (such as *Gradient Descent* or *Sequential Quadratic Programming*, SQP) can stop at a local optimum. In a minimization problem, *Gradient Descent* stops in a local valley because no nearby direction goes lower, even though a deeper valley exists elsewhere. In a maximization problem, the same trap appears as a local peak, as in Figure 1.
 
 <img src="{{ '/assets/img/blog/optimization-day-4-en.svg' | relative_url }}" alt="Linear vs. non-linear optimization: a convex feasible region with its optimum at a vertex, versus a multi-peak landscape with local optima traps" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
 <p style="text-align: center;"><em>Figure 1. A linear feasible region forming a convex polygon (left) versus a non-linear multi-peak landscape with a local optimum trap (right).</em></p>

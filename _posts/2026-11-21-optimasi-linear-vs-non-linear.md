@@ -25,6 +25,8 @@ related_posts: false
 
 Pembahasan sebelumnya mengulas bagaimana variabel keputusan, fungsi tujuan, dan batasan (*constraints*) membentuk struktur dasar suatu masalah optimasi. Namun, ketika masuk lebih jauh ke dunia nyata, muncul pertanyaan krusial berikutnya: **apa bentuk hubungan antarvariabel dalam masalah tersebut?** Apakah berupa garis lurus (linear) atau tidak lurus (non-linear) seperti kurva?
 
+Perbedaannya mirip jalan tol yang lurus dan jalan pegunungan yang berkelok. Di jalan tol, jika kecepatan diketahui, waktu tempuh bisa dihitung pasti, dan setiap kilometer tambahan menambah waktu yang sama. Di jalan pegunungan, tanjakan, tikungan, dan turunan membuat jarak dan waktu tidak lagi sebanding, dan jalan yang sedang menurun belum tentu membawa ke titik terendah lembah.
+
 Perbedaan sederhana antara garis lurus dan kurva ini ternyata mengubah secara mendasar tingkat kesulitan matematis, jenis algoritma yang dibutuhkan, serta jaminan keberhasilan dalam menemukan solusi terbaik.
 
 ---
@@ -65,7 +67,7 @@ Kondisi ini menimbulkan tantangan terbesar dalam optimasi non-linear:
 - **Local Optimum:** Titik terbaik di lingkungan sekitarnya, tetapi bukan nilai terbaik dari keseluruhan lanskap.
 - **Global Optimum:** Titik terbaik secara mutlak di seluruh feasible region.
 
-Algoritma berbasis turunan (*gradient-based methods*) seperti *Gradient Descent* atau *Sequential Quadratic Programming* (SQP) sering kali terjebak pada puncak lokal dan menghentikan pencarian karena menganggap puncak tersebut sebagai titik tertinggi.
+Algoritma berbasis turunan (*gradient-based methods*) seperti *Gradient Descent* atau *Sequential Quadratic Programming* (SQP) bisa berhenti di local optimum. Pada masalah minimasi, *Gradient Descent* berhenti di lembah lokal karena di sekitarnya tidak ada lagi arah yang lebih rendah, padahal lembah yang lebih dalam ada di tempat lain. Pada masalah maksimasi, perangkap yang sama muncul sebagai puncak lokal, seperti pada Gambar 1.
 
 <img src="{{ '/assets/img/blog/optimization-day-4-id.svg' | relative_url }}" alt="Perbandingan optimasi linear dan non-linear: feasible region konveks dengan optimum di titik sudut, versus lanskap banyak puncak dengan perangkap local optimum" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
 <p style="text-align: center;"><em>Gambar 1. Feasible region optimasi linear berbentuk poligon konveks (kiri) dibandingkan lanskap bergelombang optimasi non-linear dengan perangkap local optimum (kanan).</em></p>
