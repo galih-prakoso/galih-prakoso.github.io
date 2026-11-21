@@ -1,0 +1,116 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="google-site-verification" content="QIPtNW0cEDzwKXNR7Sw7TFnL_nua1KNkrnMem6d8dOs"> <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Why Straight Lines and Curves Change How Problems Are Solved: Linear vs. Non-Linear Optimization | Galih Prakoso </title> <meta name="author" content="Galih Prakoso"> <meta name="description" content="Optimization in Industrial Engineering, Day #4: how does a straight line versus a curve change the way we solve a problem?"> <meta name="keywords" content="additive manufacturing, FDM, batch scheduling, nesting, industrial engineering, King Saud University"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8E%93&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://galih-prakoso.github.io/blog/2026/linear-vs-non-linear-optimization/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Galih</span> Prakoso </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">writing <span class="sr-only">(current)</span> </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">language </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/">English</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/id/">Bahasa Indonesia</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Why Straight Lines and Curves Change How Problems Are Solved: Linear vs. Non-Linear Optimization</h1> <p class="post-meta"> Created on November 21, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/optimization"> <i class="fa-solid fa-hashtag fa-sm"></i> optimization</a>   <a href="/blog/tag/linear-programming"> <i class="fa-solid fa-hashtag fa-sm"></i> linear-programming</a>   <a href="/blog/tag/non-linear-programming"> <i class="fa-solid fa-hashtag fa-sm"></i> non-linear-programming</a>   <a href="/blog/tag/industrial-engineering"> <i class="fa-solid fa-hashtag fa-sm"></i> industrial-engineering</a>   <a href="/blog/tag/algorithms"> <i class="fa-solid fa-hashtag fa-sm"></i> algorithms</a>   ·   <a href="/blog/category/optimization-series"> <i class="fa-solid fa-tag fa-sm"></i> optimization-series</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <link rel="stylesheet" href="/assets/css/justify.css?v=10"> <script src="/assets/js/lang-switch.js?v=1" data-lang="en" defer></script> <script src="/assets/js/img-zoom.js?v=1" defer></script> <script src="/assets/js/post-edit.js?v=1" data-src="_posts/2026-11-21-linear-vs-non-linear-optimization.md" defer></script> <p><em>Series: Optimization in Industrial Engineering, Day #4. Topic 1.4: Linear vs. Non-Linear Optimization</em> · <a href="/id/tulisan/2026/optimasi-linear-vs-non-linear/">Baca dalam Bahasa Indonesia</a></p> <p>The previous post covered how decision variables, an objective function, and constraints form the basic structure of an optimization problem. When we step further into real-world applications, the next crucial question arises: <strong>what is the shape of the relationship among the variables?</strong> Is it a straight line (linear) or a curve (non-linear)?</p> <p>This simple distinction fundamentally changes the mathematical difficulty, the type of algorithm required, and the guarantee of finding the best solution.</p> <hr> <h3 id="linear-optimization-linear-programming--lp">Linear Optimization (Linear Programming / LP)</h3> <p>An optimization problem is classified as <strong>Linear Programming (LP)</strong> when both its objective function and all of its constraints satisfy two key properties:</p> <ol> <li> <strong>Proportionality:</strong> Any change in a decision variable causes a constant, proportional change in both the objective function and the constraints. For example, if producing 1 unit costs USD 10, producing 100 units will cost exactly USD 1,000.</li> <li> <strong>Additivity:</strong> The total contribution of all variables is the direct sum of each variable’s individual contribution, without multiplicative interactions.</li> </ol> <h4 id="geometric-properties-and-lp-solutions">Geometric Properties and LP Solutions</h4> <p>Geometrically, linear constraints enclose a <strong>feasible region</strong> that forms a convex polygon in two dimensions, or a convex polyhedron in higher dimensions. The boundaries of this region are crisp, straight lines.</p> <p>The most notable property of linear optimization is that <strong>the optimal solution always resides at one of the vertices (corner points) of the feasible region</strong>. This neat geometric structure allows classical algorithms such as the <em>Simplex Method</em> or the <em>Interior Point Method</em> to find the global optimal solution deterministically and efficiently, even for problems involving millions of variables.</p> <p>Consider, for example, a manufacturing plant producing two product lines, \(x_1\) and \(x_2\), with unit profits of USD 50 and USD 40 respectively. If machine capacity and raw material availability follow the linear constraints \(2x_1 + x_2 \le 100\) and \(x_1 + 2x_2 \le 80\), the objective function is written as:</p> \[\text{Maximize } Z = 50x_1 + 40x_2\] <p>Solving this problem means evaluating the corner points of the feasible region, which guarantees that the true best decision is found. Here, the corner points \((0,0)\), \((50,0)\), \((40,20)\), and \((0,40)\) give \(Z = 0\), \(2{,}500\), \(2{,}800\), and \(1{,}600\), so the optimum is to produce 40 units of \(x_1\) and 20 units of \(x_2\).</p> <hr> <h3 id="non-linear-optimization-non-linear-programming--nlp">Non-Linear Optimization (Non-Linear Programming / NLP)</h3> <p>Conversely, a problem is classified as <strong>Non-Linear Programming (NLP)</strong> if the objective function, or at least one constraint, contains a non-linear relationship. Non-linear behavior frequently stems from physical geometry, quadratic distance measures, exponential growth, logarithmic diminishing returns, or interactions between decision variables.</p> <p>For example, when determining the location of a new facility, the Euclidean distance between the facility and each demand point is calculated using the square root formula \(\sqrt{(x_1 - a_i)^2 + (x_2 - b_i)^2}\). The squared terms and the square root automatically turn the problem into a non-linear one.</p> <h4 id="the-local-optimum-trap-in-nlp">The Local Optimum Trap in NLP</h4> <p>Replacing straight lines with curves drastically transforms the solution landscape. The feasible region of an NLP problem is no longer confined to flat-faced polygons. It can have curved boundaries, disconnected feasible islands, or wavy surfaces with multiple peaks and valleys.</p> <p>This structural shift introduces the major challenge of non-linear optimization:</p> <ul> <li> <strong>Local Optimum:</strong> A point that outperforms all of its immediate neighbors, but is not the best score across the whole landscape.</li> <li> <strong>Global Optimum:</strong> The absolute best point across the entire feasible region.</li> </ul> <p>Derivative-based algorithms (such as <em>Gradient Descent</em> or <em>Sequential Quadratic Programming</em>, SQP) can easily become trapped at a local peak and stop searching, wrongly assuming that the highest point has been reached.</p> <p><img src="/assets/img/blog/optimization-day-4-en.svg" alt="Linear vs. non-linear optimization: a convex feasible region with its optimum at a vertex, versus a multi-peak landscape with local optima traps" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;"></p> <p style="text-align: center;"><em>Figure 1. A linear feasible region forming a convex polygon (left) versus a non-linear multi-peak landscape with a local optimum trap (right).</em></p> <hr> <h3 id="industrial-engineering-case-comparison">Industrial Engineering Case Comparison</h3> <p>The table below shows how linear and non-linear assumptions differ across practical engineering contexts:</p> <table> <thead> <tr> <th style="text-align: left">Comparison Dimension</th> <th style="text-align: left">Linear Optimization (LP)</th> <th style="text-align: left">Non-Linear Optimization (NLP)</th> </tr> </thead> <tbody> <tr> <td style="text-align: left"><strong>Mathematical Form</strong></td> <td style="text-align: left">All functions \(f(x)\) and \(g(x)\) are first-degree (\(ax_1 + bx_2\)).</td> <td style="text-align: left">Involves \(x^2\), \(\sqrt{x}\), \(\log(x)\), \(x_1 \cdot x_2\), or exponentials.</td> </tr> <tr> <td style="text-align: left"><strong>Feasible Region Shape</strong></td> <td style="text-align: left">Convex polygon or polyhedron with straight borders.</td> <td style="text-align: left">Curved boundaries, non-convex regions, or wavy surfaces.</td> </tr> <tr> <td style="text-align: left"><strong>Optimal Solution Location</strong></td> <td style="text-align: left">Always at a vertex (corner point).</td> <td style="text-align: left">Can occur anywhere: in the interior, along a curved boundary, or at a crest.</td> </tr> <tr> <td style="text-align: left"><strong>Solution Guarantee</strong></td> <td style="text-align: left">A global optimum is guaranteed.</td> <td style="text-align: left">High risk of getting trapped in a local optimum.</td> </tr> <tr> <td style="text-align: left"><strong>IE Application Examples</strong></td> <td style="text-align: left">Production planning, blending models, workforce allocation.</td> <td style="text-align: left">Facility location (Euclidean distance), portfolio variance, chemical process control.</td> </tr> </tbody> </table> <hr> <h3 id="bridging-models-to-solution-methods">Bridging Models to Solution Methods</h3> <p>Distinguishing between LP and NLP dictates the algorithmic strategy of an industrial engineer:</p> <ol> <li>If the formulation is strictly linear (LP), commercial solvers such as CPLEX, Gurobi, or GLPK can solve problems with millions of variables in seconds.</li> <li>If the model is non-linear but convex, <em>Interior Point</em> or <em>SQP</em> algorithms can still reach the global optimum efficiently.</li> <li>If the model is non-linear and non-convex (<em>multimodal</em>), metaheuristic approaches such as <em>Genetic Algorithms</em> (GA), <em>Particle Swarm Optimization</em> (PSO), or <em>Simulated Annealing</em> (SA) become essential for exploring the landscape and escaping local traps.</li> </ol> <p>Understanding the structural difference between LP and NLP is a foundational step before moving on to formulation techniques and algorithm selection in the upcoming posts.</p> <hr> <h3 id="reference">Reference</h3> <p>Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., &amp; Rodriguez, A. (2025). <em>Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications</em> (Chapter 1, Section 1.4: Linear vs. Non-Linear Optimization, pp. 12–18). Springer Nature.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Galih Prakoso. © Galih Prakoso. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/al-folio/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Peer-reviewed publications in reverse chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-writing",
+          title: "writing",
+          description: "Daily notes and articles on optimization, industrial engineering, and manufacturing.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "dropdown-english",
+              title: "English",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/";
+              },
+            },{id: "dropdown-bahasa-indonesia",
+              title: "Bahasa Indonesia",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/id/";
+              },
+            },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%34%34%35%31%30%39%33%31%32@%73%74%75%64%65%6E%74.%6B%73%75.%65%64%75.%73%61", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0006-1962-5336", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=yG2JbOAAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/galih-prakoso-255bb756", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
