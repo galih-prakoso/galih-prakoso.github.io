@@ -19,7 +19,7 @@ related_posts: false
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
 
-*Series: Optimization in Industrial Engineering, Day #4. Topic 1.4: Linear vs. Non-Linear Optimization* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/optimasi-linear-vs-non-linear/' | relative_url }})
+*Series: Optimization in Industrial Engineering, Day #4. Topic: Linear vs. Non-Linear Optimization* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/optimasi-linear-vs-non-linear/' | relative_url }})
 
 The previous post covered how decision variables, an objective function, and constraints form the basic structure of an optimization problem. When we step further into real-world applications, the next crucial question arises: **what is the shape of the relationship among the variables?** Is it a straight line (linear) or a curve (non-linear)?
 
@@ -101,4 +101,4 @@ Understanding the structural difference between LP and NLP is a foundational ste
 
 ### Reference
 
-Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 1, Section 1.4: Linear vs. Non-Linear Optimization, pp. 12–18). Springer Nature.
+Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 1, Section 1.1: What and Where Do We Optimize, p. 3). Springer Nature.

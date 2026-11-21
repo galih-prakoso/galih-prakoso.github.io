@@ -19,7 +19,7 @@ related_posts: false
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
 
-*Series: Optimization in Industrial Engineering, Day #3. Topic 1.3: General Formulation of an Optimization Problem* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/anatomi-model-optimasi/' | relative_url }})
+*Series: Optimization in Industrial Engineering, Day #3. Topic: General Formulation of an Optimization Problem* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/anatomi-model-optimasi/' | relative_url }})
 
 After seeing how cost-balancing principles work in retail inventory control in the previous post, a practical question naturally follows: **how is a real-world story translated into a set of equations that can be solved systematically?**
 
@@ -81,4 +81,4 @@ Once this foundational anatomy is clear, any optimization problem, no matter how
 
 ### Reference
 
-Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 1, Section 1.3: General Formulation of an Optimization Problem, pp. 7–11). Springer Nature.
+Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 1, Section 1.1: What and Where Do We Optimize, pp. 2–3). Springer Nature.

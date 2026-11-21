@@ -21,7 +21,7 @@ related_posts: false
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
-*Seri: Optimasi di Teknik Industri, Hari #3. Topik 1.3: General Formulation of an Optimization Problem* · [Read in English]({{ '/blog/2026/anatomy-of-an-optimization-model/' | relative_url }})
+*Seri: Optimasi di Teknik Industri, Hari #3. Topik: General Formulation of an Optimization Problem* · [Read in English]({{ '/blog/2026/anatomy-of-an-optimization-model/' | relative_url }})
 
 Setelah melihat bagaimana konsep keseimbangan biaya bekerja pada pengelolaan stok toko di pembahasan sebelumnya, muncul satu pertanyaan praktis: **bagaimana cara mengubah permasalahan di dunia nyata menjadi susunan rumus yang bisa dihitung secara sistematis?**
 
@@ -83,4 +83,4 @@ Dengan memahami anatomi dasar ini, setiap persoalan optimasi, sekompleks apa pun
 
 ### Referensi
 
-Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 1, Section 1.3: General Formulation of an Optimization Problem, pp. 7–11). Springer Nature.
+Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 1, Section 1.1: What and Where Do We Optimize, pp. 2–3). Springer Nature.

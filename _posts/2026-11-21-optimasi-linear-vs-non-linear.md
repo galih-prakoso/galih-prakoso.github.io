@@ -21,7 +21,7 @@ related_posts: false
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
-*Seri: Optimasi di Teknik Industri, Hari #4. Topik 1.4: Linear vs. Non-Linear Optimization* · [Read in English]({{ '/blog/2026/linear-vs-non-linear-optimization/' | relative_url }})
+*Seri: Optimasi di Teknik Industri, Hari #4. Topik: Linear vs. Non-Linear Optimization* · [Read in English]({{ '/blog/2026/linear-vs-non-linear-optimization/' | relative_url }})
 
 Pembahasan sebelumnya mengulas bagaimana variabel keputusan, fungsi tujuan, dan batasan (*constraints*) membentuk struktur dasar suatu masalah optimasi. Namun, ketika masuk lebih jauh ke dunia nyata, muncul pertanyaan krusial berikutnya: **apa bentuk hubungan antarvariabel dalam masalah tersebut?** Apakah berupa garis lurus (linear) atau tidak lurus (non-linear) seperti kurva?
 
@@ -103,4 +103,4 @@ Pemahaman mengenai struktur LP dan NLP ini merupakan langkah kunci sebelum masuk
 
 ### Referensi
 
-Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 1, Section 1.4: Linear vs. Non-Linear Optimization, pp. 12–18). Springer Nature.
+Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 1, Section 1.1: What and Where Do We Optimize, p. 3). Springer Nature.
