@@ -90,6 +90,7 @@ Distinguishing between LP and NLP dictates the algorithmic strategy of an indust
 1. If the formulation is strictly linear (LP), commercial solvers such as CPLEX, Gurobi, or GLPK can solve problems with millions of variables in seconds.
 2. If the model is non-linear but convex, *Interior Point* or *SQP* algorithms can still reach the global optimum efficiently.
 3. If the model is non-linear and non-convex (*multimodal*), metaheuristic approaches such as *Genetic Algorithms* (GA), *Particle Swarm Optimization* (PSO), or *Simulated Annealing* (SA) become essential for exploring the landscape and escaping local traps.
+4. If the problem is so large or combinatorial (for example scheduling, routing, or nesting problems that are *NP-hard*) that exact methods cannot finish within a reasonable time, *heuristics* are used. They do not guarantee the global optimum, but they quickly produce good feasible solutions, which is often the practical trade-off in real industrial settings.
 
 Understanding the structural difference between LP and NLP is a foundational step before moving on to formulation techniques and algorithm selection in the upcoming posts.
 

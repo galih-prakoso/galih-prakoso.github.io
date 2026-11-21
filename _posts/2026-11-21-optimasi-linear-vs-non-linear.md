@@ -92,6 +92,7 @@ Klasifikasi antara LP dan NLP menentukan jalur algoritma yang dipilih oleh seora
 1. Jika model dapat dirumuskan secara linear (LP), *solver* komersial seperti CPLEX, Gurobi, atau GLPK mampu menyelesaikan masalah dengan jutaan variabel dalam hitungan detik.
 2. Jika model bersifat non-linear tetapi konveks, metode *Interior Point* atau *SQP* masih dapat memberikan solusi optimal global secara efisien.
 3. Jika model bersifat non-linear dan non-konveks (*multimodal*), pendekatan metaheuristik seperti *Genetic Algorithm* (GA), *Particle Swarm Optimization* (PSO), atau *Simulated Annealing* (SA) menjadi pilihan utama untuk mengeksplorasi lanskap dan menghindari perangkap local optimum.
+4. Jika masalahnya sangat besar atau bersifat kombinatorial (misalnya masalah scheduling, routing, atau nesting yang *NP-hard*) sehingga metode eksak tidak selesai dalam waktu wajar, digunakan *heuristic*. Metode ini tidak menjamin global optimum, tetapi cepat menghasilkan solusi feasible yang baik, dan inilah trade-off yang sering dipilih dalam praktik industri.
 
 Pemahaman mengenai struktur LP dan NLP ini merupakan langkah kunci sebelum masuk ke teknik formulasi dan pemilihan algoritma pada pembahasan selanjutnya.
 
