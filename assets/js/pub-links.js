@@ -9,6 +9,10 @@
   var WOS = {
     prakoso2026nesting: "https://www.webofscience.com/wos/woscc/full-record/WOS:001928820200001"
   };
+  // Journal home pages, keyed by journal name as shown in the entry.
+  var JOURNALS = {
+    "Rapid Prototyping Journal": "https://www.emerald.com/rpj"
+  };
   var id = (document.documentElement.lang || "en").toLowerCase().indexOf("id") === 0;
   document.querySelectorAll(".publications li").forEach(function (li) {
     var links = li.querySelectorAll(".links a[href]");
@@ -32,6 +36,19 @@
       while (title.firstChild) a.appendChild(title.firstChild);
       title.appendChild(a);
     }
+
+    li.querySelectorAll(".periodical em").forEach(function (em) {
+      var url = JOURNALS[em.textContent.trim()];
+      if (!url || em.querySelector("a")) return;
+      var j = document.createElement("a");
+      j.className = "pub-journal-link";
+      j.href = url;
+      j.target = "_blank";
+      j.rel = "external nofollow noopener";
+      j.title = id ? "Buka situs jurnal" : "Open the journal website";
+      while (em.firstChild) j.appendChild(em.firstChild);
+      em.appendChild(j);
+    });
 
     var linksBox = li.querySelector(".links");
     if (doi && linksBox && !li.querySelector(".pub-doi")) {

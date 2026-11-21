@@ -7,11 +7,11 @@ nav: true
 nav_order: 2
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=9">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=12">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" data-alt="{{ '/id/publikasi/' | relative_url }}" defer></script>
 
-<script src="{{ '/assets/js/pub-links.js' | relative_url }}?v=3" defer></script>
+<script src="{{ '/assets/js/pub-links.js' | relative_url }}?v=4" defer></script>
 
 <!-- _pages/publications.md -->
 
