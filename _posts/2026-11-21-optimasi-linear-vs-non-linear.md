@@ -52,7 +52,7 @@ Masalah ini dapat diselesaikan dengan menelusuri titik-titik sudut feasible regi
 
 ### Optimasi Non-Linear (Non-Linear Programming / NLP)
 
-Sebaliknya, sebuah masalah dikategorikan sebagai **Non-Linear Programming (NLP)** apabila fungsi tujuan, atau minimal salah satu batasannya, mengandung hubungan non-linear. Hubungan ini muncul dari berbagai fenomena nyata seperti kuadrat jarak, eksponensial, logaritma, fungsi daya, atau perkalian antarvariabel keputusan.
+Sebaliknya, sebuah masalah dikategorikan sebagai **Non-Linear Programming (NLP)** apabila fungsi tujuan, atau minimal salah satu batasannya, mengandung hubungan non-linear. Hubungan ini muncul dari berbagai fenomena nyata seperti kuadrat jarak, eksponensial, logaritma, fungsi pangkat, atau perkalian antarvariabel keputusan.
 
 Sebagai contoh, dalam menentukan lokasi fasilitas pabrik baru, jarak Euclidean antara pabrik dan konsumen dihitung menggunakan rumus akar kuadrat $$\sqrt{(x_1 - a_i)^2 + (x_2 - b_i)^2}$$. Kehadiran pangkat dua dan akar kuadrat ini secara otomatis mengubah masalah menjadi non-linear.
 
