@@ -12,25 +12,25 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=15">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=16">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
-<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=2" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=3" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
 *Seri: Optimasi di Teknik Industri, Hari #2. Topik 1.2: John's Problem, Introduction to the EOQ* · [Read in English]({{ '/blog/2026/johns-problem-eoq-inventory/' | relative_url }})
 
-Pada pembahasan sebelumnya, kita telah melihat bagaimana prinsip optimasi sebenarnya sudah sangat akrab dengan berbagai keputusan sehari-hari. Kali ini, pembahasan berlanjut ke salah satu persoalan klasik yang paling mendasar dalam Teknik Industri dan manajemen rantai pasok, yakni pengelolaan persediaan barang (*inventory*).
+Pada uraian sebelumnya, kita telah melihat bagaimana prinsip optimasi sebenarnya sudah sangat akrab dengan berbagai keputusan sehari-hari. Kali ini, pembahasan berlanjut ke salah satu persoalan klasik yang paling mendasar dalam Teknik Industri dan manajemen rantai pasok, yakni pengelolaan persediaan barang (*inventory*).
 
 Agar konsepnya mudah diikuti oleh pemula, mari simak sebuah studi kasus sederhana yang dalam literatur sering diperkenalkan sebagai **Masalah John (*John's Problem*)**.
 
-Misalkan John adalah seorang pengelola toko ritel yang menjual produk kebutuhan harian. Berdasarkan catatan penjualan tahun-tahun sebelumnya, permintaan pelanggan terhadap produk tersebut tergolong stabil dan dapat diperkirakan setiap tahunnya. Secara sekilas, tugas John tampak sederhana: ia hanya perlu memesan barang dari pemasok (*supplier*) agar stok di toko selalu tersedia saat pelanggan datang membeli.
+Misalkan John adalah seorang pengelola toko ritel yang menjual produk kebutuhan harian. Berdasarkan catatan penjualan tahun-tahun sebelumnya, permintaan pelanggan terhadap produk tersebut tergolong stabil dan dapat diperkirakan setiap tahunnya. Secara sekilas, tugas John tampak sederhana: John hanya perlu memesan barang dari pemasok (*supplier*) agar stok di toko selalu tersedia saat pelanggan datang membeli.
 
 Namun, begitu perhitungan biaya operasional mulai dilakukan, muncul sebuah dilema yang kerap membuat para pengelola usaha ragu dalam mengambil keputusan: **berapa banyak unit barang yang sebaiknya dipesan setiap kali melakukan pemesanan?**
 

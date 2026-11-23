@@ -12,21 +12,21 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=15">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=16">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
-<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=2" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=3" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
 *Seri: Optimasi di Teknik Industri, Hari #3. Topik: General Formulation of an Optimization Problem* · [Read in English]({{ '/blog/2026/anatomy-of-an-optimization-model/' | relative_url }})
 
-Setelah melihat bagaimana konsep keseimbangan biaya bekerja pada pengelolaan stok toko di pembahasan sebelumnya, muncul satu pertanyaan praktis: **bagaimana cara mengubah permasalahan di dunia nyata menjadi susunan rumus yang bisa dihitung secara sistematis?**
+Setelah melihat bagaimana konsep keseimbangan biaya bekerja pada pengelolaan stok toko pada ulasan sebelumnya, muncul satu pertanyaan praktis: **bagaimana cara mengubah permasalahan di dunia nyata menjadi susunan rumus yang bisa dihitung secara sistematis?**
 
 Dalam Teknik Industri, langkah menerjemahkan situasi lapangan ke dalam bahasa simbolik ini disebut sebagai **pemodelan matematis**. Bagi pemula, deretan huruf $$x$$, $$y$$, atau tanda pertidaksamaan di buku teks sering kali terlihat mengintimidasi. Padahal, simbol-simbol tersebut hanyalah cara singkat untuk menuliskan cerita yang sebenarnya sangat logis.
 
@@ -80,7 +80,7 @@ $$\begin{aligned} \text{Optimize} \quad & f(\mathbf{x}) \\ \text{Subject to} \qu
 
 Notasi $$\mathbf{x}$$ bercetak tebal hanyalah singkatan untuk sekumpulan variabel keputusan ($$x_1, x_2, \dots, x_n$$), fungsi $$f(\mathbf{x})$$ mewakili target yang ingin dimaksimalkan atau diminimalkan, sedangkan $$g_i(\mathbf{x}) \le b_i$$ adalah daftar seluruh aturan batas yang wajib dipatuhi. Sementara itu, $$\mathcal{S}$$ menunjukkan *feasible region*, yakni seluruh kombinasi angka yang tidak melanggar satu pun aturan batasan.
 
-Dengan memahami anatomi dasar ini, setiap persoalan optimasi, sekompleks apa pun bentuknya, dapat selalu dikenali polanya. Pada contoh katering di atas, semua persamaan kebetulan berbentuk perkalian angka sederhana tanpa pangkat atau lengkungan. Namun di lapangan, hubungan antarvariabel sering kali tidak sesederhana garis lurus. Perbedaan karakteristik inilah yang akan kita bahas pada pertemuan berikutnya mengenai masalah **Linear vs. Non-Linear**.
+Dengan memahami anatomi dasar ini, setiap persoalan optimasi, sekompleks apa pun bentuknya, dapat selalu dikenali polanya. Pada contoh katering di atas, semua persamaan kebetulan berbentuk perkalian angka sederhana tanpa pangkat atau lengkungan. Namun di lapangan, hubungan antarvariabel sering kali tidak sesederhana garis lurus. Perbedaan karakteristik inilah yang akan kita bahas pada pembahasan berikutnya mengenai masalah **Linear vs. Non-Linear**.
 
 ---
 

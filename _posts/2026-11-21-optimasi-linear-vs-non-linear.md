@@ -12,21 +12,21 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=15">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=16">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
-<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=2" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=3" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
 *Seri: Optimasi di Teknik Industri, Hari #4. Topik: Linear vs. Non-Linear Optimization* · [Read in English]({{ '/blog/2026/linear-vs-non-linear-optimization/' | relative_url }})
 
-Pembahasan sebelumnya mengulas bagaimana variabel keputusan, fungsi tujuan, dan batasan (*constraints*) membentuk struktur dasar suatu masalah optimasi. Namun, ketika masuk lebih jauh ke dunia nyata, muncul pertanyaan krusial berikutnya: **apa bentuk hubungan antarvariabel dalam masalah tersebut?** Apakah berupa garis lurus (linear) atau tidak lurus (non-linear) seperti kurva?
+Diskusi sebelumnya mengulas bagaimana variabel keputusan, fungsi tujuan, dan batasan (*constraints*) membentuk struktur dasar suatu masalah optimasi. Namun, ketika masuk lebih jauh ke dunia nyata, muncul pertanyaan krusial berikutnya: **apa bentuk hubungan antarvariabel dalam masalah tersebut?** Apakah berupa garis lurus (linear) atau tidak lurus (non-linear) seperti kurva?
 
 Perbedaannya mirip jalan tol yang lurus dan jalan pegunungan yang berkelok. Di jalan tol, jika kecepatan diketahui, waktu tempuh bisa dihitung pasti, dan setiap kilometer tambahan menambah waktu yang sama. Di jalan pegunungan, tanjakan, tikungan, dan turunan membuat jarak dan waktu tidak lagi sebanding, dan jalan yang sedang menurun belum tentu membawa ke titik terendah lembah.
 
@@ -70,7 +70,7 @@ Kondisi ini menimbulkan tantangan terbesar dalam optimasi non-linear:
 - **Local Optimum:** Titik terbaik di lingkungan sekitarnya, tetapi bukan nilai terbaik dari keseluruhan lanskap.
 - **Global Optimum:** Titik terbaik secara mutlak di seluruh feasible region.
 
-Algoritma berbasis turunan (*gradient-based methods*) seperti *Gradient Descent* atau *Sequential Quadratic Programming* (SQP) bisa berhenti di local optimum. Pada masalah minimasi, *Gradient Descent* berhenti di lembah lokal karena di sekitarnya tidak ada lagi arah yang lebih rendah, padahal lembah yang lebih dalam ada di tempat lain. Pada masalah maksimasi, perangkap yang sama muncul sebagai puncak lokal, seperti pada Gambar 1.
+Algoritma berbasis turunan (*gradient-based methods*) seperti *Gradient Descent* atau *Sequential Quadratic Programming* (SQP) bisa berhenti di local optimum. Pada masalah minimasi, *Gradient Descent* berhenti di lembah lokal karena di sekitarnya tidak ada lagi arah yang lebih rendah, padahal lembah yang lebih dalam berada di tempat lain. Pada masalah maksimasi, perangkap yang sama muncul sebagai puncak lokal, seperti pada Gambar 1.
 
 <img src="{{ '/assets/img/blog/optimization-day-4-id.svg' | relative_url }}" alt="Perbandingan optimasi linear dan non-linear: feasible region konveks dengan optimum di titik sudut, versus lanskap banyak puncak dengan perangkap local optimum" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
 <p style="text-align: center;"><em>Gambar 1. Feasible region optimasi linear berbentuk poligon konveks (kiri) dibandingkan lanskap bergelombang optimasi non-linear dengan perangkap local optimum (kanan).</em></p>
@@ -100,7 +100,7 @@ Klasifikasi antara LP dan NLP menentukan jalur algoritma yang dipilih oleh seora
 3. Jika model bersifat non-linear dan non-konveks (*multimodal*), pendekatan metaheuristik seperti *Genetic Algorithm* (GA), *Particle Swarm Optimization* (PSO), atau *Simulated Annealing* (SA) menjadi pilihan utama untuk mengeksplorasi lanskap dan menghindari perangkap local optimum.
 4. Jika masalahnya sangat besar atau bersifat kombinatorial (misalnya masalah scheduling, routing, atau nesting yang *NP-hard*) sehingga metode eksak tidak selesai dalam waktu wajar, digunakan *heuristic*. Metode ini tidak menjamin global optimum, tetapi cepat menghasilkan solusi feasible yang baik, dan inilah trade-off yang sering dipilih dalam praktik industri.
 
-Pemahaman mengenai struktur LP dan NLP ini merupakan langkah kunci sebelum masuk ke teknik formulasi dan pemilihan algoritma pada pembahasan selanjutnya.
+Pemahaman mengenai struktur LP dan NLP ini merupakan langkah kunci sebelum masuk ke teknik formulasi dan pemilihan algoritma pada ulasan selanjutnya.
 
 ---
 

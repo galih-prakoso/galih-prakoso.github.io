@@ -12,14 +12,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=15">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=16">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
-<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=2" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=3" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
@@ -42,7 +42,7 @@ Dalam sudut pandang rekayasa (*engineering*), optimasi juga dapat dipahami sebag
 <img src="{{ '/assets/img/blog/optimization-day-1-id.svg' | relative_url }}" alt="Ilustrasi konsep optimasi dalam kehidupan sehari-hari dan rekayasa" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
 <p style="text-align: center;"><em>Gambar 1. Perbandingan trade-off dalam keputusan sehari-hari, empat desain kendaraan di industri otomotif, serta tiga pilar pemodelan optimasi.</em></p>
 
-Lalu, muncul pertanyaan menarik: *mungkinkah dibuat truk kargo yang memiliki akselerasi secepat mobil sport?* Secara teknis, hal itu sangat mungkin dilakukan dengan memasang mesin berukuran raksasa. Namun, pabrikan tidak melakukannya karena berdasarkan perhitungan, biaya produksinya akan sangat mahal dan volume penjualannya bakal rendah. Artinya, keputusan tersebut tidak optimal secara ekonomi maupun teknis.
+Lalu, muncul pertanyaan menarik: *mungkinkah dibuat truk kargo yang memiliki akselerasi secepat mobil sport?* Secara teknis, hal tersebut sangat mungkin dilakukan dengan memasang mesin berukuran raksasa. Namun, pabrikan tidak melakukannya karena berdasarkan perhitungan, biaya produksinya akan sangat mahal dan volume penjualannya bakal rendah. Artinya, keputusan tersebut tidak optimal secara ekonomi maupun teknis.
 
 Di sisi konsumen, pola pikir optimasi yang sama juga berlaku. Banyak orang memilih untuk tidak mengalokasikan terlalu banyak dana pada pembelian mobil, agar sisa sumber daya finansialnya dapat digunakan untuk kebutuhan lain yang dianggap lebih penting atau lebih mereka nikmati.
 
@@ -56,13 +56,13 @@ Agar persoalan-persoalan nyata tersebut dapat diselesaikan secara sistematis, si
 2. **Fungsi Tujuan (*Objective Function*):** Ukuran kinerja utama f(x) yang ingin dimaksimalkan (seperti keuntungan atau akselerasi) atau diminimalkan (seperti biaya produksi atau waktu tunggu), yang nilainya dipengaruhi oleh variabel keputusan.
 3. **Batasan (*Constraints*):** Kondisi atau aturan main yang membatasi ruang gerak keputusan, misalnya batas anggaran, kapasitas gudang, atau jumlah kursi penumpang.
 
-Tujuan dari metode optimasi bukan hanya mencari berapa nilai maksimum atau minimum dari fungsi tujuan tersebut, melainkan menemukan **kombinasi nilai variabel keputusan** yang menghasilkan kondisi paling optimal. Pada pembahasan-pembahasan berikutnya, kita akan mengenal lebih jauh berbagai karakteristik masalah optimasi, mulai dari yang bersifat linear hingga non-linear, cembung (*convex*) hingga non-cembung, serta yang memiliki satu titik optimal (*unimodal*) maupun banyak titik optimal lokal (*multimodal*), dengan pendekatan yang bertahap dan mudah dipahami.
+Tujuan dari metode optimasi bukan hanya mencari berapa nilai maksimum atau minimum dari fungsi tujuan tersebut, melainkan menemukan **kombinasi nilai variabel keputusan** yang menghasilkan kondisi paling optimal. Pada pembahasan berikutnya, kita akan mengenal lebih jauh berbagai karakteristik masalah optimasi, mulai dari yang bersifat linear hingga non-linear, cembung (*convex*) hingga non-cembung, serta yang memiliki satu titik optimal (*unimodal*) maupun banyak titik optimal lokal (*multimodal*), dengan pendekatan yang bertahap dan mudah dipahami.
 
 ---
 
 ### Script Python
 
-Script berikut adalah ilustrasi kecil dari gagasan trade-off: ia mencari daya mesin terbaik untuk prioritas yang berbeda. Angkanya karangan untuk ilustrasi, bukan dari buku rujukan. Script mencetak tabel dan menggambar plotnya. Dibutuhkan Python 3.9+ dengan `numpy` dan `matplotlib`. Script memuat pernyataan hak cipta penulis (© 2026 Galih Prakoso, MIT License) yang harus tetap disertakan pada setiap salinan atau modifikasi.
+Script berikut adalah ilustrasi kecil dari gagasan trade-off: script ini mencari daya mesin terbaik untuk prioritas yang berbeda. Angkanya karangan untuk ilustrasi, bukan dari buku rujukan. Script mencetak tabel dan menggambar plotnya. Dibutuhkan Python 3.9+ dengan `numpy` dan `matplotlib`. Script memuat pernyataan hak cipta penulis (© 2026 Galih Prakoso, MIT License) yang harus tetap disertakan pada setiap salinan atau modifikasi.
 
 <div class="code-view" data-src="{{ '/assets/code/day-1-tradeoff.py' | relative_url }}"><a href="{{ '/assets/code/day-1-tradeoff.py' | relative_url }}">day-1-tradeoff.py</a></div>
 
