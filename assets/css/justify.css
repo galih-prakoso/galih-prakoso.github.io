@@ -82,3 +82,9 @@ img.img-zoomable { cursor: zoom-in; }
 .code-view-bar button { cursor: pointer; border: 1px solid var(--global-hover-color); background: transparent; color: var(--global-hover-color); border-radius: 999px; padding: 0.1rem 0.8rem; }
 .code-view-bar button:hover { background: var(--global-hover-color); color: var(--global-bg-color); }
 .code-view-box pre { max-height: 32rem; overflow: auto; font-size: 0.8rem; margin: 0; text-align: left; }
+
+/* share buttons */
+.share-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 2.5rem 0 0.5rem; padding-top: 1rem; border-top: 1px solid var(--global-divider-color, #e5e7eb); }
+.share-label { font-weight: 600; margin-right: 0.25rem; }
+.share-btn { display: inline-block; padding: 0.3rem 0.8rem; border: 1px solid var(--global-divider-color, #cbd5e1); border-radius: 999px; background: transparent; color: var(--global-text-color, inherit) !important; font-size: 0.85rem; line-height: 1.4; cursor: pointer; text-decoration: none !important; }
+.share-btn:hover { background: var(--global-theme-color, #2563eb); border-color: var(--global-theme-color, #2563eb); color: #fff !important; }

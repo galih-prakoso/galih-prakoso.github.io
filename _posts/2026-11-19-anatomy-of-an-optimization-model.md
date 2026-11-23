@@ -4,6 +4,7 @@ lang: en
 title: "Anatomy of an Optimization Model: Breaking Down Variables, Objectives, and Constraints"
 date: 2026-11-19 12:00:00 +0300
 description: "Optimization in Industrial Engineering, Day #3: how do we turn a real-world problem into a mathematical model?"
+og_image: /assets/img/blog/optimization-day-3-en.png
 permalink: /blog/2026/anatomy-of-an-optimization-model/
 tags: optimization mathematical-modeling decision-variables industrial-engineering operations-research
 categories: optimization-series
@@ -11,13 +12,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=14">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #3. Topic: General Formulation of an Optimization Problem* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/anatomi-model-optimasi/' | relative_url }})

@@ -4,6 +4,7 @@ lang: en
 title: "John's Problem and the Art of Balancing Inventory: An Introduction to the EOQ Model"
 date: 2026-11-17 12:00:00 +0300
 description: "Optimization in Industrial Engineering, Day #2: how do we decide the most economical order quantity?"
+og_image: /assets/img/blog/optimization-day-2-en.png
 permalink: /blog/2026/johns-problem-eoq-inventory/
 tags: optimization eoq inventory-management industrial-engineering supply-chain
 categories: optimization-series
@@ -11,13 +12,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=14">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #2. Topic 1.2: John's Problem, Introduction to the EOQ* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/masalah-john-model-eoq/' | relative_url }})

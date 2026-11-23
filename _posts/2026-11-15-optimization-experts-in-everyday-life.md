@@ -4,6 +4,7 @@ lang: en
 title: "Without Realizing It, We Are 'Optimization Experts' in Everyday Life"
 date: 2026-11-15 12:00:00 +0300
 description: "Optimization in Industrial Engineering, Day #1: what and where do we optimize?"
+og_image: /assets/img/blog/optimization-day-1-en.png
 permalink: /blog/2026/optimization-experts-in-everyday-life/
 tags: optimization industrial-engineering decision-making mathematical-modeling
 categories: optimization-series
@@ -11,13 +12,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=14">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #1. Topic 1.1: What and Where Do We Optimize?* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/ahli-optimasi-kehidupan-sehari-hari/' | relative_url }})

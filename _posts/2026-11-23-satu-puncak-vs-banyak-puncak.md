@@ -4,6 +4,7 @@ lang: id
 title: "Satu Puncak atau Banyak Puncak? Mengenal Masalah Unimodal dan Multimodal"
 date: 2026-11-23 12:00:00 +0300
 description: "Optimasi di Teknik Industri, Hari #5: mengapa jumlah puncak pada fungsi tujuan menentukan apakah metode sederhana cukup atau tidak?"
+og_image: /assets/img/blog/optimization-day-5-id.png
 permalink: /id/tulisan/2026/satu-puncak-vs-banyak-puncak/
 tags: optimasi unimodal multimodal local-optimum teknik-industri
 categories: seri-optimasi
@@ -11,13 +12,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=14">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>

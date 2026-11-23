@@ -4,6 +4,7 @@ lang: en
 title: "Why Straight Lines and Curves Change How Problems Are Solved: Linear vs. Non-Linear Optimization"
 date: 2026-11-21 12:00:00 +0300
 description: "Optimization in Industrial Engineering, Day #4: how does a straight line versus a curve change the way we solve a problem?"
+og_image: /assets/img/blog/optimization-day-4-en.png
 permalink: /blog/2026/linear-vs-non-linear-optimization/
 tags: optimization linear-programming non-linear-programming industrial-engineering algorithms
 categories: optimization-series
@@ -11,13 +12,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=14">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #4. Topic: Linear vs. Non-Linear Optimization* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/optimasi-linear-vs-non-linear/' | relative_url }})
