@@ -23,6 +23,7 @@ related_posts: false
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/tag-links.js' | relative_url }}?v=1" defer></script>
 
 *Seri: Optimasi di Teknik Industri, Hari #5. Topik: Modality (Unimodal vs. Multimodal)* · [Read in English]({{ '/blog/2026/unimodal-vs-multimodal/' | relative_url }})
 

@@ -23,6 +23,7 @@ related_posts: false
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/tag-links.js' | relative_url }}?v=1" defer></script>
 
 *Seri: Optimasi di Teknik Industri, Hari #2. Topik 1.2: John's Problem, Introduction to the EOQ* · [Read in English]({{ '/blog/2026/johns-problem-eoq-inventory/' | relative_url }})
 

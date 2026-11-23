@@ -23,6 +23,7 @@ related_posts: false
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/tag-links.js' | relative_url }}?v=1" defer></script>
 
 *Seri: Optimasi di Teknik Industri, Hari #4. Topik: Linear vs. Non-Linear Optimization* · [Read in English]({{ '/blog/2026/linear-vs-non-linear-optimization/' | relative_url }})
 
