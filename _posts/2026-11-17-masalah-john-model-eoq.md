@@ -11,13 +11,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=11">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
@@ -95,6 +96,14 @@ Melalui Masalah John, kerangka pemodelan optimasi terlihat bekerja secara utuh: 
 Tentu saja, dalam dunia industri yang sesungguhnya, persoalan persediaan dapat berkembang jauh lebih menantang. Bagaimana jika pemasok menawarkan **diskon harga** apabila perusahaan bersedia membeli dalam jumlah sangat besar (*volume discounts*)? Atau bagaimana jika luas gudang memiliki **batasan kapasitas** maksimal yang tidak boleh dilanggar?
 
 Pada kondisi yang lebih kompleks seperti itu, rumus aljabar sederhana seperti EOQ klasik sering kali tidak lagi memadai untuk langsung memberikan jawaban akhir. Di titik inilah metode pencarian numerik dan algoritma optimasi modern mulai berperan penting, topik yang akan kita bahas secara bertahap pada tulisan-tulisan berikutnya.
+
+---
+
+### Script Python
+
+Angka dan kurva biaya pada tulisan ini dapat direproduksi dengan script Python berikut. Script mencetak tabel perbandingan dan menggambar plotnya. Dibutuhkan Python 3.9+ dengan `numpy` dan `matplotlib`. Script memuat pernyataan hak cipta penulis (© 2026 Galih Prakoso, MIT License) yang harus tetap disertakan pada setiap salinan atau modifikasi.
+
+<div class="code-view" data-src="{{ '/assets/code/day-2-eoq.py' | relative_url }}"><a href="{{ '/assets/code/day-2-eoq.py' | relative_url }}">day-2-eoq.py</a></div>
 
 ---
 

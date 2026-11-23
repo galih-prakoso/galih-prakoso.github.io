@@ -11,13 +11,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=11">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #2. Topic 1.2: John's Problem, Introduction to the EOQ* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/masalah-john-model-eoq/' | relative_url }})
 
@@ -93,6 +94,14 @@ Through John's Problem, the optimization modeling framework can be seen working 
 Of course, in real-world industrial settings, inventory problems can quickly grow more intricate. What happens if the supplier offers **volume discounts** when a company purchases larger batches? Or what if the warehouse has a strict **storage capacity constraint** that cannot be exceeded?
 
 Once these real-world complexities enter the picture, a single closed-form algebraic formula like the basic EOQ is no longer enough to solve the problem directly. That is precisely where numerical search techniques and modern optimization algorithms come into play, topics we will gradually explore in the upcoming posts of this series.
+
+---
+
+### Python Script
+
+The numbers and the cost curve in this post can be reproduced with the Python script below. It prints the comparison table and draws the plot. It needs Python 3.9+ with `numpy` and `matplotlib`. The script carries the author's copyright notice (© 2026 Galih Prakoso, MIT License), which must be kept in any copy or modification.
+
+<div class="code-view" data-src="{{ '/assets/code/day-2-eoq.py' | relative_url }}"><a href="{{ '/assets/code/day-2-eoq.py' | relative_url }}">day-2-eoq.py</a></div>
 
 ---
 

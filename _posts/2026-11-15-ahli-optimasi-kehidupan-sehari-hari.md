@@ -11,13 +11,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=11">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
@@ -54,6 +55,14 @@ Agar persoalan-persoalan nyata tersebut dapat diselesaikan secara sistematis, si
 3. **Batasan (*Constraints*):** Kondisi atau aturan main yang membatasi ruang gerak keputusan, misalnya batas anggaran, kapasitas gudang, atau jumlah kursi penumpang.
 
 Tujuan dari metode optimasi bukan hanya mencari berapa nilai maksimum atau minimum dari fungsi tujuan tersebut, melainkan menemukan **kombinasi nilai variabel keputusan** yang menghasilkan kondisi paling optimal. Pada pembahasan-pembahasan berikutnya, kita akan mengenal lebih jauh berbagai karakteristik masalah optimasi, mulai dari yang bersifat linear hingga non-linear, cembung (*convex*) hingga non-cembung, serta yang memiliki satu titik optimal (*unimodal*) maupun banyak titik optimal lokal (*multimodal*), dengan pendekatan yang bertahap dan mudah dipahami.
+
+---
+
+### Script Python
+
+Script berikut adalah ilustrasi kecil dari gagasan trade-off: ia mencari daya mesin terbaik untuk prioritas yang berbeda. Angkanya karangan untuk ilustrasi, bukan dari buku rujukan. Script mencetak tabel dan menggambar plotnya. Dibutuhkan Python 3.9+ dengan `numpy` dan `matplotlib`. Script memuat pernyataan hak cipta penulis (© 2026 Galih Prakoso, MIT License) yang harus tetap disertakan pada setiap salinan atau modifikasi.
+
+<div class="code-view" data-src="{{ '/assets/code/day-1-tradeoff.py' | relative_url }}"><a href="{{ '/assets/code/day-1-tradeoff.py' | relative_url }}">day-1-tradeoff.py</a></div>
 
 ---
 

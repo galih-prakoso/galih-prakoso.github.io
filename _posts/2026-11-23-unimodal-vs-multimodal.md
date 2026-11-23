@@ -11,13 +11,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=11">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #5. Topic: Modality (Unimodal vs. Multimodal)* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/satu-puncak-vs-banyak-puncak/' | relative_url }})
 
@@ -32,7 +33,7 @@ Consider a hiker who must reach the highest point, but thick fog lets them see o
 - On a **single hill**, this strategy always works. Wherever the hiker starts, every climb leads to the only summit, which is therefore the highest one.
 - In a **mountain range with many peaks**, the same strategy can be deceptive. The hiker may stop on top of a small hill because every nearby direction goes down, while a much higher summit stands behind the next valley.
 
-This "always go uphill" strategy is exactly how gradient methods work (*gradient ascent* for maximization, *gradient descent* for minimization), which this series has started to introduce.
+This "always go uphill" strategy is exactly how gradient methods work (*gradient ascent* for maximization, *gradient descent* for minimization). At each point, the method computes the steepest uphill direction and steps that way. It was briefly mentioned in Day #4.
 
 ---
 
@@ -86,6 +87,14 @@ Besides the number of peaks, the reference book also highlights **dimensionality
 The reference book shows that probability-based methods, such as *random search* and *Particle Swarm Optimization*, find the highest peak of the Peaks function regardless of the starting point. These methods will be covered one by one later in the series.
 
 Before choosing an algorithm, start with a simple question: is the landscape of this problem likely to have one peak, or many? The answer often settles half of the work.
+
+---
+
+### Python Script
+
+The peaks table in this post can be reproduced with the Python script below. It also runs a plain gradient ascent from several starting points and draws the result on a contour map. It needs Python 3.9+ with `numpy` and `matplotlib`. The script carries the author's copyright notice (© 2026 Galih Prakoso, MIT License), which must be kept in any copy or modification.
+
+<div class="code-view" data-src="{{ '/assets/code/day-5-peaks.py' | relative_url }}"><a href="{{ '/assets/code/day-5-peaks.py' | relative_url }}">day-5-peaks.py</a></div>
 
 ---
 

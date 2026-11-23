@@ -11,13 +11,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=11">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
@@ -34,7 +35,7 @@ Misalkan seorang pendaki diminta mencapai titik tertinggi, tetapi kabut tebal me
 - Di **satu bukit tunggal**, strategi ini selalu berhasil. Dari sisi mana pun ia mulai, setiap tanjakan membawanya ke satu-satunya puncak, dan itu pasti puncak tertinggi.
 - Di **pegunungan dengan banyak puncak**, strategi yang sama bisa menipu. Pendaki bisa berhenti di puncak bukit kecil karena di sekitarnya semua arah menurun, padahal puncak yang jauh lebih tinggi ada di balik lembah berikutnya.
 
-Strategi "selalu menanjak" ini persis cara kerja metode gradien (*gradient ascent* untuk maksimasi, *gradient descent* untuk minimasi) yang mulai kita kenal di seri ini.
+Strategi "selalu menanjak" ini persis cara kerja metode gradien (*gradient ascent* untuk maksimasi, *gradient descent* untuk minimasi). Di setiap titik, metode ini menghitung arah tanjakan paling curam, lalu melangkah ke arah itu. Metode ini sempat disinggung pada Hari #4.
 
 ---
 
@@ -88,6 +89,14 @@ Selain jumlah puncak, buku rujukan juga menyoroti **dimensi**, yaitu jumlah vari
 Buku rujukan menunjukkan bahwa metode berbasis probabilitas, seperti *random search* dan *Particle Swarm Optimization*, mampu menemukan puncak tertinggi fungsi Peaks tanpa bergantung pada titik awal. Metode-metode ini akan kita bahas satu per satu di bagian akhir seri.
 
 Sebelum memilih algoritma, mulailah dengan pertanyaan sederhana: apakah lanskap masalah ini kemungkinan hanya punya satu puncak, atau banyak? Jawaban itu sering kali sudah menentukan separuh keberhasilan.
+
+---
+
+### Script Python
+
+Tabel puncak pada tulisan ini dapat direproduksi dengan script Python berikut. Script juga menjalankan gradient ascent sederhana dari beberapa titik awal dan menggambar hasilnya pada peta kontur. Dibutuhkan Python 3.9+ dengan `numpy` dan `matplotlib`. Script memuat pernyataan hak cipta penulis (© 2026 Galih Prakoso, MIT License) yang harus tetap disertakan pada setiap salinan atau modifikasi.
+
+<div class="code-view" data-src="{{ '/assets/code/day-5-peaks.py' | relative_url }}"><a href="{{ '/assets/code/day-5-peaks.py' | relative_url }}">day-5-peaks.py</a></div>
 
 ---
 

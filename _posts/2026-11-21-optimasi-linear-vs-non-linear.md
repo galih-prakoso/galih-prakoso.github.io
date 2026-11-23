@@ -11,13 +11,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=11">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="id" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
@@ -98,6 +99,14 @@ Klasifikasi antara LP dan NLP menentukan jalur algoritma yang dipilih oleh seora
 4. Jika masalahnya sangat besar atau bersifat kombinatorial (misalnya masalah scheduling, routing, atau nesting yang *NP-hard*) sehingga metode eksak tidak selesai dalam waktu wajar, digunakan *heuristic*. Metode ini tidak menjamin global optimum, tetapi cepat menghasilkan solusi feasible yang baik, dan inilah trade-off yang sering dipilih dalam praktik industri.
 
 Pemahaman mengenai struktur LP dan NLP ini merupakan langkah kunci sebelum masuk ke teknik formulasi dan pemilihan algoritma pada pembahasan selanjutnya.
+
+---
+
+### Script Python
+
+Titik sudut, solusi optimal, dan plot feasible region pada tulisan ini dapat direproduksi dengan script Python berikut. Script mencari vertex dengan memotongkan garis-garis batasan. Dibutuhkan Python 3.9+ dengan `numpy` dan `matplotlib`. Script memuat pernyataan hak cipta penulis (© 2026 Galih Prakoso, MIT License) yang harus tetap disertakan pada setiap salinan atau modifikasi.
+
+<div class="code-view" data-src="{{ '/assets/code/day-4-linear-vertices.py' | relative_url }}"><a href="{{ '/assets/code/day-4-linear-vertices.py' | relative_url }}">day-4-linear-vertices.py</a></div>
 
 ---
 

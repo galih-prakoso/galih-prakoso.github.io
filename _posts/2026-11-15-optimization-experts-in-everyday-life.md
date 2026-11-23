@@ -11,13 +11,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=11">
+<link rel="stylesheet" href="{{ '/assets/css/justify.css' | relative_url }}?v=13">
 
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}?v=1" data-lang="en" defer></script>
 
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #1. Topic 1.1: What and Where Do We Optimize?* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/ahli-optimasi-kehidupan-sehari-hari/' | relative_url }})
 
@@ -52,6 +53,14 @@ To solve these physical, real-world situations systematically, they must first b
 3. **Constraints:** The real-world limitations or conditions that bound decisions, such as budget caps, storage capacity, or seating requirements.
 
 The goal of an optimization algorithm is not merely to find the minimum or maximum value of the objective function, but to determine the **exact values of the decision variables** that produce that optimal outcome. As we move forward in this series, upcoming posts will gradually explore different types of optimization problems, ranging from linear to nonlinear, convex to non-convex, and single-peak (*unimodal*) to multi-peak (*multimodal*), in a clear and approachable manner.
+
+---
+
+### Python Script
+
+The script below is a small illustration of the trade-off idea: it finds the best engine power for different priorities. The numbers are made up for illustration and are not from the reference book. It prints the table and draws the plot. It needs Python 3.9+ with `numpy` and `matplotlib`. The script carries the author's copyright notice (© 2026 Galih Prakoso, MIT License), which must be kept in any copy or modification.
+
+<div class="code-view" data-src="{{ '/assets/code/day-1-tradeoff.py' | relative_url }}"><a href="{{ '/assets/code/day-1-tradeoff.py' | relative_url }}">day-1-tradeoff.py</a></div>
 
 ---
 
