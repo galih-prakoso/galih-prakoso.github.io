@@ -92,3 +92,4 @@ Before choosing an algorithm, start with a simple question: is the landscape of 
 ### Reference
 
 Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., & Rodriguez, A. (2025). *Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications* (Chapter 2, Section 2.8: Modality and Dimensionality, pp. 39–41; Chapter 3, Section 3.4: Maximizing the Peaks Function, pp. 55–62). Springer Nature.
+
