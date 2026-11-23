@@ -60,7 +60,7 @@ Buku rujukan memakai fungsi **Peaks**, fungsi dua variabel yang sering dipakai u
 | Local optimum 1 | $$(-0{,}460;\ -0{,}629)$$ | 3,78 |
 | Local optimum 2 | $$(1{,}286;\ -0{,}005)$$ | 3,59 |
 
-Buku tersebut menjalankan metode gradien dari dua titik awal yang berbeda. Dari titik $$(-1, -2)$$, pencarian berhasil mencapai puncak tertinggi. Dari titik $$(-0{,}5, -1)$$, pencarian justru berhenti di puncak lokal, yang tingginya kurang dari separuh puncak global. Algoritmanya sama, fungsinya sama, hanya titik awalnya yang berbeda. Inilah ciri khas masalah multimodal: **hasil metode lokal bergantung pada dari mana ia mulai.**
+Mengikuti gagasan buku tentang menjalankan metode gradien dari titik awal yang berbeda, kita coba dua titik pada fungsi Peaks (dihitung dengan script di akhir tulisan ini). Dari titik $$(-1, 1)$$, pencarian berhasil mencapai puncak tertinggi. Dari titik $$(0, 0)$$, pencarian justru berhenti di puncak lokal, yang tingginya kurang dari separuh puncak global. Algoritmanya sama, fungsinya sama, hanya titik awalnya yang berbeda. Inilah ciri khas masalah multimodal: **hasil metode lokal bergantung pada dari mana ia mulai.**
 
 ---
 

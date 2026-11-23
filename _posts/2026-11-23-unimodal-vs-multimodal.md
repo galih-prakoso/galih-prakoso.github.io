@@ -58,7 +58,7 @@ The reference book uses the **Peaks** function, a two-variable function often us
 | Local optimum 1 | $$(-0.460,\ -0.629)$$ | 3.78 |
 | Local optimum 2 | $$(1.286,\ -0.005)$$ | 3.59 |
 
-The book runs the gradient method from two different starting points. From $$(-1, -2)$$, the search reaches the highest peak. From $$(-0.5, -1)$$, the search stops at a local peak, less than half as high as the global one. Same algorithm, same function, only the starting point differs. This is the signature of a multimodal problem: **the result of a local method depends on where it starts.**
+Following the book's idea of running the gradient method from different starting points, we try two of them on the Peaks function (computed with the script at the end of this post). From $$(-1, 1)$$, the search reaches the highest peak. From $$(0, 0)$$, the search stops at a local peak, less than half as high as the global one. Same algorithm, same function, only the starting point differs. This is the signature of a multimodal problem: **the result of a local method depends on where it starts.**
 
 ---
 

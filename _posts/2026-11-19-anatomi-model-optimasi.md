@@ -18,6 +18,7 @@ related_posts: false
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 <script src="{{ '/assets/js/lang-nav-id.js' | relative_url }}" defer></script>
 
@@ -63,9 +64,9 @@ Setiap malam, pengelola usaha ini harus memutuskan berapa porsi masing-masing pa
 
      $$15.000x_1 + 25.000x_2 \le 1.500.000$$
 
-   - **Batasan kapasitas waktu dapur:** Menyiapkan Paket Hemat butuh waktu 6 menit dan Paket Spesial 10 menit, sedangkan total waktu kerja efektif di dapur hanya 8 jam (480 menit):
+   - **Batasan kapasitas waktu dapur:** Menyiapkan Paket Hemat butuh waktu 4 menit dan Paket Spesial 12 menit, sedangkan total waktu kerja efektif di dapur hanya 8 jam (480 menit):
 
-     $$6x_1 + 10x_2 \le 480$$
+     $$4x_1 + 12x_2 \le 480$$
 
    - **Batasan non-negatif (*non-negativity*):** Jumlah porsi makanan tidak mungkin bernilai negatif, sehingga secara matematis ditulis $$x_1 \ge 0$$ dan $$x_2 \ge 0$$.
 
@@ -78,6 +79,14 @@ $$\begin{aligned} \text{Optimize} \quad & f(\mathbf{x}) \\ \text{Subject to} \qu
 Notasi $$\mathbf{x}$$ bercetak tebal hanyalah singkatan untuk sekumpulan variabel keputusan ($$x_1, x_2, \dots, x_n$$), fungsi $$f(\mathbf{x})$$ mewakili target yang ingin dimaksimalkan atau diminimalkan, sedangkan $$g_i(\mathbf{x}) \le b_i$$ adalah daftar seluruh aturan batas yang wajib dipatuhi. Sementara itu, $$\mathcal{S}$$ menunjukkan *feasible region*, yakni seluruh kombinasi angka yang tidak melanggar satu pun aturan batasan.
 
 Dengan memahami anatomi dasar ini, setiap persoalan optimasi, sekompleks apa pun bentuknya, dapat selalu dikenali polanya. Pada contoh katering di atas, semua persamaan kebetulan berbentuk perkalian angka sederhana tanpa pangkat atau lengkungan. Namun di lapangan, hubungan antarvariabel sering kali tidak sesederhana garis lurus. Perbedaan karakteristik inilah yang akan kita bahas pada pertemuan berikutnya mengenai masalah **Linear vs. Non-Linear**.
+
+---
+
+### Script Python
+
+Model katering pada tulisan ini dapat diselesaikan dan digambar dengan script Python berikut. Script ini mencari seluruh titik sudut *feasible region*, mencetak tabel keuntungan harian di setiap titik, menunjukkan batasan mana yang aktif (*binding*) pada solusi optimum, lalu menggambar *feasible region* beserta garis keuntungan terbaik. Jalankan dengan `--idr` untuk memakai angka rupiah seperti pada tulisan ini. Script memerlukan Python 3.9+ dengan `numpy` dan `matplotlib`. Script memuat pernyataan hak cipta penulis (© 2026 Galih Prakoso, lisensi MIT) yang wajib dipertahankan pada setiap salinan atau modifikasi.
+
+<div class="code-view" data-src="{{ '/assets/code/day-3-catering-model.py' | relative_url }}"><a href="{{ '/assets/code/day-3-catering-model.py' | relative_url }}">day-3-catering-model.py</a></div>
 
 ---
 

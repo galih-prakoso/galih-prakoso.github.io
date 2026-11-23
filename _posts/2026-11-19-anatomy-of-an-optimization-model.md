@@ -18,6 +18,7 @@ related_posts: false
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
+<script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #3. Topic: General Formulation of an Optimization Problem* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/anatomi-model-optimasi/' | relative_url }})
 
@@ -61,9 +62,9 @@ Every evening, the owner must decide how many portions of each menu to cook the 
 
      $$6x_1 + 10x_2 \le 600$$
 
-   - **Kitchen time constraint:** Preparing a Standard Box takes 6 minutes and a Premium Box takes 10 minutes, while effective daily kitchen time is limited to 8 hours (480 minutes):
+   - **Kitchen time constraint:** Preparing a Standard Box takes 4 minutes and a Premium Box takes 12 minutes, while effective daily kitchen time is limited to 8 hours (480 minutes):
 
-     $$6x_1 + 10x_2 \le 480$$
+     $$4x_1 + 12x_2 \le 480$$
 
    - **Non-negativity constraint:** Negative meal portions do not exist in the real world, requiring $$x_1 \ge 0$$ and $$x_2 \ge 0$$.
 
@@ -76,6 +77,14 @@ $$\begin{aligned} \text{Optimize} \quad & f(\mathbf{x}) \\ \text{Subject to} \qu
 The bold letter $$\mathbf{x}$$ is simply shorthand for the collection of decision variables ($$x_1, x_2, \dots, x_n$$), the function $$f(\mathbf{x})$$ represents the goal to maximize or minimize, and $$g_i(\mathbf{x}) \le b_i$$ lists all the rules that must be respected. Meanwhile, $$\mathcal{S}$$ denotes the **feasible region**: the set of all combinations that satisfy every single constraint simultaneously.
 
 Once this foundational anatomy is clear, any optimization problem, no matter how large, becomes much easier to dissect. Notice that in the catering example above, every equation involved simple straight-line multiplications without curves or exponents. In real engineering systems, however, relationships between variables often bend and curve, a distinction we will explore in the next post on **Linear vs. Non-Linear** problems.
+
+---
+
+### Python Script
+
+The catering model in this post can be solved and plotted with the Python script below. It finds every corner point of the feasible region, prints a table of the daily profit at each one, reports which constraints are binding at the optimum, and draws the feasible region with the best profit line. It needs Python 3.9+ with `numpy` and `matplotlib`. The script carries the author's copyright notice (© 2026 Galih Prakoso, MIT License), which must be kept in any copy or modification.
+
+<div class="code-view" data-src="{{ '/assets/code/day-3-catering-model.py' | relative_url }}"><a href="{{ '/assets/code/day-3-catering-model.py' | relative_url }}">day-3-catering-model.py</a></div>
 
 ---
 
