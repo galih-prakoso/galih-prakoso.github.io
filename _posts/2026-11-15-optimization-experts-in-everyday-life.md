@@ -19,7 +19,7 @@ related_posts: false
 <script src="{{ '/assets/js/img-zoom.js' | relative_url }}?v=1" defer></script>
 <script src="{{ '/assets/js/post-edit.js' | relative_url }}?v=1" data-src="{{ page.path }}" defer></script>
 <script src="{{ '/assets/js/series-nav.js' | relative_url }}?v=1" defer></script>
-<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=3" defer></script>
+<script src="{{ '/assets/js/share-buttons.js' | relative_url }}?v=4" defer></script>
 <script src="{{ '/assets/js/code-view.js' | relative_url }}?v=1" defer></script>
 
 *Series: Optimization in Industrial Engineering, Day #1. Topic 1.1: What and Where Do We Optimize?* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/ahli-optimasi-kehidupan-sehari-hari/' | relative_url }})
