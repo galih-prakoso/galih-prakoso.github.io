@@ -65,5 +65,5 @@
     });
     bar.insertBefore(ns, bar.children[1]);
   }
-  host.appendChild(bar);
+  host.insertBefore(bar, first.nextSibling);
 })();
