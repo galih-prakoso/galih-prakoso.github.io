@@ -1,0 +1,116 @@
+<!DOCTYPE html> <html lang="id"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="google-site-verification" content="QIPtNW0cEDzwKXNR7Sw7TFnL_nua1KNkrnMem6d8dOs"> <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Satu Puncak atau Banyak Puncak? Mengenal Masalah Unimodal dan Multimodal | Galih Prakoso </title> <meta name="author" content="Galih Prakoso"> <meta name="description" content="Optimasi di Teknik Industri, Hari #5: mengapa jumlah puncak pada fungsi tujuan menentukan apakah metode sederhana cukup atau tidak?"> <meta name="keywords" content="additive manufacturing, FDM, batch scheduling, nesting, industrial engineering, King Saud University"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8E%93&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://galih-prakoso.github.io/id/tulisan/2026/satu-puncak-vs-banyak-puncak/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Galih</span> Prakoso </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">writing </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">language </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/">English</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/id/">Bahasa Indonesia</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Satu Puncak atau Banyak Puncak? Mengenal Masalah Unimodal dan Multimodal</h1> <p class="post-meta"> Created on November 23, 2026 </p> <p class="post-tags"> <i class="fa-solid fa-calendar fa-sm"></i> 2026   ·   <i class="fa-solid fa-hashtag fa-sm"></i> optimasi   <i class="fa-solid fa-hashtag fa-sm"></i> unimodal   <i class="fa-solid fa-hashtag fa-sm"></i> multimodal   <i class="fa-solid fa-hashtag fa-sm"></i> local-optimum   <i class="fa-solid fa-hashtag fa-sm"></i> teknik-industri   ·   <i class="fa-solid fa-tag fa-sm"></i> seri-optimasi </p> </header> <article class="post-content"> <div id="markdown-content"> <link rel="stylesheet" href="/assets/css/justify.css?v=11"> <script src="/assets/js/lang-switch.js?v=1" data-lang="id" defer></script> <script src="/assets/js/img-zoom.js?v=1" defer></script> <script src="/assets/js/post-edit.js?v=1" data-src="_posts/2026-11-23-satu-puncak-vs-banyak-puncak.md" defer></script> <script src="/assets/js/series-nav.js?v=1" defer></script> <script src="/assets/js/lang-nav-id.js" defer></script> <p><em>Seri: Optimasi di Teknik Industri, Hari #5. Topik: Modality (Unimodal vs. Multimodal)</em> · <a href="/blog/2026/unimodal-vs-multimodal/">Read in English</a></p> <p>Tulisan sebelumnya menunjukkan bahwa begitu hubungan antarvariabel berbentuk kurva, lanskap nilai fungsi tujuan bisa bergelombang. Pertanyaan berikutnya lebih spesifik: <strong>berapa banyak puncak (atau lembah) yang ada di lanskap itu?</strong> Jawabannya menentukan apakah metode sederhana sudah cukup, atau kita perlu alat yang lebih cerdik.</p> <hr> <h3 id="mendaki-satu-bukit-vs-menjelajah-pegunungan">Mendaki Satu Bukit vs. Menjelajah Pegunungan</h3> <p>Misalkan seorang pendaki diminta mencapai titik tertinggi, tetapi kabut tebal membuatnya hanya bisa melihat tanah tepat di bawah kakinya. Strateginya sederhana: selalu melangkah ke arah yang menanjak, dan berhenti ketika tidak ada lagi arah yang lebih tinggi.</p> <ul> <li>Di <strong>satu bukit tunggal</strong>, strategi ini selalu berhasil. Dari sisi mana pun ia mulai, setiap tanjakan membawanya ke satu-satunya puncak, dan itu pasti puncak tertinggi.</li> <li>Di <strong>pegunungan dengan banyak puncak</strong>, strategi yang sama bisa menipu. Pendaki bisa berhenti di puncak bukit kecil karena di sekitarnya semua arah menurun, padahal puncak yang jauh lebih tinggi ada di balik lembah berikutnya.</li> </ul> <p>Strategi “selalu menanjak” ini persis cara kerja metode gradien (<em>gradient ascent</em> untuk maksimasi, <em>gradient descent</em> untuk minimasi) yang mulai kita kenal di seri ini.</p> <hr> <h3 id="definisi-unimodal-dan-multimodal">Definisi: Unimodal dan Multimodal</h3> <p>Dalam optimasi, sebuah masalah disebut <strong>multimodal</strong> bila fungsi tujuannya memiliki lebih dari satu solusi optimal lokal (<em>local optima</em>). Yang terbaik di antara semuanya, menurut definisi, adalah <strong>global optimum</strong>. Sebaliknya, masalah <strong>unimodal</strong> hanya memiliki satu puncak (untuk maksimasi) atau satu lembah (untuk minimasi), sehingga optimum lokalnya sekaligus optimum global.</p> <p>Buku rujukan seri ini menghubungkan unimodal dengan fungsi yang <strong>convex</strong>. Hubungan itu perlu dibaca dengan hati-hati: fungsi convex memang selalu unimodal, tetapi tidak semua fungsi unimodal itu convex. Sebuah kurva bisa saja punya satu puncak namun bentuknya tidak seperti mangkuk mulus. Perbedaan convex dan non-convex akan dibahas tersendiri pada tulisan berikutnya.</p> <p><img src="/assets/img/blog/optimization-day-5-id.svg" alt="Perbandingan lanskap unimodal dengan satu puncak dan lanskap multimodal dengan puncak lokal yang menjebak metode gradien" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;"></p> <p style="text-align: center;"><em>Gambar 1. Lanskap unimodal: setiap jalur menanjak berakhir di puncak yang sama (kiri). Lanskap multimodal: hasil pencarian bergantung pada titik awal, dan pendaki bisa berhenti di puncak lokal (kanan).</em></p> <hr> <h3 id="contoh-nyata-fungsi-peaks">Contoh Nyata: Fungsi Peaks</h3> <p>Buku rujukan memakai fungsi <strong>Peaks</strong>, fungsi dua variabel yang sering dipakai untuk menguji algoritma optimasi. Fungsi ini memiliki tiga puncak di dalam rentang \(-3 \le x_1, x_2 \le 3\). Hasil perhitungan numerik untuk tulisan ini:</p> <table> <thead> <tr> <th style="text-align: left">Puncak</th> <th style="text-align: left">Lokasi \((x_1, x_2)\)</th> <th style="text-align: left">Tinggi \(f(x_1, x_2)\)</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">Global optimum</td> <td style="text-align: left">\((-0{,}009;\ 1{,}581)\)</td> <td style="text-align: left">8,11</td> </tr> <tr> <td style="text-align: left">Local optimum 1</td> <td style="text-align: left">\((-0{,}460;\ -0{,}629)\)</td> <td style="text-align: left">3,78</td> </tr> <tr> <td style="text-align: left">Local optimum 2</td> <td style="text-align: left">\((1{,}286;\ -0{,}005)\)</td> <td style="text-align: left">3,59</td> </tr> </tbody> </table> <p>Buku tersebut menjalankan metode gradien dari dua titik awal yang berbeda. Dari titik \((-1, -2)\), pencarian berhasil mencapai puncak tertinggi. Dari titik \((-0{,}5, -1)\), pencarian justru berhenti di puncak lokal, yang tingginya kurang dari separuh puncak global. Algoritmanya sama, fungsinya sama, hanya titik awalnya yang berbeda. Inilah ciri khas masalah multimodal: <strong>hasil metode lokal bergantung pada dari mana ia mulai.</strong></p> <hr> <h3 id="di-mana-multimodalitas-muncul-di-teknik-industri">Di Mana Multimodalitas Muncul di Teknik Industri?</h3> <p>Masalah multimodal bukan hanya soal fungsi uji matematika. Buku rujukan mencatat bahwa model <strong>EOQ</strong> (<em>Economic Order Quantity</em>) yang kita bahas pada Hari #2 berubah menjadi multimodal ketika pemasok memberi <strong>potongan harga berdasarkan volume</strong> (<em>volume discounts</em>). Kurva biaya total tidak lagi mulus dengan satu lembah. Ia patah di setiap batas jumlah pesanan yang mendapat harga baru, sehingga muncul beberapa lembah. Metode gradien yang mulai di dekat satu lembah bisa berhenti di sana dan melewatkan pilihan pesanan yang sebenarnya lebih murah.</p> <p>Contoh lain yang sering dijumpai adalah masalah kombinatorial seperti penjadwalan produksi atau penataan komponen di atas mesin. Di sana, menukar urutan dua pekerjaan bisa menaikkan atau menurunkan biaya secara tidak teratur, sehingga lanskapnya penuh “bukit kecil”.</p> <hr> <h3 id="dimensi-membuatnya-lebih-berat">Dimensi Membuatnya Lebih Berat</h3> <p>Selain jumlah puncak, buku rujukan juga menyoroti <strong>dimensi</strong>, yaitu jumlah variabel keputusan yang independen. Masalah EOQ John hanya punya satu variabel (jumlah pesanan \(Q\)), sedangkan fungsi Peaks punya dua. Ketika satu pemasok tidak mampu memenuhi seluruh permintaan sehingga pesanan harus dibagi ke beberapa pemasok, jumlah variabel bertambah. Makin banyak dimensi, makin luas ruang pencarian yang harus dijelajahi. Fenomena ini dikenal sebagai <em>curse of dimensionality</em>. Gabungan multimodal dan berdimensi tinggi adalah jenis masalah yang paling sulit bagi metode klasik.</p> <hr> <h3 id="lalu-metode-apa-yang-cocok">Lalu, Metode Apa yang Cocok?</h3> <table> <thead> <tr> <th style="text-align: left">Jenis Masalah</th> <th style="text-align: left">Metode yang Masuk Akal</th> <th style="text-align: left">Catatan</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">Unimodal</td> <td style="text-align: left">Metode gradien (<em>gradient descent/ascent</em>)</td> <td style="text-align: left">Cepat dan andal, titik awal tidak terlalu berpengaruh.</td> </tr> <tr> <td style="text-align: left">Multimodal, dimensi rendah</td> <td style="text-align: left">Metode gradien dari banyak titik awal (<em>multi-start</em>)</td> <td style="text-align: left">Membantu, tetapi tidak menjamin global optimum.</td> </tr> <tr> <td style="text-align: left">Multimodal, dimensi tinggi</td> <td style="text-align: left">Metaheuristik: <em>Simulated Annealing</em>, <em>Particle Swarm Optimization</em>, algoritma evolusioner</td> <td style="text-align: left">Tidak menjamin optimum, tetapi jauh lebih jarang terjebak di puncak lokal.</td> </tr> </tbody> </table> <p>Buku rujukan menunjukkan bahwa metode berbasis probabilitas, seperti <em>random search</em> dan <em>Particle Swarm Optimization</em>, mampu menemukan puncak tertinggi fungsi Peaks tanpa bergantung pada titik awal. Metode-metode ini akan kita bahas satu per satu di bagian akhir seri.</p> <p>Sebelum memilih algoritma, mulailah dengan pertanyaan sederhana: apakah lanskap masalah ini kemungkinan hanya punya satu puncak, atau banyak? Jawaban itu sering kali sudah menentukan separuh keberhasilan.</p> <hr> <h3 id="referensi">Referensi</h3> <p>Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., &amp; Rodriguez, A. (2025). <em>Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications</em> (Chapter 2, Section 2.8: Modality and Dimensionality, pp. 39–41; Chapter 3, Section 3.4: Maximizing the Peaks Function, pp. 55–62). Springer Nature.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Galih Prakoso. © Galih Prakoso. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/al-folio/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Peer-reviewed publications in reverse chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-writing",
+          title: "writing",
+          description: "Daily notes and articles on optimization, industrial engineering, and manufacturing.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "dropdown-english",
+              title: "English",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/";
+              },
+            },{id: "dropdown-bahasa-indonesia",
+              title: "Bahasa Indonesia",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/id/";
+              },
+            },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%34%34%35%31%30%39%33%31%32@%73%74%75%64%65%6E%74.%6B%73%75.%65%64%75.%73%61", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0006-1962-5336", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=yG2JbOAAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/galih-prakoso-255bb756", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
