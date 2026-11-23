@@ -24,7 +24,7 @@ related_posts: false
 
 *Series: Optimization in Industrial Engineering, Day #5. Topic: Modality (Unimodal vs. Multimodal)* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/satu-puncak-vs-banyak-puncak/' | relative_url }})
 
-The previous post showed that once the relationship among variables becomes curved, the landscape of the objective function can turn wavy. The next question is more specific: **how many peaks (or valleys) does that landscape have?** The answer decides whether a simple method is enough or whether a smarter tool is needed.
+The previous post (Day #4) showed that non-linear relationships turn the graph of the objective function into a wavy curve, like a landscape of hills and valleys. The next question is more specific: **how many peaks (or valleys) does that landscape have?** The answer decides whether a simple method is enough or whether a smarter tool is needed.
 
 ---
 

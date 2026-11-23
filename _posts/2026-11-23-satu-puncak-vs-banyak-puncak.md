@@ -27,7 +27,7 @@ related_posts: false
 
 *Seri: Optimasi di Teknik Industri, Hari #5. Topik: Modality (Unimodal vs. Multimodal)* · [Read in English]({{ '/blog/2026/unimodal-vs-multimodal/' | relative_url }})
 
-Pembahasan sebelumnya menunjukkan bahwa lanskap nilai fungsi tujuan bisa bergelombang ketika hubungan antarvariabel berbentuk kurva. Pertanyaan berikutnya yang lebih spesifik: **berapa banyak puncak (atau lembah) yang ada di lanskap tersebut?** Jawaban atas pertanyaan ini akan menentukan apakah metode sederhana sudah cukup, atau kita perlu alat yang lebih cerdik.
+Pada ulasan sebelumnya (Hari #4), kita melihat bahwa hubungan non-linear membuat grafik fungsi tujuan menjadi kurva yang bergelombang, seperti lanskap dengan bukit dan lembah. Pertanyaan berikutnya yang lebih spesifik: **berapa banyak puncak (atau lembah) yang ada di lanskap tersebut?** Jawaban atas pertanyaan ini akan menentukan apakah metode sederhana sudah cukup, atau kita perlu alat yang lebih cerdik.
 
 ---
 
