@@ -27,7 +27,7 @@ related_posts: false
 
 *Seri: Optimasi di Teknik Industri, Hari #5. Topik: Modality (Unimodal vs. Multimodal)* · [Read in English]({{ '/blog/2026/unimodal-vs-multimodal/' | relative_url }})
 
-Pada ulasan sebelumnya (Hari #4), kita melihat bahwa hubungan non-linear membuat grafik fungsi tujuan menjadi kurva yang bergelombang, seperti lanskap dengan bukit dan lembah. Pertanyaan berikutnya yang lebih spesifik: **berapa banyak puncak (atau lembah) yang ada di lanskap tersebut?** Jawaban atas pertanyaan ini akan menentukan apakah metode sederhana sudah cukup, atau kita perlu alat yang lebih cerdik.
+Pada ulasan sebelumnya (Hari #4), kita melihat bahwa hubungan non-linear membuat grafik fungsi tujuan menjadi kurva yang bergelombang, seperti lanskap dengan bukit dan lembah. Pertanyaan berikutnya yang lebih spesifik: **berapa banyak puncak (titik maksimum) atau lembah (titik minimum) yang ada di lanskap tersebut?** Jawaban atas pertanyaan ini akan menentukan apakah metode sederhana sudah cukup, atau kita perlu alat yang lebih cerdik.
 
 ---
 
@@ -44,9 +44,9 @@ Strategi "selalu menanjak" ini persis dengan cara kerja metode gradien (*gradien
 
 ### Definisi: Unimodal dan Multimodal
 
-Dalam optimasi, sebuah masalah disebut **multimodal** bila fungsi tujuannya memiliki lebih dari satu solusi optimal lokal (*local optima*). Yang terbaik di antara semuanya didefinisikan dengan **global optimum**. Sebaliknya, masalah **unimodal** hanya memiliki satu puncak (untuk maksimasi) atau satu lembah (untuk minimasi), sehingga optimum lokal sekaligus menjadi optimum global.
+Dalam optimasi, sebuah masalah disebut **multimodal** bila fungsi tujuannya memiliki lebih dari satu solusi optimal lokal (*local optima*). Yang terbaik di antara semuanya didefinisikan dengan **global optimum**. Sebaliknya, masalah **unimodal** hanya memiliki satu titik maksimum (untuk maksimasi) atau satu titik minimum (untuk minimasi), sehingga optimum lokal sekaligus menjadi optimum global.
 
-Masalah unimodal sering dikaitkan dengan fungsi yang **convex**. Hubungan tersebut perlu dibaca dengan hati-hati: fungsi convex memang selalu unimodal, tetapi tidak semua fungsi unimodal itu convex. Sebuah kurva bisa memiliki satu puncak namun bentuknya tidak seperti mangkuk yang mulus. Perbedaan convex dan non-convex akan dibahas tersendiri pada ulasan berikutnya.
+Masalah unimodal sering dikaitkan dengan fungsi yang **convex**. Hubungan tersebut perlu dibaca dengan hati-hati: fungsi convex memang selalu unimodal, tetapi tidak semua fungsi unimodal itu convex. Sebuah kurva bisa memiliki satu titik puncak namun bentuknya tidak seperti mangkuk yang mulus. Perbedaan convex dan non-convex akan dibahas tersendiri pada ulasan berikutnya.
 
 <img src="{{ '/assets/img/blog/optimization-day-5-id.svg' | relative_url }}" alt="Perbandingan lanskap unimodal dengan satu puncak dan lanskap multimodal dengan puncak lokal yang menjebak metode gradien" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;">
 <p style="text-align: center;"><em>Gambar 1. Lanskap unimodal: setiap jalur menanjak berakhir di puncak yang sama (kiri). Lanskap multimodal: hasil pencarian bergantung pada titik awal, dan pendaki bisa berhenti di puncak lokal (kanan).</em></p>
@@ -55,7 +55,7 @@ Masalah unimodal sering dikaitkan dengan fungsi yang **convex**. Hubungan terseb
 
 ### Contoh Nyata: Fungsi Peaks
 
-Sebagai contoh, kita gunakan fungsi **Peaks**, fungsi dua variabel yang sering dipakai untuk menguji algoritma optimasi, termasuk pada buku rujukan seri ini. Fungsi ini memiliki tiga puncak di dalam rentang $$-3 \le x_1, x_2 \le 3$$. Hasil perhitungan numerik untuk tulisan ini:
+Sebagai contoh, kita gunakan fungsi **Peaks**, fungsi dua variabel yang sering dipakai untuk menguji algoritma optimasi, termasuk pada buku rujukan seri ini. Fungsi ini memiliki tiga titik puncak di dalam rentang $$-3 \le x_1, x_2 \le 3$$. Hasil perhitungan numerik untuk tulisan ini:
 
 | Puncak | Lokasi $$(x_1, x_2)$$ | Tinggi $$f(x_1, x_2)$$ |
 | :--- | :--- | :--- |
@@ -63,13 +63,13 @@ Sebagai contoh, kita gunakan fungsi **Peaks**, fungsi dua variabel yang sering d
 | Local optimum 1 | $$(-0{,}460;\ -0{,}629)$$ | 3,78 |
 | Local optimum 2 | $$(1{,}286;\ -0{,}005)$$ | 3,59 |
 
-Sekarang kita jalankan metode gradien dari dua titik awal yang berbeda pada fungsi Peaks (dihitung dengan script di akhir tulisan ini). Dari titik $$(-1, 1)$$, pencarian berhasil mencapai puncak tertinggi. Dari titik $$(0, 0)$$, pencarian justru berhenti di puncak lokal, yang tingginya kurang dari separuh puncak global. Algoritmanya sama, fungsinya sama, hanya titik awalnya yang berbeda. Inilah ciri khas masalah multimodal: **hasil metode lokal bergantung pada titik awal pencarian.**
+Sekarang kita jalankan metode gradien dari dua titik awal yang berbeda pada fungsi Peaks (dihitung dengan script di akhir tulisan ini). Dari titik $$(-1, 1)$$, pencarian berhasil mencapai titik maksimum global. Dari titik $$(0, 0)$$, pencarian justru berhenti di titik maksimum lokal, yang nilainya kurang dari separuh titik maksimum global. Algoritmanya sama, fungsinya sama, hanya titik awalnya yang berbeda. Inilah ciri khas masalah multimodal: **hasil metode lokal bergantung pada titik awal pencarian.**
 
 ---
 
 ### Di Mana Multimodalitas Muncul di Teknik Industri?
 
-Masalah multimodal tidak hanya muncul pada fungsi uji matematika. Model **EOQ** (*Economic Order Quantity*) yang kita bahas pada Hari #2 ternyata bisa berubah menjadi multimodal ketika pemasok memberi **potongan harga berdasarkan volume** (*volume discounts*). Kurva biaya total tidak lagi mulus dengan satu lembah, melainkan patah di setiap batas jumlah pesanan yang mendapat harga baru, sehingga muncul beberapa lembah. Metode gradien yang mulai di dekat satu lembah bisa berhenti di lembah tersebut dan melewatkan jumlah pesanan yang sebenarnya lebih murah.
+Masalah multimodal tidak hanya muncul pada fungsi uji matematika. Model **EOQ** (*Economic Order Quantity*) yang kita bahas pada Hari #2 ternyata bisa berubah menjadi multimodal ketika pemasok memberi **potongan harga berdasarkan volume** (*volume discounts*). Kurva biaya total tidak lagi mulus dengan satu lembah, melainkan patah di setiap batas jumlah pesanan yang mendapat harga baru, sehingga muncul beberapa titik minimum. Metode gradien yang mulai di dekat satu titik minimum bisa berhenti di titik tersebut dan melewatkan jumlah pesanan yang sebenarnya lebih murah.
 
 Contoh lain yang sering dijumpai adalah masalah kombinatorial seperti penjadwalan produksi atau penataan komponen di atas mesin. Pada kasus tersebut, menukar urutan dua pekerjaan bisa menaikkan atau menurunkan biaya secara tidak teratur, sehingga lanskap masalahnya penuh dengan "bukit kecil".
 
@@ -77,7 +77,7 @@ Contoh lain yang sering dijumpai adalah masalah kombinatorial seperti penjadwala
 
 ### Dimensi Menambah Tingkat Kesulitan
 
-Selain jumlah puncak, ada faktor lain yang membuat masalah semakin sulit, yaitu **dimensi**, atau jumlah variabel keputusan yang independen. Masalah EOQ John hanya punya satu variabel (jumlah pesanan $$Q$$), sedangkan fungsi Peaks punya dua. Ketika satu pemasok tidak mampu memenuhi seluruh permintaan sehingga pesanan harus dibagi ke beberapa pemasok, jumlah variabel bertambah. Semakin banyak dimensi, semakin luas ruang pencarian yang harus dijelajahi. Fenomena ini dikenal sebagai *curse of dimensionality*. Gabungan multimodal dan berdimensi tinggi adalah jenis masalah yang paling sulit bagi metode klasik.
+Selain jumlah titik puncak, ada faktor lain yang membuat masalah semakin sulit, yaitu **dimensi**, atau jumlah variabel keputusan yang independen. Masalah EOQ John hanya punya satu variabel (jumlah pesanan $$Q$$), sedangkan fungsi Peaks punya dua. Ketika satu pemasok tidak mampu memenuhi seluruh permintaan sehingga pesanan harus dibagi ke beberapa pemasok, jumlah variabel bertambah. Semakin banyak dimensi, semakin luas ruang pencarian yang harus dijelajahi. Fenomena ini dikenal sebagai *curse of dimensionality*. Gabungan multimodal dan berdimensi tinggi adalah jenis masalah yang paling sulit bagi metode klasik.
 
 ---
 
@@ -89,9 +89,9 @@ Selain jumlah puncak, ada faktor lain yang membuat masalah semakin sulit, yaitu 
 | Multimodal, dimensi rendah | Metode gradien dari banyak titik awal (*multi-start*) | Membantu, tetapi tidak menjamin global optimum. |
 | Multimodal, dimensi tinggi | Metaheuristik: *Simulated Annealing*, *Particle Swarm Optimization*, algoritma evolusioner | Tidak menjamin optimum, tetapi jauh lebih jarang terjebak di puncak lokal. |
 
-Menariknya, metode berbasis probabilitas, seperti *random search* dan *Particle Swarm Optimization*, mampu menemukan puncak tertinggi fungsi Peaks tanpa bergantung pada titik awal pencarian. Metode-metode ini akan kita bahas satu per satu pada bagian akhir seri.
+Menariknya, metode berbasis probabilitas, seperti *random search* dan *Particle Swarm Optimization*, mampu menemukan titik maksimum global fungsi Peaks tanpa bergantung pada titik awal pencarian. Metode-metode ini akan kita bahas satu per satu pada bagian akhir seri.
 
-Sebelum memilih algoritma, mulailah dengan pertanyaan sederhana: apakah lanskap masalah ini kemungkinan hanya punya satu puncak, atau banyak? Jawaban atas pertanyaan tersebut sering kali sudah menentukan separuh keberhasilan.
+Sebelum memilih algoritma, mulailah dengan pertanyaan sederhana: apakah lanskap masalah ini kemungkinan hanya punya satu titik maksimum, atau banyak? Jawaban atas pertanyaan tersebut sering kali sudah menentukan separuh keberhasilan.
 
 ---
 
