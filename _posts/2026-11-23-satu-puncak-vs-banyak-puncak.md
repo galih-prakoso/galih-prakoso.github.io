@@ -27,7 +27,7 @@ related_posts: false
 
 *Seri: Optimasi di Teknik Industri, Hari #5. Topik: Modality (Unimodal vs. Multimodal)* · [Read in English]({{ '/blog/2026/unimodal-vs-multimodal/' | relative_url }})
 
-Pada ulasan sebelumnya (Hari #4), kita melihat bahwa hubungan non-linear membuat grafik fungsi tujuan menjadi kurva yang bergelombang, seperti lanskap dengan bukit dan lembah. Pertanyaan berikutnya yang lebih spesifik: **berapa banyak puncak (titik maksimum) atau lembah (titik minimum) yang ada di lanskap tersebut?** Jawaban atas pertanyaan ini akan menentukan apakah metode sederhana sudah cukup, atau kita perlu alat yang lebih cerdik.
+Pada ulasan sebelumnya ([Hari #4]({{ '/id/tulisan/2026/optimasi-linear-vs-non-linear/' | relative_url }})), kita melihat bahwa hubungan non-linear membuat grafik fungsi tujuan menjadi kurva yang bergelombang, seperti lanskap dengan bukit dan lembah. Pertanyaan berikutnya yang lebih spesifik: **berapa banyak puncak (titik maksimum) atau lembah (titik minimum) yang ada di lanskap tersebut?** Jawaban atas pertanyaan ini akan menentukan apakah metode sederhana sudah cukup, atau kita perlu alat yang lebih cerdik.
 
 ---
 
@@ -38,7 +38,7 @@ Misalkan seorang pendaki diminta untuk mencapai puncak, tetapi kabut tebal menye
 - Jika mendaki **bukit tunggal**, strategi ini selalu berhasil. Dari sisi mana pun pendaki memulai, setiap tanjakan akan membawa pendaki ke satu-satunya puncak, yang pasti merupakan puncak tertinggi.
 - Jika mendaki **pegunungan dengan puncak yang banyak**, strategi yang sama bisa menipu. Pendaki bisa berhenti di puncak bukit kecil karena di sekitarnya semua arah menurun, padahal puncak yang jauh lebih tinggi berada di balik lembah berikutnya.
 
-Strategi "selalu menanjak" ini persis dengan cara kerja metode gradien (*gradient ascent* untuk maksimasi, *gradient descent* untuk minimasi). Di setiap titik, metode ini menghitung arah tanjakan paling curam, lalu melangkah ke arah tersebut. Metode ini sempat disinggung pada Hari #4.
+Strategi "selalu menanjak" ini persis dengan cara kerja metode gradien (*gradient ascent* untuk maksimasi, *gradient descent* untuk minimasi). Di setiap titik, metode ini menghitung arah tanjakan paling curam, lalu melangkah ke arah tersebut. Metode ini sempat disinggung pada [Hari #4]({{ '/id/tulisan/2026/optimasi-linear-vs-non-linear/' | relative_url }}).
 
 ---
 
@@ -69,7 +69,7 @@ Sekarang kita jalankan metode gradien dari dua titik awal yang berbeda pada fung
 
 ### Di Mana Multimodalitas Muncul di Teknik Industri?
 
-Masalah multimodal tidak hanya muncul pada fungsi uji matematika. Model **EOQ** (*Economic Order Quantity*) yang kita bahas pada Hari #2 ternyata bisa berubah menjadi multimodal ketika pemasok memberi **potongan harga berdasarkan volume** (*volume discounts*). Kurva biaya total tidak lagi mulus dengan satu lembah, melainkan patah di setiap batas jumlah pesanan yang mendapat harga baru, sehingga muncul beberapa titik minimum. Metode gradien yang mulai di dekat satu titik minimum bisa berhenti di titik tersebut dan melewatkan jumlah pesanan yang sebenarnya lebih murah.
+Masalah multimodal tidak hanya muncul pada fungsi uji matematika. Model **EOQ** (*Economic Order Quantity*) yang kita bahas pada [Hari #2]({{ '/id/tulisan/2026/masalah-john-model-eoq/' | relative_url }}) ternyata bisa berubah menjadi multimodal ketika pemasok memberi **potongan harga berdasarkan volume** (*volume discounts*). Kurva biaya total tidak lagi mulus dengan satu lembah, melainkan patah di setiap batas jumlah pesanan yang mendapat harga baru, sehingga muncul beberapa titik minimum. Metode gradien yang mulai di dekat satu titik minimum bisa berhenti di titik tersebut dan melewatkan jumlah pesanan yang sebenarnya lebih murah.
 
 Contoh lain yang sering dijumpai adalah masalah kombinatorial seperti penjadwalan produksi atau penataan komponen di atas mesin. Pada kasus tersebut, menukar urutan dua pekerjaan bisa menaikkan atau menurunkan biaya secara tidak teratur, sehingga lanskap masalahnya penuh dengan "bukit kecil".
 

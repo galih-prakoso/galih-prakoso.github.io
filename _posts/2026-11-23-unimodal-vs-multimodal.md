@@ -24,7 +24,7 @@ related_posts: false
 
 *Series: Optimization in Industrial Engineering, Day #5. Topic: Modality (Unimodal vs. Multimodal)* · [Baca dalam Bahasa Indonesia]({{ '/id/tulisan/2026/satu-puncak-vs-banyak-puncak/' | relative_url }})
 
-The previous post (Day #4) showed that non-linear relationships turn the graph of the objective function into a wavy curve, like a landscape of hills and valleys. The next question is more specific: **how many peaks (maximum points) or valleys (minimum points) does that landscape have?** The answer decides whether a simple method is enough or whether a smarter tool is needed.
+The previous post ([Day #4]({{ '/blog/2026/linear-vs-non-linear-optimization/' | relative_url }})) showed that non-linear relationships turn the graph of the objective function into a wavy curve, like a landscape of hills and valleys. The next question is more specific: **how many peaks (maximum points) or valleys (minimum points) does that landscape have?** The answer decides whether a simple method is enough or whether a smarter tool is needed.
 
 ---
 
@@ -35,7 +35,7 @@ Consider a hiker who must reach the highest point, but thick fog lets them see o
 - On a **single hill**, this strategy always works. Wherever the hiker starts, every climb leads to the only summit, which is therefore the highest one.
 - In a **mountain range with many peaks**, the same strategy can be deceptive. The hiker may stop on top of a small hill because every nearby direction goes down, while a much higher summit stands behind the next valley.
 
-This "always go uphill" strategy is exactly how gradient methods work (*gradient ascent* for maximization, *gradient descent* for minimization). At each point, the method computes the steepest uphill direction and steps that way. It was briefly mentioned in Day #4.
+This "always go uphill" strategy is exactly how gradient methods work (*gradient ascent* for maximization, *gradient descent* for minimization). At each point, the method computes the steepest uphill direction and steps that way. It was briefly mentioned in [Day #4]({{ '/blog/2026/linear-vs-non-linear-optimization/' | relative_url }}).
 
 ---
 
@@ -66,7 +66,7 @@ Now we run the gradient method from two different starting points on the Peaks f
 
 ### Where Multimodality Appears in Industrial Engineering
 
-Multimodal problems are not only mathematical test functions. The **EOQ** (*Economic Order Quantity*) model from Day #2 can also become multimodal when suppliers offer **volume discounts**. The total cost curve is no longer a smooth curve with a single valley. It breaks at every order quantity where a new price applies, so several minimum points appear. A gradient method that starts near one minimum point can stop there and miss an order quantity that is actually cheaper.
+Multimodal problems are not only mathematical test functions. The **EOQ** (*Economic Order Quantity*) model from [Day #2]({{ '/blog/2026/johns-problem-eoq-inventory/' | relative_url }}) can also become multimodal when suppliers offer **volume discounts**. The total cost curve is no longer a smooth curve with a single valley. It breaks at every order quantity where a new price applies, so several minimum points appear. A gradient method that starts near one minimum point can stop there and miss an order quantity that is actually cheaper.
 
 Another common case is combinatorial problems such as production scheduling or arranging parts on a machine. Swapping the order of two jobs can raise or lower the cost irregularly, so the landscape is full of small hills.
 
