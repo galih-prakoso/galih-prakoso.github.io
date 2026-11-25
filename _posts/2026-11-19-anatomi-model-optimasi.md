@@ -3,7 +3,7 @@ layout: post
 lang: id
 title: "Anatomi Model Optimasi: Membedah Variabel, Tujuan, dan Batasan"
 date: 2026-11-19 12:00:00 +0300
-description: "Optimasi di Teknik Industri, Hari #3: bagaimana mengubah masalah nyata menjadi model matematis?"
+description: "Optimasi di Teknik Industri, Hari #3: bagaimana mengubah masalah aktual menjadi model matematis?"
 og_image: /assets/img/blog/optimization-day-3-id.png
 permalink: /id/tulisan/2026/anatomi-model-optimasi/
 tags: optimasi pemodelan-matematika decision-variables teknik-industri operations-research
@@ -27,7 +27,7 @@ related_posts: false
 
 *Seri: Optimasi di Teknik Industri, Hari #3. Topik: General Formulation of an Optimization Problem* · [Read in English]({{ '/blog/2026/anatomy-of-an-optimization-model/' | relative_url }})
 
-Setelah melihat bagaimana konsep keseimbangan biaya bekerja pada pengelolaan stok toko pada ulasan sebelumnya, muncul satu pertanyaan praktis: **bagaimana cara mengubah permasalahan di dunia nyata menjadi susunan rumus yang bisa dihitung secara sistematis?**
+Setelah melihat bagaimana konsep keseimbangan biaya bekerja pada pengelolaan stok toko pada ulasan sebelumnya, muncul satu pertanyaan praktis: **bagaimana cara mengubah permasalahan pada kondisi sebenarnya menjadi susunan rumus yang bisa dihitung secara sistematis?**
 
 Dalam Teknik Industri, langkah menerjemahkan situasi lapangan ke dalam bahasa simbolik ini disebut sebagai **pemodelan matematis**. Bagi pemula, deretan huruf $$x$$, $$y$$, atau tanda pertidaksamaan di buku teks sering kali terlihat mengintimidasi. Padahal, simbol-simbol tersebut hanyalah cara singkat untuk menuliskan cerita yang sebenarnya sangat logis.
 
@@ -40,7 +40,7 @@ Terlepas dari seberapa rumit sebuah sistem industri, mulai dari pengaturan jadwa
 
 Seperti terlihat pada diagram di atas, proses pengambilan keputusan selalu bergerak dari pemilihan nilai pada variabel yang dapat diatur, lalu disaring oleh berbagai keterbatasan sumber daya, hingga menghasilkan nilai kinerja pada fungsi tujuan.
 
-### Analogi Nyata: Menyusun Paket Usaha Katering Rumahan
+### Analogi Konkret: Menyusun Paket Usaha Katering Rumahan
 
 Agar hubungan ketiga komponen tersebut terasa lebih membumi, sebagai contoh, seorang pengelola usaha katering rumahan sedang merencanakan produksi menu makan siang untuk besok. Dapur katering tersebut menawarkan dua pilihan menu utama: **Paket Hemat** dan **Paket Spesial**.
 
@@ -61,7 +61,7 @@ Setiap malam, pengelola usaha ini harus memutuskan berapa porsi masing-masing pa
 
 3. **Batasan (*Constraints*): "Apa Saja Aturan Main dan Keterbatasannya?"**
 
-   Jika tidak ada batasan apa pun, pengelola katering tentu akan memasak jutaan porsi Paket Spesial agar keuntungannya tak terhingga. Namun di dunia nyata, selalu ada keterbatasan sumber daya yang memagari ruang gerak keputusan:
+   Jika tidak ada batasan apa pun, pengelola katering tentu akan memasak jutaan porsi Paket Spesial agar keuntungannya tak terhingga. Namun pada kondisi sebenarnya, selalu ada keterbatasan sumber daya yang memagari ruang gerak keputusan:
 
    - **Batasan modal bahan baku:** Biaya bahan baku Paket Hemat adalah Rp15.000 per porsi dan Paket Spesial Rp25.000 per porsi, sementara modal belanja harian yang tersedia maksimal Rp1.500.000:
 

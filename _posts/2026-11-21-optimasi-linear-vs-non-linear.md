@@ -27,7 +27,7 @@ related_posts: false
 
 *Seri: Optimasi di Teknik Industri, Hari #4. Topik: Linear vs. Non-Linear Optimization* · [Read in English]({{ '/blog/2026/linear-vs-non-linear-optimization/' | relative_url }})
 
-Diskusi sebelumnya mengulas bagaimana variabel keputusan, fungsi tujuan, dan batasan (*constraints*) membentuk struktur dasar suatu masalah optimasi. Namun, ketika masuk lebih jauh ke dunia nyata, muncul pertanyaan krusial berikutnya: **apa bentuk hubungan antarvariabel dalam masalah tersebut?** Apakah berupa garis lurus (linear) atau tidak lurus (non-linear) seperti kurva?
+Diskusi sebelumnya mengulas bagaimana variabel keputusan, fungsi tujuan, dan batasan (*constraints*) membentuk struktur dasar suatu masalah optimasi. Namun, ketika masuk lebih jauh ke kondisi sebenarnya, muncul pertanyaan krusial berikutnya: **apa bentuk hubungan antarvariabel dalam masalah tersebut?** Apakah berupa garis lurus (linear) atau tidak lurus (non-linear) seperti kurva?
 
 Perbedaannya mirip jalan tol yang lurus dan jalan pegunungan yang berkelok. Di jalan tol, jika kecepatan diketahui, waktu tempuh bisa dihitung pasti, dan setiap kilometer tambahan menambah waktu yang sama. Di jalan pegunungan, tanjakan, tikungan, dan turunan membuat jarak dan waktu tidak lagi sebanding, dan jalan yang sedang menurun belum tentu membawa ke titik terendah lembah.
 
@@ -58,7 +58,7 @@ Masalah ini dapat diselesaikan dengan menelusuri titik-titik sudut feasible regi
 
 ### Optimasi Non-Linear (Non-Linear Programming / NLP)
 
-Sebaliknya, sebuah masalah dikategorikan sebagai **Non-Linear Programming (NLP)** apabila fungsi tujuan, atau minimal salah satu batasannya, mengandung hubungan non-linear. Hubungan ini muncul dari berbagai fenomena nyata seperti kuadrat jarak, eksponensial, logaritma, fungsi pangkat, atau perkalian antarvariabel keputusan.
+Sebaliknya, sebuah masalah dikategorikan sebagai **Non-Linear Programming (NLP)** apabila fungsi tujuan, atau minimal salah satu batasannya, mengandung hubungan non-linear. Hubungan ini muncul dari berbagai fenomena aktual seperti kuadrat jarak, eksponensial, logaritma, fungsi pangkat, atau perkalian antarvariabel keputusan.
 
 Sebagai contoh, dalam menentukan lokasi fasilitas pabrik baru, jarak Euclidean antara pabrik dan konsumen dihitung menggunakan rumus akar kuadrat $$\sqrt{(x_1 - a_i)^2 + (x_2 - b_i)^2}$$. Kehadiran pangkat dua dan akar kuadrat ini secara otomatis mengubah masalah menjadi non-linear.
 
@@ -80,7 +80,7 @@ Algoritma berbasis turunan (*gradient-based methods*) seperti *Gradient Descent*
 
 ### Perbandingan Kasus di Teknik Industri
 
-Untuk memahami dampaknya secara praktis, tabel berikut memperlihatkan bagaimana perbedaan asumsi linearitas memengaruhi pemodelan sistem nyata:
+Untuk memahami dampaknya secara praktis, tabel berikut memperlihatkan bagaimana perbedaan asumsi linearitas memengaruhi pemodelan sistem aktual:
 
 | Dimensi Perbandingan | Optimasi Linear (LP) | Optimasi Non-Linear (NLP) |
 | :--- | :--- | :--- |

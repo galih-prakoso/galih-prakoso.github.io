@@ -53,7 +53,7 @@ Masalah unimodal sering dikaitkan dengan fungsi yang **convex**. Hubungan terseb
 
 ---
 
-### Contoh Nyata: Fungsi Peaks
+### Contoh Konkret: Fungsi Peaks
 
 Sebagai contoh, kita gunakan fungsi **Peaks**, fungsi dua variabel yang sering dipakai untuk menguji algoritma optimasi, termasuk pada buku rujukan seri ini. Fungsi ini memiliki tiga titik puncak di dalam rentang $$-3 \le x_1, x_2 \le 3$$. Hasil perhitungan numerik untuk tulisan ini:
 

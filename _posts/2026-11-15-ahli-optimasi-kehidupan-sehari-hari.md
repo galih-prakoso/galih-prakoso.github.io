@@ -33,7 +33,7 @@ Pola serupa juga muncul dalam berbagai pilihan lain, mulai dari makanan, pakaian
 
 ### Memahami *Trade-Off* Lewat Desain Kendaraan
 
-Dalam sudut pandang rekayasa (*engineering*), optimasi juga dapat dipahami sebagai cara menentukan "biaya" atau pengorbanan apa yang bersedia ditanggung demi memperoleh manfaat yang diharapkan. Contoh nyatanya terlihat pada bagaimana para insinyur merancang empat kategori mobil berbeda di industri otomotif:
+Dalam sudut pandang rekayasa (*engineering*), optimasi juga dapat dipahami sebagai cara menentukan "biaya" atau pengorbanan apa yang bersedia ditanggung demi memperoleh manfaat yang diharapkan. Contoh konkretnya terlihat pada bagaimana para insinyur merancang empat kategori mobil berbeda di industri otomotif:
 
 - **Mobil Sport (*Sports Car*):** Jika tujuannya adalah memaksimalkan akselerasi, perancang perlu memaksimalkan tenaga mesin sekaligus meminimalkan bobot kendaraan dengan ukuran bodi yang ringkas. Konsekuensinya, pengemudi harus menerima pengorbanan berupa konsumsi bahan bakar yang boros dan biaya perawatan yang tinggi.
 - **Mobil Hemat Bahan Bakar:** Sebaliknya, untuk meminimalkan konsumsi bahan bakar, mobil umumnya dirancang berukuran kecil dengan mesin berdaya rendah, sehingga akselerasinya tidak secepat mobil sport.
@@ -47,11 +47,11 @@ Lalu, muncul pertanyaan menarik: *mungkinkah dibuat truk kargo yang memiliki aks
 
 Di sisi konsumen, pola pikir optimasi yang sama juga berlaku. Banyak orang memilih untuk tidak mengalokasikan terlalu banyak dana pada pembelian mobil, agar sisa sumber daya finansialnya dapat digunakan untuk kebutuhan lain yang dianggap lebih penting atau lebih mereka nikmati.
 
-### Membawa Persoalan Nyata ke dalam Model Matematika
+### Membawa Persoalan Konkret ke dalam Model Matematika
 
 Di bidang Teknik Industri dan Manajemen, prinsip optimasi menjadi fondasi utama dalam pengambilan keputusan. Misalnya, bagaimana meminimalkan biaya produksi suatu barang tanpa mengurangi standar kualitas yang ditetapkan, bagaimana memaksimalkan keuntungan perusahaan di bawah keterbatasan anggaran, atau bagaimana mengatur pembagian tugas karyawan secara efisien.
 
-Agar persoalan-persoalan nyata tersebut dapat diselesaikan secara sistematis, situasi fisik di lapangan perlu diterjemahkan ke dalam bahasa matematika. Proses ini disebut sebagai **pemodelan (*modeling*)**. Secara garis besar, setiap model optimasi terdiri dari tiga elemen utama:
+Agar persoalan-persoalan konkret tersebut dapat diselesaikan secara sistematis, situasi fisik di lapangan perlu diterjemahkan ke dalam bahasa matematika. Proses ini disebut sebagai **pemodelan (*modeling*)**. Secara garis besar, setiap model optimasi terdiri dari tiga elemen utama:
 
 1. **Variabel Keputusan (*Decision Variables*):** Faktor atau nilai yang dapat diatur dan ditentukan besarannya (misalnya x₁, x₂, …, xₙ), seperti kapasitas mesin atau jumlah unit yang dipesan.
 2. **Fungsi Tujuan (*Objective Function*):** Ukuran kinerja utama f(x) yang ingin dimaksimalkan (seperti keuntungan atau akselerasi) atau diminimalkan (seperti biaya produksi atau waktu tunggu), yang nilainya dipengaruhi oleh variabel keputusan.

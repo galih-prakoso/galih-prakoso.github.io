@@ -42,7 +42,7 @@ Jika berada di posisi John, setidaknya ada dua pendekatan ekstrem yang dapat dit
 - **Pilihan Pertama: Memesan dalam jumlah sedikit, tetapi sangat sering.** Dengan cara ini, gudang tidak perlu menampung terlalu banyak barang. Ruang penyimpanan menjadi lebih lega, modal tidak banyak tertahan dalam bentuk stok barang, dan risiko kerusakan atau kedaluwarsa pun kecil. Akan tetapi, konsekuensinya muncul di sisi lain: setiap kali pemesanan dilakukan, toko harus menanggung biaya administrasi serta ongkos kirim (*transportasi*) yang bersifat tetap. Jika frekuensi pemesanan terlalu tinggi, total ongkos kirim dalam setahun akan membengkak.
 - **Pilihan Kedua: Memesan dalam jumlah sangat besar sekaligus, tetapi jarang.** Dengan memesan stok untuk kebutuhan enam bulan atau satu tahun penuh dalam satu kali pengiriman, biaya transportasi memang dapat dihemat secara signifikan. Sebagai gantinya, diperlukan ruang gudang yang jauh lebih luas, biaya listrik, perawatan, serta asuransi penyimpanan menjadi lebih tinggi, dan dana tunai perusahaan akan mengendap lama di gudang.
 
-Di sinilah esensi optimasi kembali terlihat nyata. Memesan terlalu sedikit membuat **biaya pemesanan** melambung, sedangkan memesan terlalu banyak membuat **biaya penyimpanan** membengkak. Tantangannya adalah menemukan titik tengah yang paling seimbang agar **total keseluruhan biaya** berada pada level paling rendah.
+Di sinilah esensi optimasi kembali terlihat konkret. Memesan terlalu sedikit membuat **biaya pemesanan** melambung, sedangkan memesan terlalu banyak membuat **biaya penyimpanan** membengkak. Tantangannya adalah menemukan titik tengah yang paling seimbang agar **total keseluruhan biaya** berada pada level paling rendah.
 
 ### Mengenal Model *Economic Order Quantity* (EOQ)
 
@@ -72,7 +72,7 @@ $$Q^* = \sqrt{\frac{2DS}{H}}$$
 
 ### Simulasi Angka Sederhana untuk Toko John
 
-Agar gambaran penerapannya terasa lebih nyata, mari masukkan angka operasional ke dalam studi kasus toko John:
+Agar gambaran penerapannya terasa lebih konkret, mari masukkan angka operasional ke dalam studi kasus toko John:
 
 - Permintaan tahunan ($$D$$) = 1.000 unit per tahun.
 - Biaya pemesanan dan pengiriman ($$S$$) = USD 50 setiap kali pesan.
@@ -92,7 +92,7 @@ Tabel berikut memperlihatkan perbandingan besarnya penghematan yang diperoleh ap
 
 Dari perbandingan angka pada tabel tersebut, terlihat sebuah temuan yang menarik. Baik saat memesan terlalu sedikit (50 unit) maupun terlalu banyak (500 unit), John sama-sama harus mengeluarkan biaya logistik dan penyimpanan sebesar USD 1.100 per tahun. Namun, dengan memesan sekitar 158 unit setiap kali pesan, total biayanya turun drastis menjadi USD 632 per tahun, sebuah penghematan lebih dari 40% hanya dengan mengatur ritme pemesanan secara tepat.
 
-### Menjembatani Teori Klasik ke Dunia Nyata
+### Menjembatani Teori Klasik ke Kondisi Sebenarnya
 
 Melalui Masalah John, kerangka pemodelan optimasi terlihat bekerja secara utuh: terdapat **variabel keputusan** berupa jumlah pesanan ($$Q$$) dan **fungsi tujuan** untuk meminimalkan total biaya persediaan.
 
