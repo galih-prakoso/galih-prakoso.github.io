@@ -27,7 +27,7 @@ related_posts: false
 
 *Seri: Optimasi di Teknik Industri, Hari #6. Topik: Convexity (Convex vs. Non-Convex)* · [Read in English]({{ '/blog/2026/convex-vs-non-convex/' | relative_url }})
 
-Pada ulasan sebelumnya ([Hari #5]({{ '/id/tulisan/2026/satu-puncak-vs-banyak-puncak/' | relative_url }})), dapat kita lihat bahwa sebuah fungsi tujuan bisa memiliki banyak titik maksimum atau titik minimum lokal. Pertanyaan berikutnya: **apakah ada sifat yang bisa diperiksa sejak awal untuk memastikan bahwa hanya ada satu titik minimum?** Sifat tersebut disebut **convexity**. Hasil pemeriksaan tersebut menentukan apakah sebuah masalah optimasi bisa diselesaikan dengan pasti, atau harus ditangani dengan hati-hati.
+Pada ulasan sebelumnya ([Hari #5]({{ '/id/tulisan/2026/satu-puncak-vs-banyak-puncak/' | relative_url }})), dapat kita lihat bahwa sebuah fungsi tujuan bisa memiliki banyak titik maksimum atau titik minimum lokal. Pertanyaan berikutnya: **apakah ada ciri-ciri yang dapat diidentifikasi sejak awal untuk memastikan suatu kurva hanya ada satu titik minimum?** Sifat atau ciri-ciri tersebut disebut sifat **convexity**. Hasil pemeriksaan tersebut menentukan apakah sebuah masalah optimasi bisa diselesaikan dengan pasti, atau harus ditangani dengan hati-hati.
 
 ---
 
