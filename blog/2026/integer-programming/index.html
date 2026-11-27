@@ -1,0 +1,116 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="google-site-verification" content="QIPtNW0cEDzwKXNR7Sw7TFnL_nua1KNkrnMem6d8dOs"> <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Whole or Fraction? Understanding Integer Programming | Galih Prakoso </title> <meta name="author" content="Galih Prakoso"> <meta name="description" content="Optimization in Industrial Engineering, Day #7: why a rounded LP answer can violate a constraint or fall far from the optimum."> <meta name="keywords" content="additive manufacturing, FDM, batch scheduling, nesting, industrial engineering, King Saud University"> <meta property="og:site_name" content="Galih Prakoso"> <meta property="og:type" content="article"> <meta property="og:title" content="Galih Prakoso | Whole or Fraction? Understanding Integer Programming"> <meta property="og:url" content="https://galih-prakoso.github.io/blog/2026/integer-programming/"> <meta property="og:description" content="Optimization in Industrial Engineering, Day #7: why a rounded LP answer can violate a constraint or fall far from the optimum."> <meta property="og:image" content="https://galih-prakoso.github.io/assets/img/blog/optimization-day-7-en.png"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Whole or Fraction? Understanding Integer Programming"> <meta name="twitter:description" content="Optimization in Industrial Engineering, Day #7: why a rounded LP answer can violate a constraint or fall far from the optimum."> <meta name="twitter:image" content="https://galih-prakoso.github.io/assets/img/blog/optimization-day-7-en.png"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8E%93&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://galih-prakoso.github.io/blog/2026/integer-programming/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Galih</span> Prakoso </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">writing <span class="sr-only">(current)</span> </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">language </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/">English</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/id/">Bahasa Indonesia</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Whole or Fraction? Understanding Integer Programming</h1> <p class="post-meta"> Created on November 27, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/optimization"> <i class="fa-solid fa-hashtag fa-sm"></i> optimization</a>   <a href="/blog/tag/integer-programming"> <i class="fa-solid fa-hashtag fa-sm"></i> integer-programming</a>   <a href="/blog/tag/branch-and-bound"> <i class="fa-solid fa-hashtag fa-sm"></i> branch-and-bound</a>   <a href="/blog/tag/lp-relaxation"> <i class="fa-solid fa-hashtag fa-sm"></i> lp-relaxation</a>   <a href="/blog/tag/industrial-engineering"> <i class="fa-solid fa-hashtag fa-sm"></i> industrial-engineering</a>   ·   <a href="/blog/category/optimization-series"> <i class="fa-solid fa-tag fa-sm"></i> optimization-series</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <link rel="stylesheet" href="/assets/css/justify.css?v=16"> <script src="/assets/js/lang-switch.js?v=1" data-lang="en" defer></script> <script src="/assets/js/img-zoom.js?v=1" defer></script> <script src="/assets/js/post-edit.js?v=1" data-src="_posts/2026-11-27-whole-or-fraction-integer-programming.md" defer></script> <script src="/assets/js/series-nav.js?v=1" defer></script> <script src="/assets/js/share-buttons.js?v=4" defer></script> <script src="/assets/js/code-view.js?v=1" defer></script> <p><em>Series: Optimization in Industrial Engineering, Day #7. Topic: Integer Programming</em> · <a href="/id/tulisan/2026/integer-programming/">Baca dalam Bahasa Indonesia</a></p> <p>In the previous post (<a href="/blog/2026/convex-vs-non-convex/">Day #6</a>), we discussed when a problem is safe to solve with a local method. This time we look at a different obstacle: <strong>decision variables that must be whole numbers</strong>. A workshop cannot build 2.25 cabinets, and a factory cannot buy 3.75 machines. Problems like this are called <strong>Integer Programming (IP)</strong>.</p> <h3 id="what-is-integer-programming">What Is Integer Programming?</h3> <p>IP is a linear programming problem with the added requirement that some or all variables must take integer values. Three forms are common:</p> <table> <thead> <tr> <th style="text-align: left">Form</th> <th style="text-align: left">Variable rule</th> <th style="text-align: left">Example decision</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">Pure IP</td> <td style="text-align: left">All variables are integers</td> <td style="text-align: left">Number of machines to buy</td> </tr> <tr> <td style="text-align: left">Mixed IP</td> <td style="text-align: left">Some integer, some may be fractional</td> <td style="text-align: left">Number of trucks (integer) and liters of fuel (fractional)</td> </tr> <tr> <td style="text-align: left">Binary IP</td> <td style="text-align: left">Variables are only 0 or 1</td> <td style="text-align: left">Build a plant in a given city or not</td> </tr> </tbody> </table> <p>The catering model in <a href="/blog/2026/anatomy-of-an-optimization-model/">Day #3</a> also used integer variables (number of meals), and its optimum happened to fall on the integer point \((75,\ 15)\). That does not always happen, as the following example shows.</p> <h3 id="example-a-furniture-workshop">Example: A Furniture Workshop</h3> <p>Suppose a workshop makes two products. Each cabinet (x₁) earns USD 5,000 and each table (x₂) earns USD 8,000. The workshop has 6 workers and 45 boards. Each product uses 1 worker. Each cabinet uses 5 boards and each table uses 9 boards. The model can be written as follows:</p> \[\max\; Z = 5x_1 + 8x_2 \quad \text{subject to}\quad x_1 + x_2 \le 6,\;\; 5x_1 + 9x_2 \le 45,\;\; x_1, x_2 \ge 0\text{ and integer}\] <p>If the integer requirement is dropped, the LP optimum is at the corner \((2.25,\ 3.75)\) with \(Z = 41.25\). That answer cannot be built. So what if we round it?</p> <p><img src="/assets/img/blog/optimization-day-7-en.svg" alt="Comparison of the fractional LP optimum with integer points in the feasible region of a furniture workshop" style="max-width: 100%; height: auto; display: block; margin: 1rem auto 0.25rem;"></p> <p style="text-align: center;"><em>Figure 1. Left: LP reaches a corner of the feasible region. Right: only integer points may be chosen.</em></p> <table> <thead> <tr> <th style="text-align: left">Method</th> <th style="text-align: left">Point</th> <th style="text-align: left">Status</th> <th style="text-align: right">Z</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">Round to nearest</td> <td style="text-align: left">(2, 4)</td> <td style="text-align: left">Violates the board constraint (5·2 + 9·4 = 46 &gt; 45)</td> <td style="text-align: right">-</td> </tr> <tr> <td style="text-align: left">Round down</td> <td style="text-align: left">(2, 3)</td> <td style="text-align: left">Feasible</td> <td style="text-align: right">34</td> </tr> <tr> <td style="text-align: left">True integer optimum</td> <td style="text-align: left">(0, 5)</td> <td style="text-align: left">Feasible</td> <td style="text-align: right">40</td> </tr> </tbody> </table> <p>Rounding to the nearest integer gives an infeasible answer, and rounding down leaves Z = 34 even though Z = 40 is achievable. The integer optimum is even located far from the LP optimum. Therefore, <strong>rounding an LP answer is not a reliable method</strong>.</p> <p>Hillier and Lieberman point out these two pitfalls: a rounded LP answer is not necessarily feasible, and even if it is feasible, it is not necessarily optimal. Rounding can still work well for a smooth one-variable problem, such as John’s case in Cuevas et al., where 44.72 gallons is rounded to 45. For problems with several variables and constraints, that rule cannot be trusted.</p> <h3 id="finding-the-integer-optimum-branch-and-bound">Finding the Integer Optimum: Branch and Bound</h3> <p>The most common method is <strong>branch and bound</strong>. The idea is simple:</p> <ol> <li>Solve the LP without the integer requirement (the <strong>LP relaxation</strong>). Its value is an upper bound: no integer answer can beat 41.25.</li> <li>If a variable is fractional, say x₁ = 2.25, split the problem into two branches: x₁ ≤ 2 and x₁ ≥ 3. No integer point is lost, because no integer lies between 2 and 3.</li> <li>Solve the LP on each branch, then repeat the splitting.</li> <li>Whenever an integer answer is found, keep it as the best so far. Any branch whose LP bound is no better than that answer is stopped (<em>pruned</em>).</li> </ol> <p>In this example, the Python script finishes in 9 nodes. The first integer answer (2, 3) is worth 34, then (1, 4) appears with 37, and finally (0, 5) with 40. The branch x₁ ≥ 3 is stopped because its LP bound is only 39.</p> <h3 id="where-does-this-appear-in-industrial-engineering">Where Does This Appear in Industrial Engineering?</h3> <p>Integer decisions are everywhere in industry: number of machines, number of operators, facility locations (yes or no), job sequences, and production lot sizes. Some of them are sources of the non-convexity mentioned in <a href="/blog/2026/convex-vs-non-convex/">Day #6</a>, because the set of integer points is not a convex set. As a result, IP is generally much harder to solve than an LP of the same size. This difficulty is one reason metaheuristics are discussed later in this series.</p> <h3 id="so-what-is-it-good-for">So What Is It Good For?</h3> <p>There are three practical lessons. First, always check whether the decision variables must be integers before trusting an LP answer. Second, the LP relaxation value is still useful as a bound: the gap between 41.25 and 40 tells us how far the integer answer is from the best possible bound. Third, do not simply round. Use an IP solver or branch and bound so the answer is guaranteed feasible and optimal.</p> <hr> <h3 id="python-script">Python Script</h3> <p>The workshop example in this post can be reproduced with the following Python script. It prints the LP relaxation, the rounding results, the integer optimum found by exhaustive search, and every branch-and-bound node, then plots the integer points. It requires Python 3.9+ with <code class="language-plaintext highlighter-rouge">numpy</code>, <code class="language-plaintext highlighter-rouge">scipy</code>, and <code class="language-plaintext highlighter-rouge">matplotlib</code>. The script carries the author’s copyright notice (© 2026 Galih Prakoso, MIT License), which must be kept in every copy or modification.</p> <div class="code-view" data-src="/assets/code/day-7-integer-programming.py"><a href="/assets/code/day-7-integer-programming.py">day-7-integer-programming.py</a></div> <hr> <h3 id="referensi">Referensi</h3> <p>Cuevas, E., Rosas Caro, J. C., Alejo Reyes, A., González Ayala, P., &amp; Rodriguez, A. (2025). <em>Optimization in Industrial Engineering: From Classical Methods to Modern Metaheuristics with MATLAB Applications</em> (Chapter 1, Section 1.4: Solving John’s Problem Using the Gradient Descent Method with Matlab, pp. 10 and 12). Springer Nature.</p> <p>Hillier, F. S., &amp; Lieberman, G. J. (2010). <em>Introduction to Operations Research</em> (9th ed.; Chapter 11: Integer Programming, pp. 464–465; Section 11.5: Some Perspectives on Solving Integer Programming Problems, pp. 487–490; Section 11.6: The Branch-and-Bound Technique and Its Application to Binary Integer Programming, p. 491). McGraw-Hill.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Galih Prakoso. © Galih Prakoso. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/al-folio/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Peer-reviewed publications in reverse chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-writing",
+          title: "writing",
+          description: "Daily notes and articles on optimization, industrial engineering, and manufacturing.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "dropdown-english",
+              title: "English",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/";
+              },
+            },{id: "dropdown-bahasa-indonesia",
+              title: "Bahasa Indonesia",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/id/";
+              },
+            },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%34%34%35%31%30%39%33%31%32@%73%74%75%64%65%6E%74.%6B%73%75.%65%64%75.%73%61", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0006-1962-5336", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=yG2JbOAAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/galih-prakoso-255bb756", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
