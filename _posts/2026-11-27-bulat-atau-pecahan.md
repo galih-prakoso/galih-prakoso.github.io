@@ -73,7 +73,7 @@ Metode yang paling umum adalah **branch and bound**. Idenya sederhana:
 
 Pada contoh ini, script Python menyelesaikannya dalam 9 simpul. Jawaban bulat pertama (2, 3) bernilai 34, kemudian muncul (1, 4) bernilai 37, dan akhirnya (0, 5) bernilai 40. Cabang x₁ ≥ 3 dihentikan karena batas LP-nya hanya 39.
 
-### Di Mana Ini Muncul dalam Teknik Industri?
+### Pada Kondisi Seperti Apa Permasalahan Ini Muncul di Teknik Industri?
 
 Keputusan yang menggunakan bilangan bulat sangat umum di industri: jumlah mesin, jumlah operator, lokasi fasilitas (ya atau tidak), urutan pekerjaan, dan ukuran lot produksi. Sebagian di antaranya termasuk sumber sifat non-convex yang disebut pada [Hari #6]({{ '/id/tulisan/2026/convex-vs-non-convex/' | relative_url }}), karena kumpulan titik bulat bukan himpunan convex. Akibatnya, IP umumnya jauh lebih sulit diselesaikan daripada LP dengan ukuran yang sama. Kesulitan tersebut menjadi salah satu alasan metode metaheuristik dibahas pada seri berikutnya.
 
